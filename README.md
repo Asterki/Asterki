@@ -7,7 +7,7 @@ I'm a independet developer with experience in CSS3, HTML5, JavaScript. I know a 
 - 🌱 I’m currently learning PHP, JavaScript and TypeScript.
 - 👯 I’m looking to collaborate on anyone who needs it.
 - 🤔 I’m looking for help with PHP.
-- 💬 Ask me about my projects.
+- 💬 Ask me about anything you want.
 - 📫 How to reach me: Contact me on Discord as Asterki#9724.
 - 😄 Pronouns: Aster, Fernan, That one guy that no one cares.
 - ⚡ Fun fact: Css is hell.
