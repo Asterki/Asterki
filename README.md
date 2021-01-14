@@ -1,7 +1,7 @@
 ### Hello everyone and you!
 
 
-I'm a independet developer with experience in CSS3, HTML5, JavaScript. I know a little of Python and I'm also learning PHP so I can become a full stack developer.
+I'm a independet developer with experience in CSS3, HTML5, JavaScript. I know a little of Python and I'm also learning React.js and so I'm trying to become a full stack developer.
 
 - 🔭 I’m currently working on my own.
 - 🌱 I’m currently learning React.js, JavaScript and advanced CSS.
