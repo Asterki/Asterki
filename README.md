@@ -1,6 +1,6 @@
 # I'm asterki, a self-taught web developer
 
-I use HTML, EJS, TS, SCSS and Vue.js for my projects
+I use HTML, EJS, TS, SCSS and React.js for my projects
 
 - 🔭 I’m currently working on my own.
 - 🌱 I’m currently learning Models with MongoDB and advanced TypeScript.
