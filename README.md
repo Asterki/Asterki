@@ -7,5 +7,4 @@ I use HTML, EJS, TS, SCSS and React.js for my projects
 - 💬 Ask me about anything you want.
 - 📫 How to reach me: https://website.asterki.repl.co/contact, fill the forum and I will contact you later
 - 😄 Pronouns: Aster
-- ⚡ Fun fact: Once I set my pc on permanent recovery mode and I (without a working brain) re installed the OS.
-
+- ⚡ Fun fact: Once I set my pc on fire while editing a video for school
