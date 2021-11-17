@@ -29,3 +29,7 @@
 <a href="https://medium.com/@asterki.dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@asterki.dev" height="30" width="40" /></a>
 </p>
 
+<br /><br />
+
+<i><b>No student knows his subject: the most he knows is where and how to find out the things he does not know.</b></i>
+<i>— Woodrow T. Wilson</i>
