@@ -323,7 +323,7 @@ graph](https://activity-graph.herokuapp.com/graph?username=Asterki&theme=react-d
   
   <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=asterki&theme=github_dark&show_icons=true&count_private=true" />
   <br></br>
-  <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Mark streak" src="https://github-readme-streak-stats.herokuapp.com/?user=asterki&theme=tokyonight_duo&hide_border=true" />
+  <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Asterki streak" src="https://github-readme-streak-stats.herokuapp.com/?user=asterki&theme=tokyonight_duo&hide_border=true" />
 
 
   
