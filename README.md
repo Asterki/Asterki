@@ -331,8 +331,8 @@ graph](https://activity-graph.herokuapp.com/graph?username=Asterki&theme=react-d
 <td width="50%" align="center">
 
   <img
-    align="left"
-    src="https://github-readme-stats.vercel.app/api/top-langs?username=asterki&theme=github_dark&show_icons=true&locale=en&layout=compact"
+    align="center"
+    src="https://github-readme-stats.vercel.app/api/top-langs?username=asterki&theme=github_dark&show_icons=true&locale=en"
     alt="asterki"
   />
   
