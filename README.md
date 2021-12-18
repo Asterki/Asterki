@@ -368,7 +368,7 @@ graph](https://activity-graph.herokuapp.com/graph?username=Asterki&theme=react-d
       height="30"
       width="40"
   /></a>
-  <a href="https://twitter.com/asterkiwastaken" target="blank"
+  <a href="https://twitter.com/AsterkiDev" target="blank"
     ><img
       align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
