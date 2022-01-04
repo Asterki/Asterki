@@ -2,7 +2,7 @@
   <img
     width="100%"
     height="300px"
-    src="https://asterki.is-inside.me/qlU0aaTS.png"
+    src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
     alt="cover"
   />
 </div>
