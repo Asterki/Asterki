@@ -64,14 +64,6 @@
       height="40"
     />
   </a>
-  <a href="https://www.electronjs.org" target="_blank" rel="noreferrer">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg"
-      alt="electron"
-      width="40"
-      height="40"
-    />
-  </a>
   <a href="https://expressjs.com" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
@@ -100,18 +92,6 @@
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
       alt="html5"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a
-    href="https://www.adobe.com/in/products/illustrator.html"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <img
-      src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
-      alt="illustrator"
       width="40"
       height="40"
     />
@@ -168,14 +148,6 @@
       height="40"
     />
   </a>
-  <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
-      alt="photoshop"
-      width="40"
-      height="40"
-    />
-  </a>
   <a href="https://www.gimp.org/" target="_blank" rel="noreferrer">
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg"
@@ -196,14 +168,6 @@
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
       alt="heroku"
-      width="40"
-      height="40"
-    /> 
-  </a>
-  <a href="https://jquery.com/" target="_blank" rel="noreferrer">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
-      alt="jquery"
       width="40"
       height="40"
     /> 
@@ -256,14 +220,6 @@
       height="40"
     />
   </a>
-  <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
-    <img
-      src="https://reactnative.dev/img/header_logo.svg"
-      alt="reactnative"
-      width="40"
-      height="40"
-    />
-  </a>
   <a href="https://redis.io" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"
@@ -272,6 +228,15 @@
       height="40"
     />
   </a>
+  <a href="https://leveljs.org/" target="_blank" rel="noreferrer">
+    <img
+      src="https://leveljs.org/img/logo.svg"
+      alt="LevelDB"
+      width="40"
+      height="40"
+    />
+  </a>
+  
   <a href="https://code.visualstudio.com" target="_blank" rel="noreferrer">
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
@@ -284,14 +249,6 @@
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
       alt="sass"
-      width="40"
-      height="40"
-    />
-  </a>
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-      alt="typescript"
       width="40"
       height="40"
     />
