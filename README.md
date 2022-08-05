@@ -1,12 +1,3 @@
-<div align="center">
-  <img
-    width="100%"
-    height="500px"
-    src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-    alt="cover"
-  />
-</div>
-
 <h1 align="center">Hello everyone 👋, I'm Asterki</h1>
 <h3 align="center">A Self-Taught Full Stack Web Developer</h3>
 
