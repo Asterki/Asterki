@@ -302,8 +302,8 @@ graph](https://activity-graph.herokuapp.com/graph?username=Asterki&theme=react-d
 <br />
 
 <h13 align="left">My Website</h3>
-<a href="http://website.asterki.repl.co/" target="_blank">
-    http://website.asterki.repl.co/
+<a href="https://www.asterki.ga" target="_blank">
+    https://www.asterki.ga/
   </a>
   
   Source Code: <br />
