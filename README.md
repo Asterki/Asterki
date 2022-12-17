@@ -277,6 +277,14 @@
       height="40"
     />
   </a>
+  <a href="https://eslint.org/" target="_blank" rel="noreferrer">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg"
+      alt="eslint"
+      width="40"
+      height="40"
+    />
+  </a>
   <a href="https://jestjs.io" target="_blank" rel="noreferrer">
     <img
       src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
@@ -401,6 +409,14 @@
     <img
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
       alt="heroku"
+      width="40"
+      height="40"
+    /> 
+  </a>
+  <a href="https://vercel.com" target="_blank" rel="noreferrer">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg"
+      alt="vercel"
       width="40"
       height="40"
     /> 
