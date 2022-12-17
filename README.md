@@ -9,11 +9,12 @@
 <p align="left">
   <a href="https://babeljs.io/" target="_blank" rel="noreferrer">
     <img
-      src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.sv"
       alt="babel"
       width="40"
       height="40"
     />
+      
   </a>
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img
@@ -47,6 +48,22 @@
       height="40"
     />
   </a>
+  <a href="https://nginx.org/en/" target="_blank" rel="noreferrer">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
+      alt="nginx"
+      width="40"
+      height="40"
+    />
+  </a>
+  <a href="https://nginx.org/en/" target="_blank" rel="noreferrer">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+      alt="socket.io"
+      width="40"
+      height="40"
+    />
+  </a>
   <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
@@ -72,13 +89,13 @@
     />
   </a>
    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-                        <img
-                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                            alt="typescript"
-                            width="40"
-                            height="40"
-                        />
-                 </a>
+        <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+            alt="typescript"
+            width="40"
+            height="40"
+        />
+    </a>
   <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
     <img
       src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
@@ -119,6 +136,14 @@
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
       alt="linux"
+      width="40"
+      height="40"
+    />
+  </a>
+  <a href="https://www.ssh.com/academy/ssh" target="_blank" rel="noreferrer">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original-wordmark.svg"
+      alt="ssh"
       width="40"
       height="40"
     />
@@ -268,11 +293,6 @@
 [![Ashutosh's github activity
 graph](https://activity-graph.herokuapp.com/graph?username=Asterki&theme=react-dark)](https://github.com/Asterki/)
 
-
-
-
-
-
 <table border="0" align="center">
 <tr border="0">
 <td width="50%" align="center">
@@ -281,39 +301,35 @@ graph](https://activity-graph.herokuapp.com/graph?username=Asterki&theme=react-d
   <br></br>
   <img  title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="Asterki streak" src="https://github-readme-streak-stats.herokuapp.com/?user=asterki&theme=tokyonight_duo&hide_border=true" />
 
-
-  
 </td>
 
 <td width="50%" align="center">
 
-  <img
+<img
     align="center"
     src="https://github-readme-stats.vercel.app/api/top-langs?username=asterki&theme=github_dark&show_icons=true&locale=en"
     alt="asterki"
   />
-  
+
   </td>
 </tr>
 </table>
-  
 
 <br />
 <br />
 
 <h13 align="left">My Website</h3>
 <a href="https://www.asterki.ga" target="_blank">
-    https://www.asterki.ga/
-  </a>
-  
-  Source Code: <br />
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=asterki&repo=new-website&theme=github_dark)](https://github.com/Asterki/new-website)
+https://www.asterki.ga/
+</a>
+
+Source Code: <br />
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=asterki&repo=new-website&theme=github_dark)](https://github.com/Asterki/new-website)
 
 <br />
 
 <h3 align="left">Contact with me:</h3>
 
-  
 <p align="left">
   
   <a href="https://dev.to/asterki" target="blank"
