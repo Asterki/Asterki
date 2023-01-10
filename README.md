@@ -194,6 +194,14 @@
       height="40"
     />
   </a>
+  <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
+  <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+      alt="vuejs"
+      width="40"
+      height="40"
+    />
+  </a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
