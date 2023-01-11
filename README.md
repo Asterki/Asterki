@@ -1,5 +1,5 @@
 <h1 align="center">Hello everyone 👋, I'm Asterki</h1>
-<h3 align="center">A Self-Taught Full Stack Web Developer</h3>
+<h3 align="center">Certified Stack Web Developer</h3>
 
 <br />
 
