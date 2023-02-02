@@ -505,7 +505,7 @@ https://www.asterki.ga/
 </a>
 
 Source Code: <br />
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=asterki&repo=new-website&theme=github_dark)](https://github.com/Asterki/new-website)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=asterki&repo=asterki&theme=github_dark)](https://github.com/Asterki/Asterki)
 
 <br />
 
