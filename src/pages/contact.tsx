@@ -39,7 +39,7 @@ const ContactPage = () => {
             className="contact-page"
         >
             <Head>
-                <title>Asterki Dev | Home</title>
+                <title>Asterki Dev | Contact</title>
             </Head>
 
             <motion.div

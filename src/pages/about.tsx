@@ -39,7 +39,7 @@ const AboutPage = () => {
             className="about-page"
         >
             <Head>
-                <title>Asterki Dev | Home</title>
+                <title>Asterki Dev | About</title>
             </Head>
 
             <div>

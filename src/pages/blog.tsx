@@ -39,7 +39,7 @@ const BlogPage = () => {
             className="blog-page"
         >
             <Head>
-                <title>Asterki Dev | Home</title>
+                <title>Asterki Dev | Blog</title>
             </Head>
 
             <div>

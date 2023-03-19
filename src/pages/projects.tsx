@@ -56,7 +56,7 @@ const ProjectsPage = () => {
             className="projects-page"
         >
             <Head>
-                <title>Asterki Dev | Home</title>
+                <title>Asterki Dev | Projects</title>
             </Head>
 
             <div>
