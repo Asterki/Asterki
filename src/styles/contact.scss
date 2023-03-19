@@ -1,0 +1,94 @@
+.contact-page {
+    .particles {
+        position: absolute;
+        top: 0;
+
+        z-index: 0;
+    }
+
+    main {
+        min-height: 100vh;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+        div {
+            width: 30%;
+            padding: 10px;
+            border-radius: 10px;
+
+            margin: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+
+            text-align: left;
+
+            a {
+                color: white;
+            }
+        }
+
+        button {
+            border: 2px solid #ffffff25 !important;
+
+            margin: 5px;
+            padding: 10px;
+
+            width: 10%;
+
+            border-radius: 0.28571429rem;
+
+            // background: none !important;
+            color: white !important;
+            font-size: 20px !important;
+            transition: 0.3s all ease-in-out !important;
+
+            background-color: rgba(255, 255, 255, 0.062);
+            backdrop-filter: blur(20px);
+
+            &:hover {
+                background-color: #ffffff2d !important;
+            }
+
+            &:focus {
+                background-color: #ffffff49 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contact-page {
+        main {
+            div {
+                width: 80%;
+            }
+
+            button {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-page {
+        main {
+            padding: 10%;
+
+            div {
+                width: 95%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

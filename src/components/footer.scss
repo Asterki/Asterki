@@ -1,0 +1,13 @@
+@media screen and (max-width: 1100px) {
+    .footer-component {
+        margin-bottom: auto !important;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    .footer-component {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+}
