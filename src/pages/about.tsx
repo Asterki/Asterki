@@ -75,38 +75,20 @@ const AboutPage = () => {
                     <h2>Certifications</h2>
                     <ul>
                         <li>
-                            <a href="https://www.udemy.com/certificate/UC-8b48f7ea-c040-4234-9817-de15f2cb06ce/">
-                                FullStack Web Development BootCamp (App Brewery)
-                            </a>{" "}
-                            - 65h
+                            FullStack Web Development BootCamp (App Brewery)
                         </li>
                         <li>
-                            <a href="https://www.freecodecamp.org/certification/fcc51b68323-815f-43b4-a069-e9ec56732a65/back-end-development-and-apis">
-                                Backend Development and APIs (FreeCodeCamp)
-                            </a>{" "}
-                            - ~300h
+                            Backend Development and APIs (FreeCodeCamp)
                         </li>
                         <li>
-                            <a href="https://www.freecodecamp.org/certification/fcc51b68323-815f-43b4-a069-e9ec56732a65/responsive-web-design">
-                                Responsive Web Design (FreeCodeCamp)
-                            </a>{" "}
-                            - ~300h
+                            Responsive Web Design (FreeCodeCamp)
                         </li>
                         <li>
-                            <a href="https://www.freecodecamp.org/certification/fcc51b68323-815f-43b4-a069-e9ec56732a65/javascript-algorithms-and-data-structures">
-                                JavaScript Algorithms and Data Structures (FreeCodeCamp)
-                            </a>{" "}
-                            - ~300h
+                            JavaScript Algorithms and Data Structures (FreeCodeCamp)
                         </li>
-                    </ul>
-                </div>
-
-                <br />
-
-                <div className="content">
-                    <h2>Education</h2>
-                    <ul>
-                        <li>La Inmaculada Marist Institute: computer science baccalaureate 2022-2024 (expected)</li>
+                        <li>
+                            Introduction To Data Science (Cisco Networking Academy)
+                        </li>
                     </ul>
                 </div>
 
