@@ -1,13 +1,13 @@
 <h2>
   Fernando D. Rivera (Asterki)
 
-  <img style="float: right; border-radius: 50%" src="https://asterki.ga/assets/images/icon.png" width="70" />
+  <img style="float: right; border-radius: 50%" src="https://website-iota-henna.vercel.app/assets/images/icon.png" width="70" />
 </h2>
 
 <p align="left">
   Full Stack Web Developer:
-  <a href="https://www.asterki.ga" target="_blank">
-  www.asterki.ga
+  <a href="https://website-iota-henna.vercel.app/" target="_blank">
+  https://website-iota-henna.vercel.app/
 </a></p>
 
 <p align="left">
