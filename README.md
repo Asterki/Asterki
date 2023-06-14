@@ -326,7 +326,7 @@
 <td width="50%">
   <img
       align="center"
-      src="https://github-readme-stats.vercel.app/api?username=asterki&bg_color=0d1117&hide_border=true&title_color=6fa4fc&text_color=fff"
+      src="https://github-readme-stats.vercel.app/api?username=asterki&bg_color=0d1117&hide_border=true&title_color=6fa4fc&text_color=fff&rank_icon=github"
       alt="asterki"
   />
 
