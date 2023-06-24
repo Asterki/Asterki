@@ -82,11 +82,6 @@
   />
    <img
       align="center"
-      src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-      alt="asterki"
-  />
-   <img
-      align="center"
       src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
       alt="asterki"
   />
@@ -209,12 +204,6 @@
   />
   
  
-
-  <img
-      align="center"
-      src="https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white"
-      alt="asterki"
-  />
   <img
       align="center"
       src="https://img.shields.io/badge/Electron-2B2E3A?style=for-the-badge&logo=electron&logoColor=9FEAF9"
@@ -223,11 +212,6 @@
   <img
       align="center"
       src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-      alt="asterki"
-  />
-  <img
-      align="center"
-      src="https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white"
       alt="asterki"
   />
 </p>
