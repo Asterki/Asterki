@@ -5,6 +5,9 @@ import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+
 import { motion } from "framer-motion";
 import Head from "react-helmet";
 
@@ -15,6 +18,7 @@ import "../styles/contact.scss";
 
 const ContactPage = () => {
     const navigate = useNavigate();
+    const lang = useSelector((state: RootState) => state.page.lang.contact);
 
     const [isTransitioning, setIsTransitioning] = React.useState(false);
 
@@ -39,7 +43,7 @@ const ContactPage = () => {
             className="contact-page"
         >
             <Head>
-                <title>Asterki Dev | Contact</title>
+                <title>{lang.pageTitle}</title>
             </Head>
 
             <motion.div
@@ -56,45 +60,41 @@ const ContactPage = () => {
 
             <main>
                 <div>
-                    <h1>Talk To Me</h1>
+                    <h1>{lang.talkToMe.title}</h1>
                     <ul>
                         <li>
-                            My Email: <a href="mailto:asterki.dev@proton.me">asterki.dev@proton.me</a>
+                            {lang.talkToMe.email} <a href="mailto:asterki.dev@proton.me">asterki.dev@proton.me</a>
                         </li>
                         <li>
-                            My Instagram: <a href="https://instagram.com/asterki.dev">asterki.dev</a>
+                            {lang.talkToMe.instagram} <a href="https://instagram.com/asterki.dev">asterki.dev</a>
                         </li>
+                        <li>{lang.talkToMe.discord} @asterki</li>
                         <li>
-                            My Discord: Asterki#1765
-                        </li>
-                        <li>
-                            My Twitter: <a href="https://twitter.com/AsterkiDev">AsterkiDev</a>
+                            {lang.talkToMe.twitter} <a href="https://twitter.com/AsterkiDev">AsterkiDev</a>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h1>Hire Me</h1>
+                    <h1>{lang.hireMe.title}</h1>
                     <ul>
                         <li>
-                            My Fiverr: <a href="https://www.fiverr.com/asterki">Asterki</a>
+                            {lang.hireMe.fiverr} <a href="https://www.fiverr.com/asterki">Asterki</a>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h1>See My Projects</h1>
+                    <h1>{lang.seeMyProjects.title}</h1>
                     <ul>
                         <li>
-                            My GitHub: <a href="https://github.com/asterki">Asterki</a>
+                            {lang.seeMyProjects.github} <a href="https://github.com/asterki">Asterki</a>
                         </li>
-                        <li>
-                            This site
-                        </li>
+                        <li>{lang.seeMyProjects.thisSite}</li>
                     </ul>
                 </div>
 
-                <button onClick={() => switchPage("/")}>Go Back</button>
+                <button onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
 
             <Footer />

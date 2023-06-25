@@ -5,6 +5,9 @@ import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+
 import { motion } from "framer-motion";
 import Head from "react-helmet";
 
@@ -15,6 +18,7 @@ import "../styles/skills.scss";
 
 const SkillsPage = () => {
     const navigate = useNavigate();
+    const lang = useSelector((state: RootState) => state.page.lang.skills);
 
     const [isTransitioning, setIsTransitioning] = React.useState(false);
 
@@ -39,7 +43,7 @@ const SkillsPage = () => {
             className="skills-page"
         >
             <Head>
-                <title>Asterki Dev | Skills</title>
+                <title>{lang.pageTitle}</title>
             </Head>
 
             <motion.div
@@ -55,9 +59,9 @@ const SkillsPage = () => {
             <Navbar />
 
             <main>
-                <h1>My Skills</h1>
+                <h1>{lang.title}</h1>
 
-                <h2>Languages</h2>
+                <h2>{lang.languages}</h2>
                 <div className="skills-cards">
                     <div className="skill-card">
                         <img
@@ -125,7 +129,7 @@ const SkillsPage = () => {
                     </div>
                 </div>
 
-                <h2>Libraries</h2>
+                <h2>{lang.libs}</h2>
                 <div className="skills-cards">
                     <div className="skill-card">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" width="40" height="40" />
@@ -231,7 +235,7 @@ const SkillsPage = () => {
                     </div>
                 </div>
 
-                <h2>Databases</h2>
+                <h2>{lang.databases}</h2>
                 <div className="skills-cards">
                     <div className="skill-card">
                         <img src="https://leveljs.org/img/logo.svg" alt="LevelDB" width="40" height="40" />
@@ -260,7 +264,7 @@ const SkillsPage = () => {
                     </div>
                 </div>
 
-                <h2>Tools</h2>
+                <h2>{lang.tools}</h2>
                 <div className="skills-cards">
                     <div className="skill-card">
                         <img
@@ -291,7 +295,7 @@ const SkillsPage = () => {
                 <br />
                 <br />
 
-                <button onClick={() => switchPage("/")}>Go Back</button>
+                <button onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
 
             <Footer />

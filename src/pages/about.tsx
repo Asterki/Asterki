@@ -5,6 +5,9 @@ import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+
 import { motion } from "framer-motion";
 import Head from "react-helmet";
 
@@ -15,6 +18,7 @@ import "../styles/about.scss";
 
 const AboutPage = () => {
     const navigate = useNavigate();
+    const lang = useSelector((state: RootState) => state.page.lang.about);
 
     const [isTransitioning, setIsTransitioning] = React.useState(false);
 
@@ -39,7 +43,7 @@ const AboutPage = () => {
             className="about-page"
         >
             <Head>
-                <title>Asterki Dev | About</title>
+                <title>{lang.pageTitle}</title>
             </Head>
 
             <div>
@@ -50,64 +54,39 @@ const AboutPage = () => {
 
             <main>
                 <div className="content">
-                    <h2>About Me</h2>
+                    <h2>{lang.about.title}</h2>
                     <br />
-                    Hi there! My name is Fernando Rivera, and I am a fullstack web developer based in Honduras. With a passion for creating beautiful and
-                    functional web applications, I specialize in developing custom solutions that meet the unique needs of my clients. I have several years of
-                    experience in the field. <br /> <br />
-                    I am well-versed in a range of programming languages and platforms, including HTML, CSS, JavaScript, React, Node.js, and many others. I am
-                    also familiar with a range of database technologies, such as MySQL and MongoDB, which allow me to create powerful and efficient applications
-                    that can handle large amounts of data. <br /> <br />
-                    One of the things that sets me apart from other web developers is my focus on collaboration and communication. I believe that the best
-                    results come from working closely with my clients to understand their goals and requirements, and I always strive to keep my clients
-                    informed and involved throughout the development process. <br /> <br />
-                    If you&apos;re looking for a talented and experienced web developer, I would love to hear from you. Please feel free to browse the rest of
-                    my website{" "}
-                    <a href="#" onClick={() => switchPage("/contact")}>
-                        and get in touch
+                    {lang.about.verse1} <br /> <br />
+                    {lang.about.verse2} <br /> <br />
+                    {lang.about.verse3} <br /> <br />
+                    {lang.about.verse4}{" "}
+                    <a href="#contact" onClick={() => switchPage("/contact")}>
+                        {lang.about.verse5}
                     </a>{" "}
-                    if you have any questions or would like to discuss your project in more detail. <br /> <br />
+                    {lang.about.verse6} <br /> <br />
                 </div>
 
                 <br />
                 <br />
 
                 <div className="content">
-                    <h2>Certifications And Training</h2>
+                    <h2>{lang.training.title}</h2>
                     <ul>
-                        <li>
-                            FullStack Web Development BootCamp (App Brewery)
-                        </li>
-                        <li>
-                            Machine Learning A-Z: AI Python & R (Ligecy Team)
-                        </li>
-                        <li>
-                            Frontend Development Libraries (FreeCodeCamp)
-                        </li>
-                        <li>
-                            Backend Development and APIs (FreeCodeCamp)
-                        </li>
-                        <li>
-                            Responsive Web Design (FreeCodeCamp)
-                        </li>
-                        <li>
-                            JavaScript Algorithms and Data Structures (FreeCodeCamp)
-                        </li>
-                        <li>
-                            Introduction To Data Science (Cisco Skills For All)
-                        </li>
-                        <li>
-                            Python Essentials 1 (Cisco Skills For All)
-                        </li>
-                        <li>
-                            Python Essentials 2 (Cisco Skills For All)
-                        </li>
+                        <li>FullStack Web Development BootCamp (App Brewery)</li>
+                        <li>Machine Learning A-Z: AI Python & R (Ligecy Team)</li>
+                        <li>Frontend Development Libraries (FreeCodeCamp)</li>
+                        <li>Backend Development and APIs (FreeCodeCamp)</li>
+                        <li>Responsive Web Design (FreeCodeCamp)</li>
+                        <li>JavaScript Algorithms and Data Structures (FreeCodeCamp)</li>
+                        <li>Introduction To Data Science (Cisco Skills For All)</li>
+                        <li>Python Essentials 1 (Cisco Skills For All)</li>
+                        <li>Python Essentials 2 (Cisco Skills For All)</li>
                     </ul>
                 </div>
 
                 <br />
 
-                <button onClick={() => switchPage("/")}>Go back</button>
+                <button onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
 
             <Footer />

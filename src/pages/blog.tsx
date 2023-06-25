@@ -5,6 +5,9 @@ import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+
 import { motion } from "framer-motion";
 import Head from "react-helmet";
 
@@ -15,6 +18,7 @@ import "../styles/blog.scss";
 
 const BlogPage = () => {
     const navigate = useNavigate();
+    const lang = useSelector((state: RootState) => state.page.lang.blog);
 
     const [isTransitioning, setIsTransitioning] = React.useState(false);
 
@@ -39,7 +43,7 @@ const BlogPage = () => {
             className="blog-page"
         >
             <Head>
-                <title>Asterki Dev | Blog</title>
+                <title>{lang.pageTitle}</title>
             </Head>
 
             <div>
@@ -49,8 +53,8 @@ const BlogPage = () => {
             <Navbar />
 
             <main>
-                <h1>Coming soon</h1>
-                <button onClick={() => switchPage("/")}>Go back</button>
+                <h1>{lang.title}</h1>
+                <button onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
 
             <Footer />

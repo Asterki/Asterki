@@ -6,6 +6,9 @@ import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+
 import { motion } from "framer-motion";
 import Head from "react-helmet";
 
@@ -16,6 +19,7 @@ import "../styles/projects.scss";
 
 const ProjectsPage = () => {
     const navigate = useNavigate();
+    const lang = useSelector((state: RootState) => state.page.lang.projects);
 
     const [isTransitioning, setIsTransitioning] = React.useState(false);
     const [projects, setProjects] = React.useState([] as any);
@@ -56,7 +60,7 @@ const ProjectsPage = () => {
             className="projects-page"
         >
             <Head>
-                <title>Asterki Dev | Projects</title>
+                <title>{lang.pageTitle}</title>
             </Head>
 
             <div>
@@ -66,7 +70,7 @@ const ProjectsPage = () => {
             <Navbar />
 
             <main>
-                <h1>My Projects</h1>
+                <h1>{lang.title}</h1>
 
                 <div className="projects">
                     {projects.map((project: any) => {
@@ -86,7 +90,7 @@ const ProjectsPage = () => {
                 <br />
                 <br />
 
-                <button onClick={() => switchPage("/")}>Go back</button>
+                <button onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
 
             <Footer />

@@ -5,9 +5,11 @@ import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+
 import { motion } from "framer-motion";
 import Head from "react-helmet";
-
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
@@ -15,6 +17,7 @@ import "../styles/index.scss";
 
 const IndexPage = () => {
     const navigate = useNavigate();
+    const lang = useSelector((state: RootState) => state.page.lang.index);
 
     const [isTransitioning, setIsTransitioning] = React.useState(false);
 
@@ -39,7 +42,7 @@ const IndexPage = () => {
             className="index-page"
         >
             <Head>
-                <title>Asterki Dev | Home</title>
+                <title>{lang.pageTitle}</title>
             </Head>
 
             <motion.div
@@ -64,7 +67,7 @@ const IndexPage = () => {
                     alt="Icon"
                 />
                 <h1>Asterki</h1>
-                <p>Hello, I&apos;m Asterki, a Honduran Full-stack Web Developer</p>
+                <p>{lang.introduction}</p>
 
                 <br />
 
@@ -75,7 +78,7 @@ const IndexPage = () => {
                     initial="hidden"
                     animate="shown"
                 >
-                    About Me
+                    {lang.about}
                 </motion.button>
 
                 <motion.button
@@ -85,7 +88,7 @@ const IndexPage = () => {
                     initial="hidden"
                     animate="shown"
                 >
-                    My Skills
+                    {lang.skills}
                 </motion.button>
 
                 <motion.button
@@ -95,7 +98,7 @@ const IndexPage = () => {
                     initial="hidden"
                     animate="shown"
                 >
-                    My Projects
+                    {lang.projects}
                 </motion.button>
 
                 <motion.button
@@ -105,7 +108,7 @@ const IndexPage = () => {
                     initial="hidden"
                     animate="shown"
                 >
-                    Contact Me
+                    {lang.contact}
                 </motion.button>
 
                 <motion.button
@@ -115,7 +118,7 @@ const IndexPage = () => {
                     initial="hidden"
                     animate="shown"
                 >
-                    Blog
+                    {lang.blog}
                 </motion.button>
             </main>
 
