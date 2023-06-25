@@ -2,15 +2,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 import type { PayloadAction } from "@reduxjs/toolkit";
+
 import LangPack from "../../shared/types/lang";
+import LangPackEN from "../../shared/locales/en";
 
 const languages = {
     // de: require("../../shared/locales/de").default as LangPack,
-    en: require("../../shared/locales/en").default as typeof LangPack,
+    en: LangPackEN,
     // es: require("../../shared/locales/es").default as LangPack,
     // fr: require("../../shared/locales/fr").default as LangPack,
     // pr: require("../../shared/locales/pr").default as LangPack,
-    initial: require("../../shared/locales/template").default as typeof LangPack,
 };
 
 interface InitialStateType {
@@ -18,7 +19,7 @@ interface InitialStateType {
 }
 
 const initialState: InitialStateType = {
-    lang: languages["initial"],
+    lang: languages["en"],
 };
 
 export const pageSlice = createSlice({
