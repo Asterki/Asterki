@@ -42,7 +42,7 @@ const ProjectsPage = () => {
 
                 setProjects(response.data);
             } catch (err: unknown) {
-                alert("2IOQJEWQIO");
+                alert("There was an error trying to load the repositories");
             }
         })();
     });

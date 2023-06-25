@@ -70,12 +70,19 @@ const AboutPage = () => {
                 </div>
 
                 <br />
+                <br />
 
                 <div className="content">
-                    <h2>Certifications</h2>
+                    <h2>Certifications And Training</h2>
                     <ul>
                         <li>
                             FullStack Web Development BootCamp (App Brewery)
+                        </li>
+                        <li>
+                            Machine Learning A-Z: AI Python & R (Ligecy Team)
+                        </li>
+                        <li>
+                            Frontend Development Libraries (FreeCodeCamp)
                         </li>
                         <li>
                             Backend Development and APIs (FreeCodeCamp)
@@ -87,7 +94,13 @@ const AboutPage = () => {
                             JavaScript Algorithms and Data Structures (FreeCodeCamp)
                         </li>
                         <li>
-                            Introduction To Data Science (Cisco Networking Academy)
+                            Introduction To Data Science (Cisco Skills For All)
+                        </li>
+                        <li>
+                            Python Essentials 1 (Cisco Skills For All)
+                        </li>
+                        <li>
+                            Python Essentials 2 (Cisco Skills For All)
                         </li>
                     </ul>
                 </div>

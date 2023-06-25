@@ -217,7 +217,7 @@ const SkillsPage = () => {
                                 fill="white"
                             ></path>
                         </svg>
-                        <p>Express</p>
+                        <p>Express.js</p>
                     </div>
 
                     <div className="skill-card">

@@ -1,17 +1,36 @@
 .navbar-component {
     position: absolute;
-    
     top: 10px;
     right: 10px;
 
-    width: 100vw;
+    width: calc(100vw - 20px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     h1 {
         margin: 0 !important;
+    }
 
-        position: absolute;
+    .socials {
+        display: flex;
 
-        top: 5px;
-        left: 20px;
+        a {
+            display: flex;
+        }
+
+        img {
+            width: 30px;
+            margin: 10px;
+
+            cursor: pointer;
+
+            opacity: 0.5;
+            transition: all 0.1s ease-in-out;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
 }

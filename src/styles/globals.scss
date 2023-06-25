@@ -6,7 +6,9 @@ body {
     margin: 0;
     padding: 0;
 
-    background: linear-gradient(-45deg, #3b3f58, #43455c);
+    min-height: 100vh;
+
+    background: #43455c;
 
     font-family: "Ubuntu";
     color: white;
@@ -26,7 +28,7 @@ button {
     color: white !important;
     font-size: 20px !important;
 
-    background-color: #4b4e64c2;
+    background-color: #4b4e64d7;
 
     transition: 0.1s all ease-in-out !important;
     &:hover {
