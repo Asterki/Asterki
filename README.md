@@ -6,8 +6,8 @@
 
 <p align="left">
   Full Stack Web Developer:
-  <a href="https://website-iota-henna.vercel.app/" target="_blank">
-  https://website-iota-henna.vercel.app/
+  <a href="https://www.asterki.com/" target="_blank">
+  https://www.asterki.com
 </a></p>
 
 <p align="left">
