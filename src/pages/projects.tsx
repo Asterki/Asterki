@@ -13,7 +13,6 @@ import { motion } from "framer-motion";
 import Head from "react-helmet";
 
 import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 
 import "../styles/projects.scss";
 
@@ -92,8 +91,6 @@ const ProjectsPage = () => {
 
                 <button onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
-
-            <Footer />
         </motion.div>
     );
 };

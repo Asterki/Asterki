@@ -5,7 +5,10 @@ import "./navbar.scss";
 const Navbar = () => {
     return (
         <div className="navbar-component">
-            <h1>Asterki Dev</h1>
+            <div>
+                <h1>Asterki Dev</h1>
+                <p>Fernando D. Rivera</p>
+            </div>
 
             <div className="socials">
                 <a href="https://github.com/Asterki" target="_blank" rel="noreferrer">

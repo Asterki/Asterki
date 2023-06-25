@@ -68,7 +68,7 @@
 @media screen and (max-width: 1100px) {
     .skills-page {
         main {
-            margin-top: 15%;
+            margin-top: 100px;
 
             .skills-cards {
                 flex-wrap: wrap;
@@ -82,6 +82,14 @@
             button {
                 width: 80%;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skills-page {
+        main {
+            margin-top: 150px;
         }
     }
 }

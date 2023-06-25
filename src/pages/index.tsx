@@ -11,7 +11,6 @@ import { RootState } from "../store";
 import { motion } from "framer-motion";
 import Head from "react-helmet";
 import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 
 import "../styles/index.scss";
 
@@ -121,8 +120,6 @@ const IndexPage = () => {
                     {lang.blog}
                 </motion.button>
             </main>
-
-            <Footer />
         </motion.div>
     );
 };

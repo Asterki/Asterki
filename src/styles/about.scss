@@ -51,6 +51,8 @@
 @media screen and (max-width: 1100px) {
     .about-page {
         main {
+            margin-top: 100px;
+
             padding: 10%;
             margin-top: 10%;
 
@@ -61,6 +63,15 @@
             button {
                 width: 100%;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .about-page {
+        main {
+            margin-top: 150px !important;
         }
     }
 }

@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 import Head from "react-helmet";
 
 import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 
 import "../styles/blog.scss";
 
@@ -56,8 +55,6 @@ const BlogPage = () => {
                 <h1>{lang.title}</h1>
                 <button onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
-
-            <Footer />
         </motion.div>
     );
 };
