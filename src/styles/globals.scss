@@ -1,13 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 html,
 body {
     margin: 0;
     padding: 0;
 
-    background: linear-gradient(-45deg, #7623d5, #e73c7e);
-    
+    background: linear-gradient(-45deg, #3b3f58, #43455c);
+
     font-family: "Ubuntu";
     color: white;
+}
+
+button {
+    cursor: pointer;
+
+    width: 20%;
+
+    margin: 5px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 0.28571429rem;
+
+    color: white !important;
+    font-size: 20px !important;
+
+    background-color: #4b4e64c2;
+
+    transition: 0.1s all ease-in-out !important;
+    &:hover {
+        filter: brightness(1.1);
+    }
+
+    &:focus {
+        filter: brightness(1.2);
+    }
 }

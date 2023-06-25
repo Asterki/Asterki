@@ -56,7 +56,7 @@ const IndexPage = () => {
 
             <main>
                 <motion.img
-                    variants={{ shown: { boxShadow: " 0px 0px 20px white" }, hidden: { boxShadow: "none" } }}
+                    variants={{ shown: { filter: "drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.7))" }, hidden: { boxShadow: "none" } }}
                     transition={{ duration: 0.3, delay: 0.7 }}
                     initial="hidden"
                     animate="shown"
