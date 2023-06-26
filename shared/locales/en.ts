@@ -2,7 +2,7 @@ import LangPack from "../types/lang";
 
 const en: typeof LangPack = {
     index: {
-        pageTitle: "Asterki | Home",
+        pageTitle: "Asterki Dev | Home",
 
         introduction: "Hello, I'm Fernando, a Honduran Full-stack Web Developer",
 
@@ -14,7 +14,7 @@ const en: typeof LangPack = {
     },
 
     about: {
-        pageTitle: "Asterki | About",
+        pageTitle: "Asterki Dev | About",
 
         about: {
             title: "About Me",
@@ -86,7 +86,7 @@ const en: typeof LangPack = {
     },
 
     blog: {
-        pageTitle: "Asterki Dev | Home",
+        pageTitle: "Asterki Dev | Blog",
         title: "Coming Soon",
         back: "Go Back"
     }

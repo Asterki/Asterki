@@ -40,7 +40,7 @@
                 display: flex;
                 align-items: center;
             
-                background-color: rgba(255, 255, 255, 0.062);
+                background-color: #333546d7;
 
                 border-radius: 0.28571429rem;
                 padding: 5px;
@@ -58,7 +58,7 @@
 
                 transition: all 0.1s ease-in-out;
                 &:hover {
-                    background-color: rgba(255, 255, 255, 0.096);
+                    background-color: #44465ac5;
                 }
             }
         }
