@@ -104,11 +104,6 @@
   />
   <img
       align="center"
-      src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"
-      alt="asterki"
-  />
-  <img
-      align="center"
       src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"
       alt="asterki"
   />
@@ -118,11 +113,6 @@
       alt="asterki"
   />
   
-   <img
-      align="center"
-      src="https://img.shields.io/badge/backbone%20js-0071B5?style=for-the-badge&logo=backbone.js&logoColor=white"
-      alt="asterki"
-  />
   <img
       align="center"
       src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E"
@@ -131,6 +121,16 @@
    <img
       align="center"
       src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white"
+      alt="asterki"
+  />
+  <img
+      align="center"
+      src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"
+      alt="asterki"
+  />
+  <img
+      align="center"
+      src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D"
       alt="asterki"
   />
    <img
@@ -158,11 +158,32 @@
       src="https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white"
       alt="asterki"
   />
+  <img
+      align="center"
+      src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"
+      alt="asterki"
+  />
+
 
 
    <img
       align="center"
       src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+      alt="asterki"
+  />
+  <img
+      align="center"
+      src="https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue"
+      alt="asterki"
+  />
+  <img
+      align="center"
+      src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white"
+      alt="asterki"
+  />
+  <img
+      align="center"
+      src="https://img.shields.io/badge/Ant%20Design-1890FF?style=for-the-badge&logo=antdesign&logoColor=white"
       alt="asterki"
   />
    <img
@@ -290,7 +311,7 @@
   />
   <img
       align="center"
-      src="https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white"
+      src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"
       alt="asterki"
   />
    <img
