@@ -31,7 +31,7 @@ const App: React.FC = () => {
                 ko: LangPackKO,
             };
 
-            const localeCode = navigator.language.slice(0, 2);
+            const localeCode = navigator.language.slice(0, 2) ? navigator.language.slice(0, 2) : "en";
             if (
                 localeCode == "en" ||
                 localeCode == "es" ||
