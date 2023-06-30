@@ -210,6 +210,11 @@
   />
    <img
       align="center"
+      src="https://img.shields.io/badge/Fastify-000?style=for-the-badge&logo=fastify&logoColor=white"
+      alt="asterki"
+  />
+  <img
+      align="center"
       src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
       alt="asterki"
   />

@@ -282,13 +282,13 @@ const SkillsPage = () => {
                     </div>
 
                     <div className="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="flask" width="40" height="40" />
-                        <p>Flask</p>
+                        <img src="https://raw.githubusercontent.com/github/explore/d236cc6153f7ab3e68694234be43003b74cfe151/topics/fastify/fastify.png" alt="fastify" width="40" height="40" />
+                        <p>Fastify</p>
                     </div>
 
                     <div className="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="electron" width="40" height="40" />
-                        <p>Electron.js</p>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="flask" width="40" height="40" />
+                        <p>Flask</p>
                     </div>
 
                     <div className="skill-card">
@@ -306,6 +306,11 @@ const SkillsPage = () => {
                     <div className="skill-card">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react native" width="40" height="40" />
                         <p>React Native</p>
+                    </div>
+
+                    <div className="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="electron" width="40" height="40" />
+                        <p>Electron.js</p>
                     </div>
 
                     <div className="skill-card">
