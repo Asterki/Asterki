@@ -145,7 +145,7 @@ const SkillsPage = () => {
 
                     <div className="skill-card">
                         <img
-                            src="https://warehouse-camo.ingress.cmh1.psfhosted.org/b86b2758380b6bc7cbdf4ff97fda9826a3b74aa2/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7363696b69742d6c6561726e2f7363696b69742d6c6561726e2f6d61696e2f646f632f6c6f676f732f7363696b69742d6c6561726e2d6c6f676f2e706e67"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bgp4.com%2Fwp-content%2Fuploads%2F2019%2F08%2FScikit_learn_logo_small.svg_-840x452.png&f=1&nofb=1&ipt=b43727494d9d0443690c64e4a160b48bf71f4393173956899b3150ffcd763600&ipo=images"
                             alt="sckitlearn"
                             width="60"
                             height="40"
@@ -212,7 +212,7 @@ const SkillsPage = () => {
                     </div>
 
                     <div className="skill-card">
-                        <img src="https://www.cypress.io/images/layouts/navbar-brand.svg" alt="cypress" width="40" height="40" />
+                        <img src="https://asset.jarombek.com/logos/cypress.png" alt="cypress" width="40" height="40" />
 
                         <p>Cypress</p>
                     </div>
