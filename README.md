@@ -298,6 +298,11 @@
       src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"
       alt="asterki"
   />
+  <img
+      align="center"
+      src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"
+      alt="asterki"
+  />
 </p>
 </details>
 
