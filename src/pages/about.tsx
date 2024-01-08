@@ -72,7 +72,7 @@ const AboutPage = () => {
                     <h2>{lang.training.title}</h2>
                     <ul>
                         <li>HTML Developer (SoloLearn) - 11/20</li>
-                        li>CSS Developer (SoloLearn) - 11/20</li>
+                        <li>CSS Developer (SoloLearn) - 11/20</li>
                         <li>FullStack Web Development BootCamp (App Brewery) - 01/23</li>
                         <li>Responsive Web Design (freeCodeCamp) - 01/23</li>
                         <li>Backend Development and APIs (freeCodeCamp) - 01/23</li>
