@@ -71,16 +71,38 @@ const AboutPage = () => {
                 <div className="content">
                     <h2>{lang.training.title}</h2>
                     <ul>
-                        <li>FullStack Web Development BootCamp (App Brewery)</li>
-                        <li>Machine Learning A-Z: AI Python & R (Ligecy Team)</li>
-                        <li>Frontend Development Libraries (FreeCodeCamp)</li>
-                        <li>Backend Development and APIs (FreeCodeCamp)</li>
-                        <li>Responsive Web Design (FreeCodeCamp)</li>
-                        <li>JavaScript Algorithms and Data Structures (FreeCodeCamp)</li>
-                        <li>Introduction To Data Science (Cisco Skills For All)</li>
-                        <li>Python Essentials 1 (Cisco Skills For All)</li>
-                        <li>Python Essentials 2 (Cisco Skills For All)</li>
+                        <li>HTML Developer (SoloLearn) - 11/20</li>
+                        li>CSS Developer (SoloLearn) - 11/20</li>
+                        <li>FullStack Web Development BootCamp (App Brewery) - 01/23</li>
+                        <li>Responsive Web Design (freeCodeCamp) - 01/23</li>
+                        <li>Backend Development and APIs (freeCodeCamp) - 01/23</li>
+                        <li>Introduction To Data Science (Cisco Skills For All) - 03/23</li>
+                        <li>JavaScript Algorithms and Data Structures (freeCodeCamp) - 03/23</li>
+                        <li>Machine Learning A-Z: AI Python & R (Ligecy Team) - 04/23</li>
+                        <li>Python Essentials 1 (Cisco Skills For All) - 05/23</li>
+                        <li>Python Essentials 2 (Cisco Skills For All) - 05/23</li>
+                        <li>Frontend Development Libraries (freeCodeCamp) - 05/23</li>
+                        <li>JavaScript Essentials 1 (Cisco Skills For All) - 06/23</li>
+                        <li>Scientific Computing with Python (freeCodeCamp) - 08/23</li>
+                        <li>Python Programming Masterclass (Udemy) - 08/23</li>
+                        <li>Intermediate Decorators in Python (Udemy) - 11/23</li>
+                        <li>2023 Python Bootcamp Masterclass (Udemy) - 11/23</li>
+                        <li>Foundational C# with Microsoft (freeCodeCamp/Microsoft Learn) - 11/23</li>
+                        <li>Microsoft Excel Fundamentals (Udemy) - 11/23</li>
+                        <li>Microsoft Excel for Begginers (Udemy) - 11/23</li>
+                        <li>Python 101 for Data Science (Cognitive Class) - 11/23</li>
+                        <li>Software Architecture (Udemy) - 12/23</li>
+                        <li>SQL and Relational Databases 101 (Cognitive Class) - 12/23</li>
+                        <li>Excel VBA for Beginner to Advanced (Udemy) - 12/23</li>
+                        <li>Malware Analysis (Udemy) - 12/23</li>
+                        <li>Information Security Fundamentals (Udemy) - 12/23</li>
+                        <li>Web Performance 101 (Udemy) - 12/23</li>
+                        <li>User Experience Design Professional Certification (MTF Institute of Management, Technology and Finance) 12/23</li>
+                        <li>Prompt Enginering Professional Certification (MTF Institute of Management, Technology and Finance) 12/23</li>
+                        <li>Strategic Management (Udemy) - 01/24</li>
                     </ul>
+
+                    To get a copy of any certificate or my CV, please contact me.
                 </div>
 
                 <br />
