@@ -14,8 +14,6 @@ import Head from "react-helmet";
 
 import Navbar from "../components/navbar";
 
-import "../styles/projects.scss";
-
 const ProjectsPage = () => {
     const navigate = useNavigate();
     const lang = useSelector((state: RootState) => state.page.lang.projects);
@@ -56,7 +54,8 @@ const ProjectsPage = () => {
             transition={{ duration: 0.3 }}
             initial="hidden"
             animate={isTransitioning == false ? "shown" : "hidden"}
-            className="projects-page"
+            className="min-h-screen flex flex-col items-center justify-center"
+
         >
             <Head>
                 <title>{lang.pageTitle}</title>
@@ -68,19 +67,19 @@ const ProjectsPage = () => {
 
             <Navbar />
 
-            <main>
-                <h1>{lang.title}</h1>
+            <main className="mt-24 flex items-center justify-center flex-col w-full">
+                <h1 className="text-4xl">{lang.title}</h1>
 
-                <div className="projects">
+                <div className="flex items-center justify-center flex-1 flex-wrap md:w-1/2 w-11/12">
                     {projects.map((project: any) => {
                         return (
-                            <a href={project.svn_url} target="_blank" rel="noreferrer" key={project.id} className="project">
+                            <a href={project.svn_url} target="_blank" rel="noreferrer" key={project.id} className="m-2 p-2 bg-white/10 hover:bg-white/20 transition-all rounded-md w-5/12 h-36">
                                 <div className="general-info">
-                                    <h3>{project.full_name}</h3>
-                                    <p>{project.language}</p>
+                                    <h3 className="text-xl">{project.full_name}</h3>
+                                    <p className="text-white/70">{project.language}</p>
                                 </div>
 
-                                <p className="description">{project.description}</p>
+                                <p className="description">{project.description ? project.description.slice(0, 70) + "..." : ""}</p>
                             </a>
                         );
                     })}
@@ -89,7 +88,7 @@ const ProjectsPage = () => {
                 <br />
                 <br />
 
-                <button onClick={() => switchPage("/")}>{lang.back}</button>
+                <button className="p-4 bg-white/10 hover:bg-white/20 rounded-md min-w-64 my-8 transition-all" onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
         </motion.div>
     );

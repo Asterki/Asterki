@@ -10,10 +10,7 @@ import { RootState } from "../store";
 
 import { motion } from "framer-motion";
 import Head from "react-helmet";
-
 import Navbar from "../components/navbar";
-
-import "../styles/contact.scss";
 
 const ContactPage = () => {
     const navigate = useNavigate();
@@ -39,7 +36,7 @@ const ContactPage = () => {
             transition={{ duration: 0.3 }}
             initial="hidden"
             animate={isTransitioning == false ? "shown" : "hidden"}
-            className="contact-page"
+            className="min-h-screen flec flex-col items-center justify-center"
         >
             <Head>
                 <title>{lang.pageTitle}</title>
@@ -57,15 +54,15 @@ const ContactPage = () => {
 
             <Navbar />
 
-            <main>
-                <div>
-                    <h1>{lang.talkToMe.title}</h1>
+            <main className="mt-24 flex items-center justify-center flex-col">
+                <div className="bg-white/10 md:w-1/2 w-11/12 rounded-md p-6 my-8">
+                    <h1 className="text-2xl">{lang.talkToMe.title}</h1>
                     <ul>
                         <li>
                             {lang.talkToMe.email} <a href="mailto:asterki.dev@proton.me">asterki.dev@proton.me</a>
                         </li>
                         <li>
-                            {lang.talkToMe.instagram} <a href="https://instagram.com/asterki.dev">asterki.dev</a>
+                            {lang.talkToMe.instagram} <a href="https://instagram.com/nicht.fer">nicht.fer</a>
                         </li>
                         <li>{lang.talkToMe.discord} @asterki</li>
                         <li>
@@ -74,8 +71,8 @@ const ContactPage = () => {
                     </ul>
                 </div>
 
-                <div>
-                    <h1>{lang.hireMe.title}</h1>
+                <div className="bg-white/10 md:w-1/2 w-11/12 rounded-md p-6 my-8">
+                    <h1 className="text-2xl">{lang.hireMe.title}</h1>
                     <ul>
                         <li>
                             {lang.hireMe.fiverr} <a href="https://www.fiverr.com/asterki">Asterki</a>
@@ -83,8 +80,8 @@ const ContactPage = () => {
                     </ul>
                 </div>
 
-                <div>
-                    <h1>{lang.seeMyProjects.title}</h1>
+                <div className="bg-white/10 md:w-1/2 w-11/12 rounded-md p-6 my-8">
+                    <h1 className="text-2xl">{lang.seeMyProjects.title}</h1>
                     <ul>
                         <li>
                             {lang.seeMyProjects.github} <a href="https://github.com/asterki">Asterki</a>
@@ -93,7 +90,7 @@ const ContactPage = () => {
                     </ul>
                 </div>
 
-                <button onClick={() => switchPage("/")}>{lang.back}</button>
+                <button className="p-4 bg-white/10 hover:bg-white/20 rounded-md min-w-64 my-8 transition-all" onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
         </motion.div>
     );

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body {
@@ -7,35 +10,9 @@ body {
 
     min-height: 100vh;
 
-    background: #272936;
-
     font-family: "Comfortaa", sans-serif;
     color: white;
 
-}
-
-button {
-    cursor: pointer;
-
-    width: 20%;
-
-    margin: 5px;
-    padding: 10px;
-
-    border: none;
-    border-radius: 0.28571429rem;
-
-    color: white !important;
-    font-size: 20px !important;
-
-    background-color: #333546d7;
-
-    transition: 0.1s all ease-in-out !important;
-    &:hover {
-        filter: brightness(1.1);
-    }
-
-    &:focus {
-        filter: brightness(1.2);
-    }
+    background: rgb(67,56,202);
+    background: linear-gradient(90deg, rgba(67,56,202,1) 0%, rgba(109,40,217,1) 50%, rgba(190,24,93,1) 100%); 
 }

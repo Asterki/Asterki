@@ -12,8 +12,6 @@ import { motion } from "framer-motion";
 import Head from "react-helmet";
 import Navbar from "../components/navbar";
 
-import "../styles/index.scss";
-
 const IndexPage = () => {
     const navigate = useNavigate();
     const lang = useSelector((state: RootState) => state.page.lang.index);
@@ -38,7 +36,7 @@ const IndexPage = () => {
             transition={{ duration: 0.3 }}
             initial="hidden"
             animate={isTransitioning == false ? "shown" : "hidden"}
-            className="index-page"
+            className="h-screen min-h-screen flex flex-col items-center justify-center"
         >
             <Head>
                 <title>{lang.pageTitle}</title>
@@ -51,12 +49,12 @@ const IndexPage = () => {
                 animate="shown"
                 // hidden
             >
-                <Particles init={particlesInit} className="particles" url="/particleConfig.json" />
+                <Particles init={particlesInit} className="absolute top-0 z-0 flex items-center justify-center" url="/particleConfig.json" />
             </motion.div>
 
             <Navbar />
 
-            <main>
+            <main className="min-h-screen min-w-8/10 flex items-center justify-center flex-col">
                 <motion.img
                     variants={{ shown: { filter: "drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.7))" }, hidden: { boxShadow: "none" } }}
                     transition={{ duration: 0.3, delay: 0.7 }}
@@ -64,11 +62,10 @@ const IndexPage = () => {
                     animate="shown"
                     src="/assets/images/icon.png"
                     alt="Icon"
+                    className="max-w-[250px] rounded-full"
                 />
-                <h1>Asterki</h1>
-                <p>{lang.introduction}</p>
-
-                <br />
+                <h1 className="text-3xl mt-2">Asterki</h1>
+                <p className="mb-2">{lang.introduction}</p>
 
                 <motion.button
                     variants={{ shown: { y: 0, opacity: 1 }, hidden: { y: 100, opacity: 0 } }}
@@ -76,6 +73,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/about")}
                     initial="hidden"
                     animate="shown"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
                 >
                     {lang.about}
                 </motion.button>
@@ -86,6 +84,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/skills")}
                     initial="hidden"
                     animate="shown"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
                 >
                     {lang.skills}
                 </motion.button>
@@ -96,6 +95,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/projects")}
                     initial="hidden"
                     animate="shown"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
                 >
                     {lang.projects}
                 </motion.button>
@@ -106,6 +106,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/contact")}
                     initial="hidden"
                     animate="shown"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
                 >
                     {lang.contact}
                 </motion.button>
@@ -116,6 +117,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/blog")}
                     initial="hidden"
                     animate="shown"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
                 >
                     {lang.blog}
                 </motion.button>
