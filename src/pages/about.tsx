@@ -50,7 +50,7 @@ const AboutPage = () => {
             <Navbar />
 
             <main className="mt-24 flex items-center justify-center flex-col">
-                <div className="bg-white/10 md:w-1/2 w-11/12 rounded-md p-6 my-8">
+                <div className="bg-white/10 backdrop-blur-md md:w-1/2 w-11/12 rounded-md p-6 my-8">
                     <h2 className="text-2xl mb-2">{lang.about.title}</h2>
                     <br />
                     {lang.about.verse1} <br /> <br />
@@ -66,7 +66,7 @@ const AboutPage = () => {
                 <br />
                 <br />
 
-                <div className="bg-white/10 md:w-1/2 w-11/12 rounded-md p-6 my-8">
+                <div className="bg-white/10 backdrop-blur-md md:w-1/2 w-11/12 rounded-md p-6 my-8">
                     <h2 className="text-2xl mb-2">{lang.training.title}</h2>
                     <ul className="list-disc">
                         <li>HTML Developer (SoloLearn) - 11/20</li>
@@ -105,7 +105,7 @@ const AboutPage = () => {
 
                 <br />
 
-                <button className="p-4 bg-white/10 hover:bg-white/20 rounded-md min-w-64 my-8 transition-all" onClick={() => switchPage("/")}>{lang.back}</button>
+                <button className="p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-md min-w-64 my-8 transition-all" onClick={() => switchPage("/")}>{lang.back}</button>
             </main>
 
         </motion.div>

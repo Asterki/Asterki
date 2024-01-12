@@ -54,7 +54,7 @@ const IndexPage = () => {
 
             <Navbar />
 
-            <main className="min-h-screen min-w-8/10 flex items-center justify-center flex-col">
+            <main className="mt-24 min-h-screen w-11/12 md:w-1/2 flex items-center justify-center flex-col">
                 <motion.img
                     variants={{ shown: { filter: "drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.7))" }, hidden: { boxShadow: "none" } }}
                     transition={{ duration: 0.3, delay: 0.7 }}
@@ -64,8 +64,8 @@ const IndexPage = () => {
                     alt="Icon"
                     className="max-w-[250px] rounded-full"
                 />
-                <h1 className="text-3xl mt-2">Asterki</h1>
-                <p className="mb-2">{lang.introduction}</p>
+                <h1 className="text-3xl mt-2 text-center">Asterki</h1>
+                <p className="mb-2 text-center">{lang.introduction}</p>
 
                 <motion.button
                     variants={{ shown: { y: 0, opacity: 1 }, hidden: { y: 100, opacity: 0 } }}
@@ -73,7 +73,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/about")}
                     initial="hidden"
                     animate="shown"
-                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10 backdrop-blur-md"
                 >
                     {lang.about}
                 </motion.button>
@@ -84,7 +84,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/skills")}
                     initial="hidden"
                     animate="shown"
-                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10 backdrop-blur-md"
                 >
                     {lang.skills}
                 </motion.button>
@@ -95,7 +95,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/projects")}
                     initial="hidden"
                     animate="shown"
-                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10 backdrop-blur-md"
                 >
                     {lang.projects}
                 </motion.button>
@@ -106,7 +106,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/contact")}
                     initial="hidden"
                     animate="shown"
-                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10 backdrop-blur-md"
                 >
                     {lang.contact}
                 </motion.button>
@@ -117,7 +117,7 @@ const IndexPage = () => {
                     onClick={() => switchPage("/blog")}
                     initial="hidden"
                     animate="shown"
-                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10"
+                    className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10 backdrop-blur-md"
                 >
                     {lang.blog}
                 </motion.button>

@@ -73,7 +73,7 @@ const ProjectsPage = () => {
                 <div className="flex items-center justify-center flex-1 flex-wrap md:w-1/2 w-11/12">
                     {projects.map((project: any) => {
                         return (
-                            <a href={project.svn_url} target="_blank" rel="noreferrer" key={project.id} className="m-2 p-2 bg-white/10 hover:bg-white/20 transition-all rounded-md md:w-5/12 w-11/12 h-36">
+                            <a href={project.svn_url} target="_blank" rel="noreferrer" key={project.id} className="m-2 p-2 bg-white/10 hover:bg-white/20 backdrop-blur-md transition-all rounded-md md:w-5/12 w-11/12 h-36">
                                 <div className="general-info">
                                     <h3 className="text-xl">{project.full_name}</h3>
                                     <p className="text-white/70">{project.language}</p>

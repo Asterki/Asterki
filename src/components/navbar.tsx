@@ -6,8 +6,8 @@ const Navbar = () => {
     return (
         <div className="absolute top-0 right-0 p-4 w-full flex items-center justify-between">
             <div>
-                <h1 className="text-2xl">Asterki Dev</h1>
-                <p>Fernando D. Rivera</p>
+                <h1 className="md:text-2xl text-md">Asterki Dev</h1>
+                <p className="md:text-md text-sm">Fernando D. Rivera</p>
             </div>
 
             <div className="flex">
