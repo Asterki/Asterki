@@ -114,7 +114,9 @@ const IndexPage = () => {
                 <motion.button
                     variants={{ shown: { y: 0, opacity: 1 }, hidden: { y: 100, opacity: 0 } }}
                     transition={{ duration: 0.1, delay: 0.5 }}
-                    onClick={() => switchPage("/blog")}
+                    onClick={() => {
+                        window.open("https://medium.com/@asterki.dev", "_blank");
+                    }}
                     initial="hidden"
                     animate="shown"
                     className="w-8/12 cursor-pointer rounded-md m-2 p-2 text-xl transition-all hover:bg-white/20 bg-white/10 backdrop-blur-md"
