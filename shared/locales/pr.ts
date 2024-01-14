@@ -77,12 +77,6 @@ const pr: typeof LangPack = {
 
         back: "Voltar",
     },
-
-    blog: {
-        pageTitle: "Asterki Dev | Blog",
-        title: "Em Breve",
-        back: "Voltar"
-    }
 };
 
 export default pr;

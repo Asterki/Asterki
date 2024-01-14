@@ -75,12 +75,6 @@ declare const LangPack: {
 
         back: string;
     }
-
-    blog: {
-        pageTitle: string;
-        title: string;
-        back: string;
-    }
 }
 
 export default LangPack;

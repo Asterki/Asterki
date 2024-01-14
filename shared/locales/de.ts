@@ -77,12 +77,6 @@ const de: typeof LangPack = {
 
         back: "Zurück",
     },
-
-    blog: {
-        pageTitle: "Asterki Dev | Blog",
-        title: "Kommt bald",
-        back: "Zurück"
-    }
 };
 
 export default de;

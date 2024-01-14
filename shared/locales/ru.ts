@@ -77,12 +77,6 @@ const ru: typeof LangPack = {
 
         back: "Вернуться",
     },
-
-    blog: {
-        pageTitle: "Asterki Dev | Блог",
-        title: "Скоро",
-        back: "Вернуться",
-    },
 };
 
 export default ru;

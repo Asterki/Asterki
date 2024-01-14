@@ -77,12 +77,6 @@ const template: typeof LangPack = {
 
         back: "",
     },
-
-    blog: {
-        pageTitle: "",
-        title: "",
-        back: ""
-    }
 }
 
 export default template

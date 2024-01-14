@@ -77,12 +77,6 @@ const ko: typeof LangPack = {
 
         back: "뒤로가기",
     },
-
-    blog: {
-        pageTitle: "Asterki Dev | 블로그",
-        title: "곧 업데이트 예정",
-        back: "뒤로가기"
-    }
 };
 
 export default ko;
