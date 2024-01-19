@@ -1,5 +1,6 @@
 <h2 style="display: flex">
-  <img style="float: right; border-radius: 50%" src="https://website-iota-henna.vercel.app/assets/images/icon.png" width="70" />
+  <img style="float: right; border-radius: 100%" src="https://website-iota-henna.vercel.app/assets/images/icon.png" width="70" />
+  <img style="float: right; border-radius: 50%" src="https://mvp.microsoft.com/Assets/UserProfile/MSA/Badge/LevelAlpha.png" width="70" />
 
   Fernando D. Rivera (Asterki)
 </h2>
