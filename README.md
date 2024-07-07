@@ -1,14 +1,13 @@
 <h2 style="display: flex">
-  <img style="float: right; border-radius: 100%" src="https://website-iota-henna.vercel.app/assets/images/icon.png" width="70" />
+  <img style="float: right; border-radius: 50%" src="https://i.ibb.co/SsBC5jW/Untitled.png" width="70" />
   <img style="float: right; border-radius: 50%" src="https://mvp.microsoft.com/Assets/UserProfile/MSA/Badge/LevelBeta.png" width="70" />
 
-  Fernando D. Rivera (Asterki)
+  Fernando Rivera
 </h2>
 
 <p align="left">
-  Full Stack Web Developer:
-  <a href="https://www.asterki.com/" target="_blank">
-  https://www.asterki.com
+  <a href="https://www.asterki.tech/" target="_blank">
+  https://www.asterki.tech
 </a></p>
 
 <p align="left">
@@ -64,31 +63,3 @@
 </table>
 
 
-<br />
-<br />
-
-# Languages
-<p align="left">
-  <img
-      align="center"
-      src="https://img.shields.io/badge/Spanish-Native%20Language-bightgreen"
-      alt="asterki"
-  />
-   <img
-      align="center"
-      src="https://img.shields.io/badge/English-C1%20Advanced-green"
-      alt="asterki"
-  />
-  <img
-      align="center"
-      src="https://img.shields.io/badge/German-A2%20Elementary-orange"
-      alt="asterki"
-  />
-</p>
-
-<br />
-<br />
-
-
-<i><b>If you hear a voice within you say “you cannot paint” then by all means paint and that voice will be silenced.</b></i>
-<i>— Vincent van Gogh</i>
