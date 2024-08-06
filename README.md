@@ -27,7 +27,7 @@
     ><img
       align="center"
       src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
-      alt="asterki.dev"
+      alt="nicht.fer"
   /></a>
   <a href="https://stackoverflow.com/users/15480837/" target="blank"
     ><img
