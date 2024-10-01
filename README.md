@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+<h2 style="display: flex">
+  <img style="float: right; border-radius: 50%" src="https://i.ibb.co/SsBC5jW/Untitled.png" width="70" />
+  <img style="float: right; border-radius: 50%" src="https://mvp.microsoft.com/Assets/UserProfile/MSA/Badge/LevelBeta.png" width="70" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  Fernando Rivera
+</h2>
 
-Currently, two official plugins are available:
+<p align="left">
+  <a href="https://www.asterki.tech/" target="_blank">
+  https://www.asterki.tech
+</a></p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="left">
+  <a href="https://dev.to/asterki" target="blank"
+    ><img
+      align="center"
+      src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white"
+      alt="asterki"
+  /></a>
+  <a href="https://twitter.com/AsterkiDev" target="blank"
+    ><img
+      align="center"
+      src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"
+      alt="Asterki Dev"
+  /></a>
+  <a href="https://instagram.com/asterki.dev" target="blank"
+    ><img
+      align="center"
+      src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+      alt="nicht.fer"
+  /></a>
+  <a href="https://stackoverflow.com/users/15480837/" target="blank"
+    ><img
+      align="center"
+      src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"
+      alt="Asterki"
+  /></a>
+</p>
 
-## Expanding the ESLint configuration
+<br />
+<br />
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<table align="center">
+<td width="50%">
+  <img
+      align="center"
+      src="https://github-readme-stats.vercel.app/api?username=asterki&bg_color=0d1117&hide_border=true&title_color=6fa4fc&text_color=fff&rank_icon=github"
+      alt="asterki"
+  />
 
-- Configure the top-level `parserOptions` property like this:
+  <br>
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  <img  title="" alt="Asterki streak" src="https://streak-stats.demolab.com?user=Asterki&theme=tokyonight-duo&hide_border=true&background=0D1117" />
+</td>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<td width="50%">
+<img
+      align="center"
+      src="https://github-readme-stats.vercel.app/api/top-langs?username=asterki&bg_color=0d1117&hide_border=true&title_color=6fa4fc&ttext_color=fff"
+      alt="Asterki Dev"
+  />
+</td>
+</table>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
