@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -12,18 +13,14 @@ import {
 import Particles from 'react-tsparticles';
 import type { Container, Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
-//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 
 const LandingPage = () => {
+    const navigate = useNavigate();
+
     const [isReady, setIsReady] = React.useState(false);
+    const [transitionTo, setTransitionTo] = React.useState('');
 
     const particlesInit = React.useCallback(async (engine: Engine) => {
-        console.log(engine);
-
-        // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
         await loadSlim(engine);
     }, []);
 
@@ -40,8 +37,16 @@ const LandingPage = () => {
         }, 1000);
     }, []);
 
+    React.useEffect(() => {
+        if (transitionTo !== '') {
+            setTimeout(() => {
+                navigate(`/${transitionTo}`);
+            }, 1000);
+        }
+    }, [transitionTo]);
+
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-800">
+        <div className="min-h-screen flex flex-col items-center justify-center">
             <div className="w-full absolute top-0 left-0 z-50">
                 <motion.div
                     className="bg-orange-500 min-h-screen w-full top-0 left-0 absolute shadow-md"
@@ -55,7 +60,7 @@ const LandingPage = () => {
                     }}
                     transition={{
                         duration: 0.5,
-                        delay: 1.3,
+                        delay: 0.8,
                         bounceDamping: 10,
                         bounceStiffness: 100,
                         ease: 'easeInOut',
@@ -75,7 +80,7 @@ const LandingPage = () => {
                     }}
                     transition={{
                         duration: 0.5,
-                        delay: 1.2,
+                        delay: 0.7,
                         bounceDamping: 10,
                         bounceStiffness: 100,
                         ease: 'easeInOut',
@@ -95,7 +100,7 @@ const LandingPage = () => {
                     }}
                     transition={{
                         duration: 0.5,
-                        delay: 1.1,
+                        delay: 0.6,
                         bounceDamping: 10,
                         bounceStiffness: 100,
                         ease: 'easeInOut',
@@ -112,16 +117,21 @@ const LandingPage = () => {
                         final: {
                             minHeight: '10vh',
                         },
+                        out: {
+                            minHeight: '100vh',
+                        },
                     }}
                     transition={{
                         duration: 0.5,
-                        delay: 1,
+                        delay: isReady && transitionTo !== '' ? 0 : 0.5,
                         bounceDamping: 10,
                         bounceStiffness: 100,
                         ease: 'easeInOut',
                     }}
                     initial={isReady ? 'final' : 'initial'}
-                    animate={isReady ? 'final' : 'initial'}
+                    animate={
+                        isReady && transitionTo == '' ? 'final' : 'initial'
+                    }
                 >
                     <motion.div className="flex-col flex items-center justify-center">
                         <div className="bg-white md:w-2/12 w-11/12 h-2/12 rounded-full flex items-center justify-center">
@@ -168,7 +178,7 @@ const LandingPage = () => {
                 transition={{ duration: 1, delay: 1.6 }}
             >
                 <main className="flex md:flex-row flex-col gap-4 items-center justify-around md:mt-0 mt-24">
-                    <section className="flex items-center justify-center flex-col bg-white p-6 rounded-md shadow-md w-11/12 md:w-5/12 text-center">
+                    <section className="flex items-center justify-center flex-col bg-white border-2 border-rose-500 p-6 rounded-md shadow-md w-11/12 md:w-1/2 text-center">
                         <img
                             src="/assets/images/icon.png"
                             alt="Icon"
@@ -186,11 +196,11 @@ const LandingPage = () => {
                             discipline amongst your dreams"
                         </i>
                     </section>
-                    <section className="flex items-center justify-center flex-col gap-4 md:w-1/2 w-11/12">
+                    <section className="flex items-center justify-center flex-col gap-4 md:w-5/12 w-11/12">
                         <button
                             className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
                             onClick={() => {
-                                setIsReady(false);
+                                setTransitionTo('about');
                             }}
                         >
                             About Me
@@ -199,7 +209,7 @@ const LandingPage = () => {
                         <button
                             className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
                             onClick={() => {
-                                setIsReady(false);
+                                setTransitionTo('projects');
                             }}
                         >
                             Projects
@@ -208,7 +218,7 @@ const LandingPage = () => {
                         <button
                             className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
                             onClick={() => {
-                                setIsReady(false);
+                                setTransitionTo('contact');
                             }}
                         >
                             Contact
@@ -217,7 +227,7 @@ const LandingPage = () => {
                         <button
                             className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
                             onClick={() => {
-                                setIsReady(false);
+                                setTransitionTo('blog');
                             }}
                         >
                             Blog
@@ -244,10 +254,10 @@ const LandingPage = () => {
                     </section>
                 </main>
             </motion.div>
-            {/* 
-            <footer className="w-full flex items-center justify-center p-4 bg-rose-700 text-white">
+
+            <footer className="w-full flex items-center justify-center p-4 bg-rose-700 text-white z-20 absolute bottom-0">
                 <p>© 2021 Asterki Dev</p>
-            </footer> */}
+            </footer>
 
             <Particles
                 id="tsparticles"
