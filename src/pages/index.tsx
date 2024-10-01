@@ -1,11 +1,47 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faGithub,
+    faInstagram,
+    faLinkedin,
+    faMedium,
+} from '@fortawesome/free-brands-svg-icons';
+
+import Particles from 'react-tsparticles';
+import type { Container, Engine } from 'tsparticles-engine';
+import { loadSlim } from 'tsparticles-slim';
+//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+
 const LandingPage = () => {
     const [isReady, setIsReady] = React.useState(false);
 
+    const particlesInit = React.useCallback(async (engine: Engine) => {
+        console.log(engine);
+
+        // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
+        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+        // starting from v2 you can add only the features you need reducing the bundle size
+        //await loadFull(engine);
+        await loadSlim(engine);
+    }, []);
+
+    const particlesLoaded = React.useCallback(
+        async (container: Container | undefined) => {
+            await console.log(container);
+        },
+        [],
+    );
+
+    React.useEffect(() => {
+        setTimeout(() => {
+            setIsReady(true);
+        }, 1000);
+    }, []);
+
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-800">
             <div className="w-full absolute top-0 left-0 z-50">
                 <motion.div
                     className="bg-orange-500 min-h-screen w-full top-0 left-0 absolute shadow-md"
@@ -88,11 +124,11 @@ const LandingPage = () => {
                     animate={isReady ? 'final' : 'initial'}
                 >
                     <motion.div className="flex-col flex items-center justify-center">
-                        <div className="bg-white w-2/12 h-2/12 rounded-full flex items-center justify-center">
+                        <div className="bg-white md:w-2/12 w-11/12 h-2/12 rounded-full flex items-center justify-center">
                             <img
                                 src="/assets/images/icon.png"
                                 alt="Icon"
-                                className="w-2/12"
+                                className="md:w-2/12 w-1/12 rounded-full"
                             />
                             <h1 className="text-center text-lg font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500">
                                 Asterki Dev
@@ -127,26 +163,99 @@ const LandingPage = () => {
             </div>
 
             <motion.div
-                className="flex items-center justify-center w-full flex-col opacity-0"
+                className="flex items-center justify-center w-full flex-col opacity-0 z-10"
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1.6 }}
             >
-                <img
-                    src="/assets/images/icon.png"
-                    alt="Icon"
-                    className="w-2/12"
-                />
-                <h1 className="text-center text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500">
-                    Asterki Dev
-                </h1>
-            </motion.div>
+                <main className="flex md:flex-row flex-col gap-4 items-center justify-around md:mt-0 mt-24">
+                    <section className="flex items-center justify-center flex-col bg-white p-6 rounded-md shadow-md w-11/12 md:w-5/12 text-center">
+                        <img
+                            src="/assets/images/icon.png"
+                            alt="Icon"
+                            className="w-6/12 md:w-2/12 rounded-full"
+                        />
+                        <h1 className="text-center text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500">
+                            Fernando Rivera
+                        </h1>
+                        <p className="text-gray-700 font-bold">
+                            Developer, Advocate, and Founder
+                        </p>
 
-            <button
-                className="absolute top-0 left-0 bg-white text-black rounded-md z-50 p-4"
-                onClick={() => setIsReady(!isReady)}
-            >
-                Trigger Animation
-            </button>
+                        <i className="mt-2 text-gray-700">
+                            "Don't feel intimidated, find motivation and
+                            discipline amongst your dreams"
+                        </i>
+                    </section>
+                    <section className="flex items-center justify-center flex-col gap-4 md:w-1/2 w-11/12">
+                        <button
+                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
+                            onClick={() => {
+                                setIsReady(false);
+                            }}
+                        >
+                            About Me
+                        </button>
+
+                        <button
+                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
+                            onClick={() => {
+                                setIsReady(false);
+                            }}
+                        >
+                            Projects
+                        </button>
+
+                        <button
+                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
+                            onClick={() => {
+                                setIsReady(false);
+                            }}
+                        >
+                            Contact
+                        </button>
+
+                        <button
+                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
+                            onClick={() => {
+                                setIsReady(false);
+                            }}
+                        >
+                            Blog
+                        </button>
+
+                        <div className="flex gap-4">
+                            <FontAwesomeIcon
+                                icon={faInstagram}
+                                className="text-4xl text-rose-500 cursor-pointer hover:text-white transition-all"
+                            />
+                            <FontAwesomeIcon
+                                icon={faGithub}
+                                className="text-4xl text-rose-500 cursor-pointer hover:text-white transition-all"
+                            />
+                            <FontAwesomeIcon
+                                icon={faLinkedin}
+                                className="text-4xl text-rose-500 cursor-pointer hover:text-white transition-all"
+                            />
+                            <FontAwesomeIcon
+                                icon={faMedium}
+                                className="text-4xl text-rose-500 cursor-pointer hover:text-white transition-all"
+                            />
+                        </div>
+                    </section>
+                </main>
+            </motion.div>
+            {/* 
+            <footer className="w-full flex items-center justify-center p-4 bg-rose-700 text-white">
+                <p>© 2021 Asterki Dev</p>
+            </footer> */}
+
+            <Particles
+                id="tsparticles"
+                className="absolute top-0 left-0 w-full h-full z-0"
+                url="/particleConfig.json"
+                init={particlesInit}
+                loaded={particlesLoaded}
+            />
         </div>
     );
 };
