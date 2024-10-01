@@ -61,7 +61,7 @@ const ProjectsPage = () => {
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center">
-            <div className="w-full top-0 left-0 z-50 absolute">
+            <div className="w-full top-0 left-0 z-50 sticky">
                 <motion.div
                     className="bg-orange-500 min-h-screen w-full top-0 left-0 absolute shadow-md"
                     variants={{

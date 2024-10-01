@@ -43,7 +43,7 @@ const LandingPage = () => {
                 navigate(`/${transitionTo}`);
             }, 1000);
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [transitionTo]);
 
     return (
@@ -228,32 +228,47 @@ const LandingPage = () => {
                         <button
                             className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
                             onClick={() => {
-                                setTransitionTo('blog');
+                                // For now, just redirect to the medium blog
+                                window.open(
+                                    'https://medium.com/@asterki.dev',
+                                );
                             }}
                         >
                             Blog
                         </button>
 
                         <div className="flex gap-4">
-                            <a href="https://instagram.com/nicht.fer" target='_blank'>
+                            <a
+                                href="https://instagram.com/nicht.fer"
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon
                                     icon={faInstagram}
                                     className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
                                 />
                             </a>
-                            <a href="https://github.com/Asterki" target='_blank'>
+                            <a
+                                href="https://github.com/Asterki"
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon
                                     icon={faGithub}
                                     className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
                                 />
                             </a>
-                            <a href="https://www.linkedin.com/in/fernando-rivera-365b74270/" target='_blank'>
+                            <a
+                                href="https://www.linkedin.com/in/fernando-rivera-365b74270/"
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon
                                     icon={faLinkedin}
                                     className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
                                 />
                             </a>
-                            <a href="https://medium.com/@asterki.dev" target='_blank'>
+                            <a
+                                href="https://medium.com/@asterki.dev"
+                                target="_blank"
+                            >
                                 <FontAwesomeIcon
                                     icon={faMedium}
                                     className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
@@ -263,10 +278,6 @@ const LandingPage = () => {
                     </section>
                 </main>
             </motion.div>
-
-            <footer className="w-full flex items-center justify-center p-4 bg-rose-700 text-white z-20 absolute bottom-0">
-                <p>© 2021 Asterki Dev</p>
-            </footer>
 
             <Particles
                 id="tsparticles"
