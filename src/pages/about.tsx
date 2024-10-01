@@ -52,6 +52,7 @@ const AboutPage = () => {
                 }
             }, 1000);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [transitionTo]);
 
     return (
@@ -322,7 +323,7 @@ const AboutPage = () => {
                         </p>
 
                         <button
-                            className="bg-rose-700 text-white p-2 rounded-md hover:bg-white border-2 border-rose-700 hover:text-rose-700 transition-all flex items-center justify-center items-center gap-2"
+                            className="bg-rose-700 text-white p-2 rounded-md hover:bg-white border-2 border-rose-700 hover:text-rose-700 transition-all flex justify-center items-center gap-2"
                             onClick={() => setTransitionTo('home')}
                         >
                             <FontAwesomeIcon icon={faChevronCircleLeft} />

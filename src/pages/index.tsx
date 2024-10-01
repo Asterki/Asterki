@@ -43,6 +43,7 @@ const LandingPage = () => {
                 navigate(`/${transitionTo}`);
             }, 1000);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [transitionTo]);
 
     return (
@@ -234,22 +235,30 @@ const LandingPage = () => {
                         </button>
 
                         <div className="flex gap-4">
-                            <FontAwesomeIcon
-                                icon={faInstagram}
-                                className="text-4xl text-rose-500 cursor-pointer hover:text-white transition-all"
-                            />
-                            <FontAwesomeIcon
-                                icon={faGithub}
-                                className="text-4xl text-rose-500 cursor-pointer hover:text-white transition-all"
-                            />
-                            <FontAwesomeIcon
-                                icon={faLinkedin}
-                                className="text-4xl text-rose-500 cursor-pointer hover:text-white transition-all"
-                            />
-                            <FontAwesomeIcon
-                                icon={faMedium}
-                                className="text-4xl text-rose-500 cursor-pointer hover:text-white transition-all"
-                            />
+                            <a href="https://instagram.com/nicht.fer" target='_blank'>
+                                <FontAwesomeIcon
+                                    icon={faInstagram}
+                                    className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
+                                />
+                            </a>
+                            <a href="https://github.com/Asterki" target='_blank'>
+                                <FontAwesomeIcon
+                                    icon={faGithub}
+                                    className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
+                                />
+                            </a>
+                            <a href="https://www.linkedin.com/in/fernando-rivera-365b74270/" target='_blank'>
+                                <FontAwesomeIcon
+                                    icon={faLinkedin}
+                                    className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
+                                />
+                            </a>
+                            <a href="https://medium.com/@asterki.dev" target='_blank'>
+                                <FontAwesomeIcon
+                                    icon={faMedium}
+                                    className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
+                                />
+                            </a>
                         </div>
                     </section>
                 </main>
