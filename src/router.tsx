@@ -6,6 +6,7 @@ import AboutPage from './pages/about';
 import ContactPage from './pages/contact';
 import ProjectsPage from './pages/projects';
 import AboutAsterkiPage from './pages/aboutasterki';
+import SkillsPage from './pages/skills';
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: '/aboutasterki',
         element: <AboutAsterkiPage />,
     },
+    {
+        path: "/skills",
+        element: <SkillsPage />,
+    }
 ]);
 
 export default router;

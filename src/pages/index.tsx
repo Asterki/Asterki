@@ -219,7 +219,7 @@ const LandingPage = () => {
                         <button
                             className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
                             onClick={() => {
-                                setTransitionTo('about');
+                                setTransitionTo('skills');
                             }}
                         >
                             My Skills
