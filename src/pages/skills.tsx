@@ -16,7 +16,7 @@ const SkillCard = ({
     imageSrc: string;
     label: string;
 }) => (
-    <div className="bg-white/10 hover:bg-white/20 transition-all rounded-md flex items-center m-2 px-4 py-2 w-full sm:w-4/12 lg:w-2/12 xl:3/12 backdrop-blur-md">
+    <div className="transition-all rounded-md flex items-center m-2 px-4 py-2 w-full sm:w-4/12 lg:w-2/12 xl:3/12">
         <img
             className="mr-2"
             src={imageSrc}
@@ -240,7 +240,7 @@ const SkillsPage = () => {
         <div className="min-h-screen flex flex-col items-center justify-center">
             <div className="w-full top-0 left-0 z-50 absolute">
                 <motion.div
-                    className="bg-orange-500 min-h-screen w-full top-0 left-0 absolute shadow-md"
+                    className="bg-orange-500 min-h-screen w-full top-0 left-0 sticky shadow-md"
                     variants={{
                         initial: {
                             minHeight: '100vh',
