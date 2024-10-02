@@ -1,0 +1,38 @@
+{
+    "title": "Sobre Mí",
+    "introduction_text": "Soy Fernando Rivera, nacido en 2007 en Comayagua, Honduras. Desde joven, me sentí cautivado por el mundo del software y la tecnología. Mi viaje comenzó inesperadamente un día cuando me topé con un archivo de script por lotes lleno de líneas de código que no podía comprender. En lugar de dejarlo sin explorar, este misterio encendió una curiosidad que ha alimentado mi camino desde entonces. Con el tiempo, perfeccioné mis habilidades y descubrí una pasión por crear proyectos impactantes que unen la tecnología y el aprendizaje.",
+
+    "empowering_title": "Empoderando a Mis Compañeros y Proporcionando Soluciones",
+    "empowering_text": "Actualmente, me dedico a fomentar una comprensión más profunda de la tecnología como desarrollador. No solo me enfoco en empoderar a mis compañeros a través de una educación tecnológica accesible, sino que también proporciono soluciones de software adaptadas a diversas necesidades. Junto a mi trabajo de desarrollo, ofrezco apoyo integral a los usuarios, asegurando que tengan los recursos y la orientación necesarios para utilizar eficazmente el software que creo. Al organizar talleres y eventos, busco desmitificar conceptos complejos y proporcionar experiencias prácticas que enciendan la curiosidad e inspiren a otros a explorar el mundo de la tecnología. Esta misión está impulsada por mi creencia de que todos deberían tener la oportunidad de aprender y crecer en el campo tecnológico, independientemente de su origen o recursos.",
+
+    "founder_title": "El Fundador de Asterki Dev",
+    "founder_text1": "Asterki Dev comenzó como mi persona en línea. A medida que me involucraba más profundamente en la comunidad tecnológica, me di cuenta de que quería crear algo más grande: una plataforma que va más allá de capacitar a las personas. Imaginé un espacio que podría",
+    "founder_text2": "despertar curiosidad",
+    "founder_text3": "en aquellos que tienen interés pero pueden carecer de los medios para seguir una carrera en tecnología. Así nació Asterki Dev, con un simple lema:",
+    "founder_text4": "“Despierta la Curiosidad.”",
+
+    "events_title": "Eventos y Contribuciones a la Comunidad",
+    "events_text1": "Como un",
+    "events_text2": "representante estudiantil y defensor",
+    "events_text3": ", he organizado eventos como",
+    "events_text4": "MSLA Comayagua 2024",
+    "events_text5": ", celebrado en el Instituto Marista La Inmaculada en mi ciudad natal. Este evento capacito a más de 70 estudiantes a nivel local y 250 en todo el mundo en los campos del desarrollo de software y la tecnología.",
+    "events_text6": "Uno de mis momentos más orgullosos fue el reconocimiento de Octo-tree por la Universidad Nacional Autónoma de Honduras (UNAH) como un proyecto excepcional. Son estos hitos los que continúan impulsando mi pasión por compartir conocimientos y construir una comunidad en torno a la tecnología.",
+
+    "philosophy_title": "Mi Filosofía",
+    "philosophy_text1": "Los principios de código abierto y el aprendizaje impulsado por la comunidad están en el corazón de todo lo que hago. Creo en el poder de la motivación y la disciplina como las claves del éxito. Mi objetivo es crear herramientas, proyectos y plataformas que inspiren a otros a descubrir su propia",
+    "philosophy_text2": "caja de curiosidad",
+    "philosophy_text3": "— así como lo hice yo aquel día cuando abrí por primera vez un archivo de script misterioso.",
+
+    "quote": "“No te sientas intimidado, encuentra motivación y disciplina entre tus sueños.”",
+
+    "future_goals_title": "Metas Futuras",
+    "future_goals_text1": "En el futuro, visualizo expandir el alcance de",
+    "future_goals_text2": "Asterki Dev",
+    "future_goals_text3": "mientras trabajo para convertirme en un desarrollador competente y establecerme como un profesional en la industria tecnológica. Mi enfoque estará en perfeccionar mis habilidades y conocimientos en tecnologías emergentes mientras continúo superando mis límites. Aspiro a asumir proyectos desafiantes que mejoren mi experiencia, permitiéndome contribuir de manera efectiva al panorama tecnológico. Este viaje de crecimiento personal me capacitará para crear soluciones e innovaciones significativas que reflejen mi compromiso con la excelencia.",
+
+    "acknowledgments_title": "Agradecimientos",
+    "acknowledgments_text": "Me gustaría tomar un momento para agradecer a Kat por siempre estar ahí para mí, por apoyarme y motivarme a lo largo de mi viaje. Tu aliento ha sido super importante para mantenerme en el camino con mis metas y aspiraciones. Realmente aprecio tu fe en mí y la valiosa orientación que me has proporcionado. Gracias por ser una amiga increíble.",
+
+    "footer_button": "Regresar a la página de inicio"
+}
