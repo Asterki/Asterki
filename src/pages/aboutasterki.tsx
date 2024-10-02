@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -18,6 +19,7 @@ import NavbarComponent from '../components/navbar';
 
 const AboutPage = () => {
     const navigate = useNavigate();
+	const { t } = useTranslation('aboutAsterki')
 
     const [isReady, setIsReady] = React.useState(false);
     const [transitionTo, setTransitionTo] = React.useState('');
@@ -64,73 +66,48 @@ const AboutPage = () => {
                 <main className="flex md:flex-row flex-col gap-4 items-center justify-around md:mt-0 mt-24 mb-24 w-full">
                     <section className="text-gray-700 flex items-center justify-center flex-col bg-white border-2 border-rose-500 p-6 rounded-md shadow-md w-11/12 md:w-9/12 text-center">
                         <h1 className="text-center text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500 w-full">
-                            About Asterki Dev
+                            {t("about_asterki_title")}
                         </h1>
 
                         <h3 className="text-xl font-semibold mt-6 mb-2 flex items-center justify-center gap-2 md:flex-row flex-col">
                             <FontAwesomeIcon icon={faRocket} />
-                            Our Story
+                            {t("our_story_title")}
                         </h3>
                         <p className="mb-4">
-                            Asterki Dev started as a personal project and has
-                            since grown into a platform dedicated to making tech
-                            education accessible. With a focus on sparking
-                            curiosity, we aim to inspire individuals to explore
-                            the world of technology, no matter their background
-                            or resources. From workshops to learning resources,
-                            we are committed to building a community where
-                            aspiring developers can learn, experiment, and grow.
+                            {t("our_story_text")}
                         </p>
 
                         {/* Mission Section - Modified */}
                         <h3 className="text-xl font-semibold mt-6 mb-2 flex items-center justify-center gap-2 md:flex-row flex-col">
                             <FontAwesomeIcon icon={faBullseye} />
-                            Our Mission: Empowering Through Tech and Providing
-                            Solutions
+                            {t("our_mission_title")}
                         </h3>
                         <p className="mb-4">
-                            At Asterki Dev, our mission is twofold: to empower
-                            individuals through accessible tech education and to
-                            offer innovative software solutions that address
-                            diverse challenges. We strive to create an inclusive
-                            environment where learners can unlock their
-                            potential while providing practical tools and
-                            applications to solve real-world problems. By
-                            bridging the gap between education and software
-                            development, we ensure that our users are equipped
-                            to navigate the tech landscape with confidence.
+                            {t("our_mission_text")}
                         </p>
 
                         {/* Goals Section */}
                         <h3 className="text-xl font-semibold mt-6 mb-2 flex items-center justify-center gap-2 md:flex-row flex-col">
                             <FontAwesomeIcon icon={faChartLine} />
-                            Our Future Goals
+                            {t("our_future_goals_title")}
                         </h3>
                         <p className="mb-4">
-                            Looking ahead, we aspire to expand Asterki Dev’s
-                            reach by partnering with educational institutions
-                            and tech organizations worldwide. Our goal is to
-                            build a comprehensive platform that offers
-                            mentorship, hands-on projects, and cutting-edge
-                            courses that keep learners ahead in the rapidly
-                            evolving tech industry.
+                            {t("our_future_goals_text")}
                         </p>
 
                         {/* Contact Section */}
                         <h3 className="text-xl font-semibold mt-6 mb-2 flex items-center justify-center gap-2 md:flex-row flex-col">
                             <FontAwesomeIcon icon={faEnvelope} />
-                            Get in Touch
+                            {t("contact_title")}
                         </h3>
                         <p className="mb-4">
-                            Interested in collaborating or learning more about
-                            Asterki Dev? Feel free to reach out. We’d love to
-                            hear from you!
+                            {t("contact_text")}
                         </p>
                         <button
                             onClick={() => setTransitionTo('contact')}
                             className="bg-rose-700 text-white p-2 mt-4 rounded-md hover:bg-white border-2 border-rose-700 hover:text-rose-700 transition-all flex justify-center items-center gap-2"
                         >
-                            Contact Us
+                            {t("contact_button")}
                         </button>
 
                         <button
@@ -138,7 +115,7 @@ const AboutPage = () => {
                             onClick={() => setTransitionTo('home')}
                         >
                             <FontAwesomeIcon icon={faChevronCircleLeft} />
-                            Return to the landing page
+                            {t("footer_button")}
                         </button>
                     </section>
                 </main>

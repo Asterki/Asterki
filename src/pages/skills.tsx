@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons';
@@ -31,6 +32,7 @@ const SkillCard = ({
 
 const SkillsPage = () => {
     const navigate = useNavigate();
+    const { t } = useTranslation('skills');
 
     const [isReady, setIsReady] = React.useState(false);
     const [transitionTo, setTransitionTo] = React.useState('');
@@ -249,7 +251,7 @@ const SkillsPage = () => {
                 <main className="flex md:flex-row flex-col gap-4 items-center justify-around md:mt-0 mt-24 mb-24 w-full">
                     <section className="text-gray-700 flex items-center justify-center flex-col bg-white border-2 border-rose-500 p-6 rounded-md shadow-md w-11/12 md:w-9/12 text-center">
                         <h1 className="text-center text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500 w-full">
-                            My Skills
+                            {t("title")}
                         </h1>
 
                         {Object.entries(skills).map(([category, skills]) => (
@@ -275,7 +277,7 @@ const SkillsPage = () => {
                             onClick={() => setTransitionTo('home')}
                         >
                             <FontAwesomeIcon icon={faChevronCircleLeft} />
-                            Return to the landing page
+                            {t("footer_button")}
                         </button>
                     </section>
                 </main>

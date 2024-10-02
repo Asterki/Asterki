@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -10,12 +11,13 @@ import {
     faMedium,
 } from '@fortawesome/free-brands-svg-icons';
 
+import NavbarComponent from '../components/navbar';
 import Particles from 'react-tsparticles';
 import type { Container, Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
-import NavbarComponent from '../components/navbar';
 
 const LandingPage = () => {
+	const { t } = useTranslation('landing')
     const navigate = useNavigate();
 
     const [isReady, setIsReady] = React.useState(false);
@@ -67,12 +69,11 @@ const LandingPage = () => {
                             Fernando Rivera
                         </h1>
                         <p className="text-gray-700 font-bold">
-                            Developer, Advocate, and Founder
+                            {t('subtitle')}
                         </p>
 
                         <i className="mt-2 text-gray-700">
-                            "Don't feel intimidated, find motivation and
-                            discipline amongst your dreams"
+                            {t('quote')}
                         </i>
                     </section>
                     <section className="flex items-center justify-center flex-col gap-4 md:w-5/12 w-11/12">
@@ -82,7 +83,7 @@ const LandingPage = () => {
                                 setTransitionTo('about');
                             }}
                         >
-                            About Me
+                            {t('buttons.about')}
                         </button>
 
                         <button
@@ -91,7 +92,7 @@ const LandingPage = () => {
                                 setTransitionTo('aboutasterki');
                             }}
                         >
-                            About Asterki Dev
+                            {t('buttons.aboutasterki')}
                         </button>
 
                         <button
@@ -100,7 +101,7 @@ const LandingPage = () => {
                                 setTransitionTo('skills');
                             }}
                         >
-                            My Skills
+                            {t('buttons.skills')}
                         </button>
 
                         <button
@@ -109,7 +110,7 @@ const LandingPage = () => {
                                 setTransitionTo('projects');
                             }}
                         >
-                            Projects
+                            {t('buttons.projects')}
                         </button>
 
                         <button
@@ -118,7 +119,7 @@ const LandingPage = () => {
                                 setTransitionTo('contact');
                             }}
                         >
-                            Contact
+                            {t('buttons.contact')}
                         </button>
 
                         <button
@@ -128,7 +129,7 @@ const LandingPage = () => {
                                 window.open('https://medium.com/@asterki.dev');
                             }}
                         >
-                            Blog
+                            {t('buttons.blog')}
                         </button>
 
                         <div className="flex gap-4">

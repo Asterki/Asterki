@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next'
 
 interface NavbarProps {
     isReady: boolean;
@@ -6,6 +7,8 @@ interface NavbarProps {
 }
 
 const NavbarComponent: React.FC<NavbarProps> = (props: NavbarProps) => {
+	const { t } = useTranslation('navbar')
+
     return (
         <div className="w-full top-0 left-0 z-50 fixed">
             <motion.div
@@ -128,7 +131,7 @@ const NavbarComponent: React.FC<NavbarProps> = (props: NavbarProps) => {
                         initial={props.isReady ? 'final' : 'initial'}
                         animate={props.isReady ? 'final' : 'initial'}
                     >
-                        Spark Curiosity
+                        {t('motto')}
                     </motion.p>
                 </motion.div>
             </motion.div>
