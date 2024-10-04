@@ -37,6 +37,15 @@ import frSkills from './locales/fr/skills.json';
 import frContact from './locales/fr/contact.json';
 import frProjects from './locales/fr/projects.json';
 
+// Italian
+import itNavbar from './locales/it/navbar.json';
+import itLanding from './locales/it/landing.json';
+import itAbout from './locales/it/about.json';
+import itAboutAsterki from './locales/it/aboutasterki.json';
+import itSkills from './locales/it/skills.json';
+import itContact from './locales/it/contact.json';
+import itProjects from './locales/it/projects.json';
+
 const resources = {
     en: {
         navbar: enNavbar,
@@ -73,6 +82,15 @@ const resources = {
         skills: frSkills,
         contact: frContact,
         projects: frProjects,
+    },
+    it: {
+        navbar: itNavbar,
+        landing: itLanding,
+        about: itAbout,
+        aboutAsterki: itAboutAsterki,
+        skills: itSkills,
+        contact: itContact,
+        projects: itProjects,
     }
 };
 
