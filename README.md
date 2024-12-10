@@ -1,13 +1,12 @@
 <h2 style="display: flex">
   <img style="float: right; border-radius: 50%" src="https://i.ibb.co/SsBC5jW/Untitled.png" width="70" />
-  <img style="float: right; border-radius: 50%" src="https://mvp.microsoft.com/Assets/UserProfile/MSA/Badge/LevelBeta.png" width="70" />
 
   Fernando Rivera
 </h2>
 
 <p align="left">
-  <a href="https://www.asterki.tech/" target="_blank">
-  https://www.asterki.tech
+  <a href="http://asterkiwebsite.vercel.app/" target="_blank">
+  http://asterkiwebsite.vercel.app/
 </a></p>
 
 <p align="left">
