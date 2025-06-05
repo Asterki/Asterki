@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBookmark,
-    faHeart,
     faLightbulb,
 } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -126,12 +125,6 @@ const AboutPage = () => {
                             <strong>{t('future_goals_text2')}</strong>{' '}
                             {t('future_goals_text3')}
                         </p>
-
-                        <h3 className="text-xl font-semibold mt-6 mb-2 flex items-center justify-center gap-2 md:flex-row flex-col">
-                            <FontAwesomeIcon icon={faHeart} />
-                            {t('acknowledgments_title')}
-                        </h3>
-                        <p className="mb-4">{t('acknowledgments_text')}</p>
 
                         <button
                             className="bg-rose-700 text-white p-2 rounded-md hover:bg-white border-2 border-rose-700 hover:text-rose-700 transition-all flex justify-center items-center gap-2"
