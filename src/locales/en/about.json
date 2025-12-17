@@ -1,38 +1,57 @@
 {
     "title": "About Me",
-    "introduction_text": "I am Fernando Rivera, born in 2007 in Comayagua, Honduras. From a young age, I found myself captivated by the world of software and technology. My journey began unexpectedly one day when I stumbled upon a batch script file filled with lines of code I couldn’t comprehend. Rather than leaving it unexplored, this mystery ignited a curiosity that has fueled my path ever since. Over time, I honed my skills and discovered a passion for creating impactful projects that bridge technology and learning.",
+
+    "introduction_text": "My name is Fernando Rivera. I was born in 2007 in Comayagua, Honduras, and I’ve been drawn to technology for as long as I can remember. It all started the day I opened a random batch script full of commands I didn’t understand. Instead of ignoring it, I began experimenting, changing lines, breaking it, copying it, fixing it again. That process of trial and error hooked me. Since then, I’ve kept building, learning, and creating projects that satisfy my constant curiosity and need to understand how things work.",
 
     "empowering_title": "Empowering Peers and Providing Solutions",
-    "empowering_text": "At present, I am dedicated to fostering a deeper understanding of technology as a developer. I not only focus on empowering my peers through accessible tech education but also provide software solutions tailored to meet various needs. Alongside my development work, I offer comprehensive support to users, ensuring they have the resources and guidance necessary to effectively utilize the software I create. By organizing workshops and events, I aim to demystify complex concepts and provide hands-on experiences that ignite curiosity and inspire others to explore the world of technology. This mission is driven by my belief that everyone should have the opportunity to learn and grow in the tech field, regardless of their background or resources.",
+
+    "empowering_text": "I don’t usually build the software people already use. I focus on teaching them how to actually use it well. And when the right tool doesn’t exist to solve a problem, I create it. I run workshops focused on practical software usage and improving digital literacy, making technology feel approachable instead of intimidating. I don’t care about someone’s background; what matters to me is helping them feel that spark—understanding that technology is a tool that can enhance whatever they do, whether it’s improving existing systems, empowering other fields, or even advancing technology itself.",
 
     "founder_title": "The Founder of Asterki Dev",
-    "founder_text1": "Asterki Dev started as my online persona. As I engaged more deeply with the tech community, I realized I wanted to create something bigger — a platform that goes beyond skilling people. I envisioned a space that could",
-    "founder_text2": "spark curiosity",
-    "founder_text3": "in those who have the interest but might lack the means to pursue a tech career. That’s how Asterki Dev was born, with a simple motto:",
+
+    "founder_text1": "Asterki Dev isn’t really a platform. It’s more like an extension of myself. The identity behind the workshops I run, the projects I build, and the people I help along the way.",
+
+    "founder_text2": "It represents",
+
+    "founder_text3": "the work I do to spark curiosity in others and support them when they’re trying to solve real problems using technology. Asterki Dev exists as the face of that effort, guided by a simple idea:",
+
     "founder_text4": "“Spark Curiosity.”",
 
     "events_title": "Events and Community Contributions",
+
     "events_text1": "As a",
+
     "events_text2": "student representative and advocate",
-    "events_text3": ", I’ve organized events like",
+
+    "events_text3": ", I’ve organized and participated in events such as",
+
     "events_text4": "MSLA Comayagua 2024",
-    "events_text5": ", held at the Marist Institute La Inmaculada in my hometown. This event skilled over 70 students locally and 250 worldwide in the fields of software development and technology.",
-    "events_text6": "One of my proudest moments was the recognition of Octo-tree by the National University of Honduras (UNAH) as an exceptional project. It’s these milestones that continue to drive my passion for sharing knowledge and building a community around technology.",
+
+    "events_text5": ", hosted at the Marist Institute La Inmaculada in my hometown. Through this event, more than 70 students locally and over 250 participants worldwide gained exposure to software development and technology.",
+
+    "events_text6": "In addition to these events, I also lead workshops and courses at my university, ranging from digital literacy programs for new students like Inducción Digital Puma to more in-depth courses focused on tech tools and field-specific topics. One of my proudest moments was having Octo-tree recognized by the National University of Honduras (UNAH) as an outstanding project. Milestones like these keep pushing me forward.",
 
     "philosophy_title": "My Philosophy",
-    "philosophy_text1": "Open-source principles and community-driven learning are at the heart of everything I do. I believe in the power of motivation and discipline as the keys to success. My goal is to create tools, projects, and platforms that inspire others to discover their own",
-    "philosophy_text2": "box of curiosity",
-    "philosophy_text3": "— just as I did that day when I first opened a mysterious script file.",
 
-    "quote": "“Don’t feel intimidated, find motivation and discipline amongst your dreams.”",
+    "philosophy_text1": "Everything I do is grounded in open-source values and community-driven learning. I strongly believe that motivation and discipline matter more than talent alone. I try to build tools, projects, and spaces that encourage others to open their own",
+
+    "philosophy_text2": "box of curiosity",
+
+    "philosophy_text3": ", the same way I did when I first explored code without knowing where it would lead.",
+
+    "quote": "“Don’t feel intimidated, find motivation and discipline within your dreams.”",
 
     "future_goals_title": "Future Goals",
-    "future_goals_text1": "In the future, I envision expanding the reach of",
+
+    "future_goals_text1": "Looking ahead, my goal is to continue growing",
+
     "future_goals_text2": "Asterki Dev",
-    "future_goals_text3": "as I work toward becoming a proficient developer and establishing myself as a professional in the tech industry. My focus will be on honing my skills and knowledge in emerging technologies while continually pushing my boundaries. I aim to take on challenging projects that enhance my expertise, enabling me to contribute effectively to the tech landscape. This journey of personal growth will empower me to create meaningful solutions and innovations that reflect my commitment to excellence.",
+
+    "future_goals_text3": "while developing myself into a strong, capable professional in the tech industry. I want to keep refining my skills, diving into new technologies, and challenging myself with projects that push me further. Through constant learning and experimentation, I aim to create solutions that are useful, meaningful, and aligned with the standards I set for my own work.",
 
     "acknowledgments_title": "Acknowledgments",
-    "acknowledgments_text": "I would like to take a moment to thank Kat for being always there for me, for supporting and motivating me throughout my journey. Your encouragement has been super important in keeping me on track with my goals and aspirations. I truly appreciate your belief in me and the invaluable guidance you’ve provided me. Thank you for being an amazing friend.",
+
+    "acknowledgments_text": "I want to thank everyone who has been there for me throughout this journey—those who offered support, encouragement, feedback, or simply believed in what I was building. Every conversation, collaboration, and moment of trust played a role in keeping me focused and moving forward. I genuinely appreciate all of it.",
 
     "footer_button": "Return to the landing page"
 }

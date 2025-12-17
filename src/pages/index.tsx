@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faGithub,
-    faInstagram,
-    faLinkedin,
-    faMedium,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faMedium,
 } from '@fortawesome/free-brands-svg-icons';
 
 import NavbarComponent from '../components/navbar';
@@ -16,173 +16,182 @@ import Particles from 'react-tsparticles';
 import type { Container, Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
 
-const LandingPage = () => {
-	const { t } = useTranslation('landing')
-    const navigate = useNavigate();
 
-    const [isReady, setIsReady] = React.useState(false);
-    const [transitionTo, setTransitionTo] = React.useState('');
 
-    const particlesInit = React.useCallback(async (engine: Engine) => {
-        await loadSlim(engine);
-    }, []);
+const socialLinks = [
+  {
+    href: 'https://instagram.com/nicht.fer',
+    icon: faInstagram,
+    label: 'Instagram',
+  },
+  {
+    href: 'https://github.com/Asterki',
+    icon: faGithub,
+    label: 'GitHub',
+  },
+  {
+    href: 'https://www.linkedin.com/in/fernando-rivera-365b74270/',
+    icon: faLinkedin,
+    label: 'LinkedIn',
+  },
+  {
+    href: 'https://medium.com/@asterki.dev',
+    icon: faMedium,
+    label: 'Medium',
+  },
+];
 
-    const particlesLoaded = React.useCallback(
-        async (container: Container | undefined) => {
-            await console.log(container);
-        },
-        [],
-    );
+const LandingPage: React.FC = () => {
+  const { t } = useTranslation('landing');
+  const navigate = useNavigate();
+  const prefersReducedMotion = useReducedMotion();
 
-    React.useEffect(() => {
-        setTimeout(() => {
-            setIsReady(true);
-        }, 1000);
-    }, []);
+  const [isReady, setIsReady] = React.useState(false);
+  const [transitionTo, setTransitionTo] = React.useState('');
+  const [showParticles, setShowParticles] = React.useState(true);
 
-    React.useEffect(() => {
-        if (transitionTo !== '') {
-            setTimeout(() => {
-                navigate(`/${transitionTo}`);
-            }, 1000);
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [transitionTo]);
+  const particlesInit = React.useCallback(async (engine: Engine) => {
+    await loadSlim(engine);
+  }, []);
 
-    return (
-        <div className="min-h-screen flex flex-col items-center justify-center relative">
-            <NavbarComponent isReady={isReady} transitionTo={transitionTo} />
+  const particlesLoaded = React.useCallback(
+    async (_container: Container | undefined) => {
+      // noop
+    },
+    [],
+  );
 
-            <motion.div
-                className="flex items-center justify-center w-full flex-col opacity-0 z-10"
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.6 }}
-            >
-                <main className="flex md:flex-row flex-col gap-4 items-center justify-around md:mt-0 mt-24">
-                    <section className="flex items-center justify-center flex-col bg-white border-2 border-rose-500 p-6 rounded-md shadow-md w-11/12 md:w-1/2 text-center">
-                        <img
-                            src="/assets/images/icon.png"
-                            alt="Icon"
-                            className="w-6/12 md:w-2/12 rounded-full"
-                        />
-                        <h1 className="text-center text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500">
-                            Fernando Rivera
-                        </h1>
-                        <p className="text-gray-700 font-bold">
-                            {t('subtitle')}
-                        </p>
+  React.useEffect(() => {
+    const delay = prefersReducedMotion ? 0 : 600;
+    const id = window.setTimeout(() => setIsReady(true), delay);
+    return () => clearTimeout(id);
+  }, [prefersReducedMotion]);
 
-                        <i className="mt-2 text-gray-700">
-                            {t('quote')}
-                        </i>
-                    </section>
-                    <section className="flex items-center justify-center flex-col gap-4 md:w-5/12 w-11/12">
-                        <button
-                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
-                            onClick={() => {
-                                setTransitionTo('about');
-                            }}
-                        >
-                            {t('buttons.about')}
-                        </button>
+  React.useEffect(() => {
+    if (!transitionTo) return;
+    const id = window.setTimeout(() => {
+      navigate(`/${transitionTo}`);
+    }, 600);
+    return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [transitionTo]);
 
-                        <button
-                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
-                            onClick={() => {
-                                setTransitionTo('aboutasterki');
-                            }}
-                        >
-                            {t('buttons.aboutasterki')}
-                        </button>
+  React.useEffect(() => {
+    const update = () => setShowParticles(window.innerWidth >= 768);
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
 
-                        <button
-                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
-                            onClick={() => {
-                                setTransitionTo('skills');
-                            }}
-                        >
-                            {t('buttons.skills')}
-                        </button>
+  const containerVariant = {
+    hidden: { opacity: 0, y: 12 },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: 'easeOut' },
+    },
+  };
 
-                        <button
-                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
-                            onClick={() => {
-                                setTransitionTo('projects');
-                            }}
-                        >
-                            {t('buttons.projects')}
-                        </button>
+  const actionButton = (label: string, to?: string, onClick?: () => void) => (
+    <button
+      key={label}
+      className="w-full rounded-md px-4 py-2 text-sm font-medium
+                 bg-rose-600 text-white border-2 border-rose-600
+                 hover:bg-transparent hover:text-rose-600
+                 transition-all focus:outline-none focus:ring-2 focus:ring-rose-300"
+      onClick={() => {
+        if (onClick) onClick();
+        else if (to) setTransitionTo(to);
+      }}
+    >
+      {label}
+    </button>
+  );
 
-                        <button
-                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
-                            onClick={() => {
-                                setTransitionTo('contact');
-                            }}
-                        >
-                            {t('buttons.contact')}
-                        </button>
+  return (
+    <div className="min-h-screen relative mt-32 bg-gradient-to-b from-white to-rose-50 dark:from-slate-900 dark:to-slate-800">
+      <NavbarComponent isReady={isReady} transitionTo={transitionTo} />
 
-                        <button
-                            className="bg-rose-500 text-white p-2 rounded-md w-full hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all"
-                            onClick={() => {
-                                // For now, just redirect to the medium blog
-                                window.open('https://medium.com/@asterki.dev');
-                            }}
-                        >
-                            {t('buttons.blog')}
-                        </button>
+      {showParticles && (
+        <Particles
+          id="tsparticles-landing"
+          className="pointer-events-none absolute inset-0 z-0"
+          url="/particleConfig.json"
+          init={particlesInit}
+          loaded={particlesLoaded}
+        />
+      )}
 
-                        <div className="flex gap-4">
-                            <a
-                                href="https://instagram.com/nicht.fer"
-                                target="_blank"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faInstagram}
-                                    className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
-                                />
-                            </a>
-                            <a
-                                href="https://github.com/Asterki"
-                                target="_blank"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faGithub}
-                                    className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
-                                />
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/fernando-rivera-365b74270/"
-                                target="_blank"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faLinkedin}
-                                    className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
-                                />
-                            </a>
-                            <a
-                                href="https://medium.com/@asterki.dev"
-                                target="_blank"
-                            >
-                                <FontAwesomeIcon
-                                    icon={faMedium}
-                                    className="text-4xl text-rose-500 cursor-pointer hover:text-rose-400 transition-all"
-                                />
-                            </a>
-                        </div>
-                    </section>
-                </main>
-            </motion.div>
+      <motion.main
+        className="relative z-10 container mx-auto px-6 lg:px-12 py-20"
+        initial="hidden"
+        animate={isReady ? 'enter' : 'hidden'}
+        variants={containerVariant}
+      >
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center">
+          {/* Left: Identity / Hero */}
+          <section className="w-full lg:w-1/2">
+            <div className="rounded-2xl border border-rose-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-8 shadow-lg text-center">
+              <img
+                src="/assets/images/icon.png"
+                alt="Personal icon"
+                className="w-28 h-28 mx-auto rounded-full shadow mb-4"
+              />
 
-            <Particles
-                id="tsparticles"
-                className="absolute top-0 left-0 w-full h-full z-0"
-                url="/particleConfig.json"
-                init={particlesInit}
-                loaded={particlesLoaded}
-            />
+              <h1 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500">
+                Fernando Rivera
+              </h1>
+
+              <p className="mt-2 text-gray-600 dark:text-gray-400 font-semibold">
+                {t('subtitle')}
+              </p>
+
+              <p className="mt-4 italic text-sm text-gray-600 dark:text-gray-400">
+                {t('quote')}
+              </p>
+            </div>
+
+            {/* Social links */}
+            <div className="mt-6 flex justify-center gap-6">
+              {socialLinks.map(({ href, icon, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={label}
+                  className="text-3xl text-rose-500 hover:text-rose-400 transition-colors"
+                >
+                  <FontAwesomeIcon icon={icon} />
+                </a>
+              ))}
+            </div>
+          </section>
+
+          {/* Right: Actions */}
+          <section className="w-full lg:w-1/2">
+            <div className="rounded-2xl border border-rose-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-8 shadow-lg">
+              <div className="grid gap-3">
+                {actionButton(t('buttons.about'), 'about')}
+                {actionButton(t('buttons.aboutasterki'), 'aboutasterki')}
+                {actionButton(t('buttons.skills'), 'skills')}
+                {actionButton(t('buttons.projects'), 'projects')}
+                {actionButton(t('buttons.contact'), 'contact')}
+                {actionButton(t('buttons.blog'), undefined, () =>
+                  window.open('https://medium.com/@asterki.dev', '_blank'),
+                )}
+              </div>
+
+              <p className="mt-6 text-xs text-center text-gray-500 dark:text-gray-400">
+                Explore my work, learn what I do, or jump straight into my
+                projects and writing.
+              </p>
+            </div>
+          </section>
         </div>
-    );
+      </motion.main>
+    </div>
+  );
 };
 
 export default LandingPage;

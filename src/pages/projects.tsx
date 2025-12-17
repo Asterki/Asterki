@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -11,127 +11,160 @@ import type { Container, Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
 import NavbarComponent from '../components/navbar';
 
-const ProjectsPage = () => {
-    const navigate = useNavigate();
-    const { t } = useTranslation('projects');
+type Project = {
+  id: number;
+  name: string;
+  description: string | null;
+  language: string | null;
+  html_url: string;
+};
 
-    const [isReady, setIsReady] = React.useState(false);
-    const [transitionTo, setTransitionTo] = React.useState('');
+const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
+  return (
+    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl border border-rose-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-shadow">
+      <div className="text-left">
+        <h3 className="font-semibold text-gray-800 dark:text-gray-400">
+          Asterki/{project.name}
+          {project.language && (
+            <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
+              · {project.language}
+            </span>
+          )}
+        </h3>
 
-    const [projects, setProjects] = React.useState<
-        {
-            id: number;
-            name: string;
-            description: string;
-            language: string;
-            html_url: string;
-        }[]
-    >([]);
+        <p className="mt-1 text-sm text-gray-700 dark:text-gray-400">
+          {project.description || 'No description provided'}
+        </p>
+      </div>
 
-    const particlesInit = React.useCallback(async (engine: Engine) => {
-        await loadSlim(engine);
-    }, []);
+      <a
+        href={project.html_url}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`Open ${project.name} on GitHub`}
+        className="inline-flex items-center justify-center gap-2 rounded-md px-3 py-2 bg-rose-600 text-white border-2 border-rose-600 hover:bg-transparent hover:text-rose-600 transition-all"
+      >
+        <FontAwesomeIcon icon={faLink} />
+        <span className="text-sm">Repo</span>
+      </a>
+    </div>
+  );
+};
 
-    const particlesLoaded = React.useCallback(
-        async (container: Container | undefined) => {
-            await console.log(container);
-        },
-        [],
-    );
+const ProjectsPage: React.FC = () => {
+  const navigate = useNavigate();
+  const { t } = useTranslation('projects');
+  const prefersReducedMotion = useReducedMotion();
 
-    React.useEffect(() => {
-        setTimeout(() => {
-            setIsReady(true);
-        }, 1000);
+  const [isReady, setIsReady] = React.useState(false);
+  const [transitionTo, setTransitionTo] = React.useState('');
+  const [projects, setProjects] = React.useState<Project[]>([]);
+  const [showParticles, setShowParticles] = React.useState(true);
 
-        fetch('https://api.github.com/users/asterki/repos')
-            .then((res) => res.json())
-            .then((data) => {
-                setProjects(data);
-            });
-    }, []);
+  const particlesInit = React.useCallback(async (engine: Engine) => {
+    await loadSlim(engine);
+  }, []);
 
-    React.useEffect(() => {
-        if (transitionTo !== '') {
-            setTimeout(() => {
-                if (transitionTo === 'home') {
-                    navigate('/');
-                } else {
-                    navigate(`/${transitionTo}`);
-                }
-            }, 1000);
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [transitionTo]);
+  const particlesLoaded = React.useCallback(
+    async (_container: Container | undefined) => {
+      /* noop */
+    },
+    [],
+  );
 
-    return (
-        <div className="min-h-screen flex flex-col items-center justify-center">
-            <NavbarComponent isReady={isReady} transitionTo={transitionTo} />
-            
+  React.useEffect(() => {
+    const delay = prefersReducedMotion ? 0 : 600;
+    const id = window.setTimeout(() => setIsReady(true), delay);
+    return () => clearTimeout(id);
+  }, [prefersReducedMotion]);
 
-            <motion.div
-                className="flex items-center justify-center w-full flex-col opacity-0 z-10 mt-32"
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.6 }}
-            >
-                <main className="flex md:flex-row flex-col gap-4 items-center justify-around md:mt-0 mt-24 mb-24 w-full">
-                    <section className="text-gray-700 flex items-center justify-center flex-col bg-white border-2 border-rose-500 p-6 rounded-md shadow-md w-11/12 md:w-9/12 text-center">
-                        <h1 className="text-center text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500 w-full">
-                            {t('projects_title')}
-                        </h1>
-                        <p>
-                            {t('projects_text')}
-                        </p>
+  React.useEffect(() => {
+    fetch('https://api.github.com/users/asterki/repos')
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
 
-                        {projects.map((project) => (
-                            <div
-                                key={project.id}
-                                className="flex items-center justify-between bg-white border-2 border-rose-500 p-4 rounded-md shadow-md w-11/12 md:w-9/12 text-center mt-4"
-                            >
-                                <div>
-                                    <h2 className="text-left w-full font-bold">
-                                        Asterki/{project.name} -{' '}
-                                        {project.language}
-                                    </h2>
-                                    <p className="text-left w-full">
-                                        {project.description
-                                            ? project.description
-                                            : 'No description provided'}
-                                    </p>
-                                </div>
-                                <div>
-                                    <a
-                                        href={project.html_url}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="bg-rose-500 text-white p-2 rounded-md hover:bg-white border-2 border-rose-500 hover:text-rose-500 transition-all flex items-center justify-center gap-2"
-                                    >
-                                        <FontAwesomeIcon icon={faLink} />
-                                    </a>
-                                </div>
-                            </div>
-                        ))}
+  React.useEffect(() => {
+    if (!transitionTo) return;
+    const id = window.setTimeout(() => {
+      if (transitionTo === 'home') navigate('/');
+      else navigate(`/${transitionTo}`);
+    }, prefersReducedMotion ? 0 : 600);
+    return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [transitionTo]);
 
-                        <button
-                            className="bg-rose-700 text-white p-2 rounded-md hover:bg-white border-2 border-rose-700 hover:text-rose-700 transition-all flex items-center justify-center mt-2 gap-2"
-                            onClick={() => setTransitionTo('home')}
-                        >
-                            <FontAwesomeIcon icon={faChevronCircleLeft} />
-                            {t('return_button')}
-                        </button>
-                    </section>
-                </main>
-            </motion.div>
+  React.useEffect(() => {
+    const update = () => setShowParticles(window.innerWidth >= 768);
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
 
-            <Particles
-                id="tsparticles"
-                className="absolute top-0 left-0 w-full h-full z-0"
-                url="/particleConfig.json"
-                init={particlesInit}
-                loaded={particlesLoaded}
-            />
+  const containerVariant = {
+    hidden: { opacity: 0, y: 10 },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.55, ease: 'easeOut' },
+    },
+  };
+
+  return (
+    <div className="min-h-screen mt-32 relative bg-gradient-to-b from-white to-rose-50 dark:from-slate-900 dark:to-slate-800">
+      <NavbarComponent isReady={isReady} transitionTo={transitionTo} />
+
+      {showParticles && (
+        <Particles
+          id="tsparticles-projects"
+          className="pointer-events-none absolute inset-0 z-0"
+          url="/particleConfig.json"
+          init={particlesInit}
+          loaded={particlesLoaded}
+        />
+      )}
+
+      <motion.main
+        className="relative z-10 container mx-auto px-6 lg:px-12 py-16"
+        initial="hidden"
+        animate={isReady ? 'enter' : 'hidden'}
+        variants={containerVariant}
+        aria-labelledby="projects-heading"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="rounded-2xl border border-rose-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 shadow-lg">
+            <header className="mb-6 text-center">
+              <h1
+                id="projects-heading"
+                className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500"
+              >
+                {t('projects_title')}
+              </h1>
+              <p className="mt-2 text-sm text-gray-700 dark:text-gray-400">
+                {t('projects_text')}
+              </p>
+            </header>
+
+            <section className="flex flex-col gap-4">
+              {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </section>
+
+            <div className="mt-8 flex justify-center">
+              <button
+                className="inline-flex items-center gap-2 rounded-md px-4 py-2 bg-rose-600 text-white border-2 border-rose-600 hover:bg-transparent hover:text-rose-600 transition-all focus:outline-none focus:ring-2 focus:ring-rose-300"
+                onClick={() => setTransitionTo('home')}
+              >
+                <FontAwesomeIcon icon={faChevronCircleLeft} />
+                {t('return_button')}
+              </button>
+            </div>
+          </div>
         </div>
-    );
+      </motion.main>
+    </div>
+  );
 };
 
 export default ProjectsPage;
