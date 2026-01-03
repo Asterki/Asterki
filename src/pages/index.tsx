@@ -178,7 +178,7 @@ const LandingPage: React.FC = () => {
                 {actionButton(t('buttons.projects'), 'projects')}
                 {actionButton(t('buttons.contact'), 'contact')}
                 {actionButton(t('buttons.blog'), undefined, () =>
-                  window.open('https://medium.com/@asterki.dev', '_blank'),
+                  window.open('https://blog.asterki.xyz', '_blank'),
                 )}
               </div>
 
