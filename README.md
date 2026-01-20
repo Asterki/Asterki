@@ -6,7 +6,7 @@
 ### About Me
 Full Stack Developer | Systems Engineering Student | Information Advocate
 
-- **Software Developer** at [Vimar](https://inversionesvimar.com/)
+- **Software Developer** at [UNAH Campus Comayagua](https://curc.unah.edu.hn/)
 - **Computer Science Student** at [Universidad Nacional Autónoma de Honduras (UNAH)](https://www.unah.edu.hn/)
 - **Microsoft Learn Student Ambassador ([MLSA](https://studentambassadors.com/)) 2024-2025**
 - Passionate for **research and open-source**
