@@ -1,8 +1,3 @@
-<h2 style="display: flex; flex: 1; align-items: center; justify-content: center; flex-gap: 2rem">
-  <img style="float: right; border-radius: 50%" src="https://i.ibb.co/SsBC5jW/Untitled.png" width="70" />
-  <p className="flex: 1;">Fernando Rivera</p>
-</h2>
-
 ### About Me
 Full Stack Developer | Systems Engineering Student | Information Advocate
 
