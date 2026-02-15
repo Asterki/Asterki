@@ -1,8 +1,8 @@
 ### About Me
-Full Stack Developer | Systems Engineering Student | Information Advocate
+Internal Tools Developer
 
-- **Software Developer** at [UNAH Campus Comayagua](https://curc.unah.edu.hn/)
-- **Computer Science Student** at [Universidad Nacional Autónoma de Honduras (UNAH)](https://www.unah.edu.hn/)
+- **Internal Tools Developer** at [UNAH Campus Comayagua](https://curc.unah.edu.hn/)
+- **Computer Systems Engineering Student** at [Universidad Nacional Autónoma de Honduras (UNAH)](https://www.unah.edu.hn/)
 - **Microsoft Learn Student Ambassador ([MLSA](https://studentambassadors.com/)) 2024-2025**
 - Passionate for **research and open-source**
 - Advocate for **free access to knowledge and innovation**
