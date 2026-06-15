@@ -1,38 +1,29 @@
 import { createBrowserRouter } from 'react-router-dom';
-
-// Pages
+import Layout from './components/Layout';
 import IndexPage from './pages/index';
 import AboutPage from './pages/about';
-import ContactPage from './pages/contact';
 import ProjectsPage from './pages/projects';
-import AboutAsterkiPage from './pages/aboutasterki';
 import SkillsPage from './pages/skills';
+import ExperiencePage from './pages/experience';
+import BlogPage from './pages/blog';
+import ContactPage from './pages/contact';
+import NotFoundPage from './pages/NotFound';
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <IndexPage />,
-    },
-    {
-        path: '/about',
-        element: <AboutPage />,
-    },
-    {
-        path: '/contact',
-        element: <ContactPage />,
-    },
-    {
-        path: '/projects',
-        element: <ProjectsPage />,
-    },
-    {
-        path: '/aboutasterki',
-        element: <AboutAsterkiPage />,
-    },
-    {
-        path: "/skills",
-        element: <SkillsPage />,
-    }
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { index: true, element: <IndexPage /> },
+      { path: 'about', element: <AboutPage /> },
+      { path: 'projects', element: <ProjectsPage /> },
+      { path: 'skills', element: <SkillsPage /> },
+      { path: 'experience', element: <ExperiencePage /> },
+      { path: 'blog', element: <BlogPage /> },
+      { path: 'contact', element: <ContactPage /> },
+      { path: '*', element: <NotFoundPage /> },
+    ],
+  },
 ]);
 
 export default router;

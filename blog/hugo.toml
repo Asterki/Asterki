@@ -1,1 +1,43 @@
-theme = 'nord'
+baseURL = 'https://www.asterki.xyz/blog/'
+languageCode = 'en-us'
+title = 'Asterki Blog'
+theme = 'papermod'
+enableRobotsTXT = true
+
+[params]
+  description = "Thoughts, notes, and things I'm learning along the way."
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+  [params.homeInfoParams]
+    Title = "Asterki's Blog"
+    Content = "Thoughts, notes, and things I'm learning along the way. Tech, projects, and open-source."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Asterki"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/fernando-rivera-365b74270/"
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/nicht.fer"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[[menu.main]]
+  identifier = "main-site"
+  name = "Main Site"
+  url = "https://www.asterki.xyz"
+  weight = 1

@@ -1,2 +1,3 @@
-User-Agent: *
-Allow: / 
+User-agent: *
+Allow: /
+Sitemap: https://www.asterki.xyz/sitemap.xml

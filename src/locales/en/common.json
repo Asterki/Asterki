@@ -1,0 +1,242 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "name": "Fernando Rivera",
+        "title": "Developer & Instructor",
+        "subtitle": "Building tools, teaching people, and opening boxes of curiosity.",
+        "cta_about": "About Me",
+        "cta_projects": "View Projects",
+        "cta_contact": "Get in Touch",
+        "scroll_hint": "Scroll to explore"
+    },
+    "about": {
+        "title": "About Me",
+        "subtitle": "Junior Software Engineer, MLSA, and community builder from Comayagua, Honduras.",
+        "intro": "My name is Fernando Rivera. I was born in 2007 in Comayagua, Honduras, and I've been drawn to technology for as long as I can remember. It all started the day I opened a random batch script full of commands I didn't understand. Instead of ignoring it, I began experimenting, changing lines, breaking it, copying it, fixing it again. That process of trial and error hooked me. Since then, I've kept building, learning, and creating projects that satisfy my constant curiosity and need to understand how things work.",
+        "empowering_title": "Empowering Peers",
+        "empowering_text": "I don't usually build the software people already use. I focus on teaching them how to actually use it well. And when the right tool doesn't exist to solve a problem, I create it. I run workshops focused on practical software usage and improving digital literacy, making technology feel approachable instead of intimidating.",
+        "events_title": "Events & Community",
+        "events_text": "As a Microsoft Learn Student Ambassador, I designed and led a 10-session course reaching 250+ students nationwide, covering AI fundamentals, cloud computing, and collaborative programming. I've also organized events like MSLA Comayagua 2024, and lead workshops at my university ranging from digital literacy to in-depth tech courses.",
+        "philosophy_title": "Philosophy",
+        "philosophy_text": "Everything I do is grounded in open-source values and community-driven learning. Motivation and discipline matter more than talent alone.",
+        "goals_title": "Future Goals",
+        "goals_text": "Continue growing my work while developing into a strong, capable professional. Keep refining skills, diving into new technologies, and building solutions that are useful and meaningful.",
+        "quote": "Don't feel intimidated, find motivation and discipline within your dreams.",
+        "acknowledgments_title": "Acknowledgments",
+        "acknowledgments_text": "To everyone who has been there throughout this journey — your support, feedback, and belief kept me moving forward. I genuinely appreciate all of it."
+    },
+    "projects": {
+        "title": "Projects",
+        "subtitle": "A curated selection of things I've built. Each one solves a real problem or scratches a particular curiosity.",
+        "view_github": "View on GitHub",
+        "view_live": "Live Demo",
+        "source": "Source",
+        "empty": "Projects coming soon — stay tuned!",
+        "items": {
+            "census": {
+                "name": "Bus Routes Census",
+                "org": "UNAH",
+                "period": "May 2026 - Present",
+                "description": "A form-based data collection app where students submit their entry/exit times and drop a pin on an interactive map. Responses are visualized through heatmaps and aggregated statistics, giving planners actionable insights to optimize university bus routes based on real student demand."
+            },
+            "editor": {
+                "name": "Bus Route Editor",
+                "org": "UNAH",
+                "period": "Feb 2026 - Present",
+                "description": "A real-time campus transportation platform featuring an interactive bus route editor and live GPS tracking. Students can view active routes and the current location of buses on a map. Includes a custom-configured companion device running a purpose-built app to transmit live GPS data."
+            },
+            "expedientes": {
+                "name": "Sistema de Expedientes",
+                "org": "Hospital San Benito José",
+                "period": "Jan 2026 - Present",
+                "description": "A secure medical records management system built in strict compliance with ISO/IEC 27001 standards. Features a deep, multi-layered access control model combining RBAC and ABAC, comprehensive audit trails, real-time alerts, and full traceability across all record interactions."
+            },
+            "pumai": {
+                "name": "PumAI — AI Inquiry Assistant",
+                "org": "UNAH",
+                "period": "Oct 2025 - Present",
+                "description": "An LLM-powered assistant built to handle student inquiries with accurate, context-aware responses. Features RAG support for institutional knowledge retrieval, MCP server integration, and deterministic workflows for guided processes — enabling autonomous actions and step-by-step student guidance."
+            },
+            "curc": {
+                "name": "UNAH CURC — Institutional Website",
+                "org": "UNAH",
+                "period": "Sep 2025 - Jan 2026",
+                "description": "The official website for UNAH's Campus Comayagua, serving 3,000+ students. Redesigned and developed to improve structure, accessibility, and usability — covering academic offerings, student services, administrative directories, transparency resources, and campus information."
+            },
+            "personal": {
+                "name": "Personal Website",
+                "org": "Self Employed",
+                "period": "Jun 2021 - Jun 2025",
+                "description": "A representation of my current skills, serving as a portal for my projects and internet persona. Contains a hub for my social media and portfolio of work."
+            },
+            "flashet": {
+                "name": "Flashet",
+                "org": "Self Employed",
+                "period": "Jul 2023 - Aug 2024",
+                "description": "Study aid app built with React and Node.js. Create flashcard decks to help prepare for exams with an intuitive interface and progress tracking."
+            },
+            "zappit": {
+                "name": "Zappit",
+                "org": "Self Employed",
+                "period": "Apr 2022 - Jul 2024",
+                "description": "Twitter-like social media platform built with Next.js and Node.js. Features include posts, follows, likes, real-time updates, and user profiles."
+            },
+            "songsurf": {
+                "name": "SongSurf",
+                "org": "Self Employed",
+                "period": "Nov 2023 - Dec 2023",
+                "description": "A microservices-based app using the Spotify API and built-in datasets to find songs matching user-defined parameters. Built with pandas and Next.js."
+            },
+            "ascloud": {
+                "name": "AsCloud",
+                "org": "Self Employed",
+                "period": "May 2023 - Nov 2023",
+                "description": "Open source cloud storage service. A platform for file storage and sharing with a clean interface and RESTful API."
+            },
+            "miichi": {
+                "name": "Mi-ichi",
+                "org": "Instituto Marista La Inmaculada",
+                "period": "Aug 2023 - Nov 2023",
+                "description": "Arduino-controlled 12-DOF robocat inspired by Boston Dynamics. Controlled using bluetooth and servomotors."
+            },
+            "dimlim": {
+                "name": "DIMLIM",
+                "org": "Self Employed",
+                "period": "Apr 2022 - Jun 2023",
+                "description": "End-to-end encrypted chat application built with Next.js. Features secure messaging, user authentication, and real-time communication."
+            }
+        }
+    },
+    "skills": {
+        "title": "Skills & Tools",
+        "subtitle": "Technologies I work with regularly. Always learning, always expanding.",
+        "note": "This is a curated list of tools I use frequently — I keep updating it as I learn and build more.",
+        "categories": {
+            "languages": "Programming Languages",
+            "frontend": "Frontend",
+            "backend": "Backend & Data",
+            "devops": "DevOps & Systems",
+            "datascience": "Data Science",
+            "tools": "Tools & Platforms"
+        }
+    },
+    "experience": {
+        "title": "Experience",
+        "subtitle": "My journey so far — from first line of code to leading university projects and building enterprise systems.",
+        "roles": {
+            "unah_dev": {
+                "title": "Junior Software Engineer",
+                "org": "Universidad Nacional Autónoma de Honduras",
+                "period": "Jun 2025 - Present",
+                "type": "Part-time",
+                "location": "Comayagua, Honduras · Hybrid",
+                "description": "Led a comprehensive revamp of the university's website, improving structure, usability, and maintainability. Collaborate closely with colleagues and authorities to design technology-oriented projects aligned with institutional goals. Manage key IT functions including general support, systems oversight, and web development. Built internal tools including a bus route management system with routes editor, a census tool for transportation requests, and an AI chat assistant with RAG support. Currently leading development of a mobile application as the primary student-facing platform for university services."
+            },
+            "vimar": {
+                "title": "Technology Services",
+                "org": "Vimar",
+                "period": "Dec 2024 - Jan 2026",
+                "type": "Contract",
+                "location": "Comayagua, Honduras · Hybrid",
+                "description": "Designed and developed the company's website, establishing a professional online presence. Performed field installations of security cameras, audio systems, and related equipment across various client sites."
+            },
+            "mlsa": {
+                "title": "Microsoft Learn Student Ambassador",
+                "org": "Microsoft",
+                "period": "Jan 2024 - Mar 2025",
+                "type": "Internship",
+                "location": "Remote",
+                "description": "Designed and led a 10-session course reaching 250+ students nationwide, covering AI fundamentals, cloud computing, and collaborative programming practices. Organized tech events and fostered a learning community around software development."
+            },
+            "intern": {
+                "title": "Internship Trainee",
+                "org": "Universidad Nacional Autónoma de Honduras",
+                "period": "Aug 2024 - Sep 2024",
+                "type": "Full-time",
+                "location": "Comayagua, Honduras · On-site",
+                "description": "Worked as an IT assistant to comply with the requirements for a technical baccalaureate. Gained hands-on experience in computer hardware, networking, and IT support."
+            },
+            "freelance_dev": {
+                "title": "Software Developer",
+                "org": "Self Employed",
+                "period": "Jun 2023 - Jan 2024",
+                "type": "Part-time",
+                "location": "Comayagua, Honduras · Remote",
+                "description": "Developed custom software solutions for various clients. Worked across the full stack with technologies including Python, JavaScript, React, and Node.js."
+            },
+            "noctaly": {
+                "title": "Software Engineer",
+                "org": "Noctaly",
+                "period": "May 2023 - Oct 2023",
+                "type": "Freelance",
+                "location": "Quebec, Canada · Remote",
+                "description": "Built a responsive control panel and landing page for the company. Delivered production-quality web applications using Next.js and modern frontend tooling."
+            },
+            "shardbot": {
+                "title": "Web Developer",
+                "org": "Shard Bot",
+                "period": "Nov 2022 - Feb 2023",
+                "type": "Freelance",
+                "location": "Mexico City, Mexico · Remote",
+                "description": "Developed web interfaces and features for the company's product. Gained foundational experience in professional web development workflows and client collaboration."
+            }
+        }
+    },
+    "education": {
+        "title": "Education",
+        "subtitle": "Academic background and professional certifications.",
+        "items": {
+            "unah": {
+                "degree": "Systems Engineering",
+                "school": "Universidad Nacional Autónoma de Honduras",
+                "period": "Jan 2025 - Dec 2027",
+                "type": "Bachelor's"
+            },
+            "marista": {
+                "degree": "Technical High School Diploma in Information Technology",
+                "school": "Instituto Marista La Inmaculada",
+                "period": "Feb 2022 - Nov 2024",
+                "type": "Technical Baccalaureate"
+            }
+        }
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Have a question, idea, or just want to connect? Reach out — I'd love to hear from you.",
+        "email_label": "Email me",
+        "email": "asterki.dev@proton.me",
+        "discord_label": "Discord",
+        "discord": "@asterki",
+        "instagram_label": "Instagram",
+        "instagram": "@nicht.fer",
+        "github_label": "GitHub",
+        "github": "Asterki",
+        "linkedin_label": "LinkedIn",
+        "cta": "Send a Message"
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Thoughts, notes, and things I'm learning along the way.",
+        "read_more": "Read More",
+        "published": "Published",
+        "no_posts": "No posts yet — check back soon!"
+    },
+    "footer": {
+        "tagline": "Built with curiosity, powered by open source.",
+        "copyright": "All rights reserved."
+    },
+    "404": {
+        "title": "Page Not Found",
+        "message": "This page doesn't exist. It might have moved or never existed.",
+        "cta": "Back to Home"
+    }
+}

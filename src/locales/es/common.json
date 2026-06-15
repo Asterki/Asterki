@@ -1,0 +1,242 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre Mí",
+        "projects": "Proyectos",
+        "skills": "Habilidades",
+        "experience": "Experiencia",
+        "blog": "Blog",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "name": "Fernando Rivera",
+        "title": "Desarrollador & Instructor",
+        "subtitle": "Construyendo herramientas, enseñando personas y abriendo cajas de curiosidad.",
+        "cta_about": "Sobre Mí",
+        "cta_projects": "Ver Proyectos",
+        "cta_contact": "Contactar",
+        "scroll_hint": "Desplázate para explorar"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "subtitle": "Ingeniero de Software Junior, MLSA y constructor de comunidades de Comayagua, Honduras.",
+        "intro": "Mi nombre es Fernando Rivera. Nací en 2007 en Comayagua, Honduras, y la tecnología me ha atraído desde que tengo memoria. Todo comenzó el día que abrí un script de batch lleno de comandos que no entendía. En lugar de ignorarlo, empecé a experimentar, cambiar líneas, romperlo, copiarlo, arreglarlo de nuevo. Ese proceso de prueba y error me enganchó. Desde entonces, he seguido construyendo, aprendiendo y creando proyectos que satisfacen mi curiosidad constante.",
+        "empowering_title": "Empoderando a Otros",
+        "empowering_text": "Normalmente no construyo el software que la gente ya usa. Me enfoco en enseñarles cómo usarlo bien. Y cuando la herramienta adecuada no existe para resolver un problema, la creo. Dirijo talleres enfocados en el uso práctico del software y la alfabetización digital, haciendo que la tecnología se sienta accesible en lugar de intimidante.",
+        "events_title": "Eventos y Comunidad",
+        "events_text": "Como Microsoft Learn Student Ambassador, diseñé y lideré un curso de 10 sesiones llegando a más de 250 estudiantes a nivel nacional, cubriendo fundamentos de IA, computación en la nube y programación colaborativa. También organicé eventos como MSLA Comayagua 2024 y lidero talleres en mi universidad.",
+        "philosophy_title": "Filosofía",
+        "philosophy_text": "Todo lo que hago se basa en valores de código abierto y aprendizaje comunitario. La motivación y la disciplina importan más que el talento solo.",
+        "goals_title": "Metas Futuras",
+        "goals_text": "Seguir creciendo mi trabajo mientras me desarrollo como un profesional fuerte y capaz. Seguir refinando habilidades y construyendo soluciones útiles y significativas.",
+        "quote": "No te sientas intimidado, encuentra motivación y disciplina dentro de tus sueños.",
+        "acknowledgments_title": "Agradecimientos",
+        "acknowledgments_text": "A todos los que han estado presentes en este viaje — su apoyo, retroalimentación y confianza me mantuvieron avanzando. Lo aprecio genuinamente."
+    },
+    "projects": {
+        "title": "Proyectos",
+        "subtitle": "Una selección curada de cosas que he construido. Cada una resuelve un problema real o satisface una curiosidad particular.",
+        "view_github": "Ver en GitHub",
+        "view_live": "Demo en Vivo",
+        "source": "Código",
+        "empty": "Próximamente más proyectos — ¡mantente al tanto!",
+        "items": {
+            "census": {
+                "name": "Bus Routes Census",
+                "org": "UNAH",
+                "period": "May 2026 - Presente",
+                "description": "Una aplicación de recolección de datos donde los estudiantes envían sus horarios de entrada/salida y colocan un pin en un mapa interactivo. Las respuestas se visualizan mediante mapas de calor y estadísticas agregadas para optimizar las rutas de autobuses universitarios."
+            },
+            "editor": {
+                "name": "Bus Route Editor",
+                "org": "UNAH",
+                "period": "Feb 2026 - Presente",
+                "description": "Plataforma de transporte universitario en tiempo real con un editor interactivo de rutas de autobús y seguimiento GPS. Los estudiantes pueden ver rutas activas y la ubicación actual de los autobuses en un mapa. Incluye un dispositivo companion con una app para transmitir datos GPS en vivo."
+            },
+            "expedientes": {
+                "name": "Sistema de Expedientes",
+                "org": "Hospital San Benito José",
+                "period": "Ene 2026 - Presente",
+                "description": "Sistema de gestión de expedientes médicos construido en cumplimiento con los estándares ISO/IEC 27001. Cuenta con un modelo de control de acceso de múltiples capas combinando RBAC y ABAC, auditorías completas, alertas en tiempo real y trazabilidad total."
+            },
+            "pumai": {
+                "name": "PumAI — Asistente de IA",
+                "org": "UNAH",
+                "period": "Oct 2025 - Presente",
+                "description": "Asistente impulsado por LLM para atender consultas estudiantiles con respuestas precisas y contextuales. Incluye soporte RAG para recuperación de conocimiento institucional, integración con MCP server y flujos de trabajo deterministas para procesos guiados."
+            },
+            "curc": {
+                "name": "Sitio Web Institucional UNAH CURC",
+                "org": "UNAH",
+                "period": "Sep 2025 - Ene 2026",
+                "description": "El sitio web oficial del Campus Comayagua de la UNAH, sirviendo a más de 3,000 estudiantes. Rediseñado para mejorar estructura, accesibilidad y usabilidad — incluyendo oferta académica, servicios estudiantiles, directorios administrativos y recursos de transparencia."
+            },
+            "personal": {
+                "name": "Sitio Web Personal",
+                "org": "Independiente",
+                "period": "Jun 2021 - Jun 2025",
+                "description": "Una representación de mis habilidades actuales, sirviendo como portal para mis proyectos y persona en internet. Contiene un centro para mis redes sociales y portafolio de trabajo."
+            },
+            "flashet": {
+                "name": "Flashet",
+                "org": "Independiente",
+                "period": "Jul 2023 - Ago 2024",
+                "description": "Aplicación de estudio creada con React y Node.js. Crea mazos de tarjetas de estudio para preparar exámenes con una interfaz intuitiva y seguimiento de progreso."
+            },
+            "zappit": {
+                "name": "Zappit",
+                "org": "Independiente",
+                "period": "Abr 2022 - Jul 2024",
+                "description": "Plataforma de redes sociales tipo Twitter construida con Next.js y Node.js. Incluye publicaciones, seguidores, me gusta, actualizaciones en tiempo real y perfiles de usuario."
+            },
+            "songsurf": {
+                "name": "SongSurf",
+                "org": "Independiente",
+                "period": "Nov 2023 - Dic 2023",
+                "description": "App basada en microservicios usando la API de Spotify y datasets integrados para encontrar canciones que coincidan con parámetros definidos por el usuario. Construida con pandas y Next.js."
+            },
+            "ascloud": {
+                "name": "AsCloud",
+                "org": "Independiente",
+                "period": "May 2023 - Nov 2023",
+                "description": "Servicio de almacenamiento en la nube de código abierto. Una plataforma para almacenar y compartir archivos con interfaz limpia y API RESTful."
+            },
+            "miichi": {
+                "name": "Mi-ichi",
+                "org": "Instituto Marista La Inmaculada",
+                "period": "Ago 2023 - Nov 2023",
+                "description": "Robogato de 12 DOF controlado por Arduino inspirado en Boston Dynamics. Controlado mediante bluetooth y servomotores."
+            },
+            "dimlim": {
+                "name": "DIMLIM",
+                "org": "Independiente",
+                "period": "Abr 2022 - Jun 2023",
+                "description": "Aplicación de chat con cifrado de extremo a extremo construida con Next.js. Mensajería segura, autenticación de usuarios y comunicación en tiempo real."
+            }
+        }
+    },
+    "skills": {
+        "title": "Habilidades y Herramientas",
+        "subtitle": "Tecnologías con las que trabajo regularmente. Siempre aprendiendo, siempre expandiendo.",
+        "note": "Esta es una lista curada de herramientas que uso frecuentemente — sigo actualizándola a medida que aprendo y construyo más.",
+        "categories": {
+            "languages": "Lenguajes de Programación",
+            "frontend": "Frontend",
+            "backend": "Backend y Datos",
+            "devops": "DevOps y Sistemas",
+            "datascience": "Ciencia de Datos",
+            "tools": "Herramientas y Plataformas"
+        }
+    },
+    "experience": {
+        "title": "Experiencia",
+        "subtitle": "Mi trayectoria hasta ahora — desde la primera línea de código hasta liderar proyectos universitarios y construir sistemas empresariales.",
+        "roles": {
+            "unah_dev": {
+                "title": "Ingeniero de Software Junior",
+                "org": "Universidad Nacional Autónoma de Honduras",
+                "period": "Jun 2025 - Presente",
+                "type": "Medio tiempo",
+                "location": "Comayagua, Honduras · Híbrido",
+                "description": "Lideré una renovación completa del sitio web universitario, mejorando estructura, usabilidad y mantenibilidad. Colaboro estrechamente con colegas y autoridades para diseñar proyectos tecnológicos alineados con metas institucionales. Gestiono funciones clave de TI incluyendo soporte general, supervisión de sistemas y desarrollo web. Construí herramientas internas incluyendo un sistema de gestión de rutas de autobús con editor de rutas, una herramienta de censo para solicitudes de transporte y un asistente de IA con RAG. Actualmente lidero el desarrollo de una aplicación móvil como plataforma estudiantil principal."
+            },
+            "vimar": {
+                "title": "Servicios de Tecnología",
+                "org": "Vimar",
+                "period": "Dic 2024 - Ene 2026",
+                "type": "Contrato",
+                "location": "Comayagua, Honduras · Híbrido",
+                "description": "Diseñé y desarrollé el sitio web de la empresa, estableciendo una presencia profesional en línea. Realicé instalaciones en campo de cámaras de seguridad, sistemas de audio y equipos relacionados en varios sitios de clientes."
+            },
+            "mlsa": {
+                "title": "Microsoft Learn Student Ambassador",
+                "org": "Microsoft",
+                "period": "Ene 2024 - Mar 2025",
+                "type": "Pasantía",
+                "location": "Remoto",
+                "description": "Diseñé y lideré un curso de 10 sesiones llegando a más de 250 estudiantes a nivel nacional, cubriendo fundamentos de IA, computación en la nube y prácticas de programación colaborativa."
+            },
+            "intern": {
+                "title": "Pasante",
+                "org": "Universidad Nacional Autónoma de Honduras",
+                "period": "Ago 2024 - Sep 2024",
+                "type": "Tiempo completo",
+                "location": "Comayagua, Honduras · Presencial",
+                "description": "Trabajé como asistente de TI para cumplir con los requisitos del bachillerato técnico. Obtuve experiencia práctica en hardware de computadoras, redes y soporte técnico."
+            },
+            "freelance_dev": {
+                "title": "Desarrollador de Software",
+                "org": "Independiente",
+                "period": "Jun 2023 - Ene 2024",
+                "type": "Medio tiempo",
+                "location": "Comayagua, Honduras · Remoto",
+                "description": "Desarrollé soluciones de software personalizadas para varios clientes. Trabajé en todo el stack con tecnologías incluyendo Python, JavaScript, React y Node.js."
+            },
+            "noctaly": {
+                "title": "Ingeniero de Software",
+                "org": "Noctaly",
+                "period": "May 2023 - Oct 2023",
+                "type": "Freelance",
+                "location": "Quebec, Canadá · Remoto",
+                "description": "Construí un panel de control responsivo y una página de aterrizaje para la empresa. Entregué aplicaciones web de calidad de producción usando Next.js y herramientas modernas de frontend."
+            },
+            "shardbot": {
+                "title": "Desarrollador Web",
+                "org": "Shard Bot",
+                "period": "Nov 2022 - Feb 2023",
+                "type": "Freelance",
+                "location": "Ciudad de México, México · Remoto",
+                "description": "Desarrollé interfaces web y funcionalidades para el producto de la empresa. Obtuve experiencia fundamental en flujos de trabajo profesionales de desarrollo web y colaboración con clientes."
+            }
+        }
+    },
+    "education": {
+        "title": "Educación",
+        "subtitle": "Formación académica y certificaciones profesionales.",
+        "items": {
+            "unah": {
+                "degree": "Ingeniería en Sistemas",
+                "school": "Universidad Nacional Autónoma de Honduras",
+                "period": "Ene 2025 - Dic 2027",
+                "type": "Licenciatura"
+            },
+            "marista": {
+                "degree": "Bachillerato Técnico en Informática",
+                "school": "Instituto Marista La Inmaculada",
+                "period": "Feb 2022 - Nov 2024",
+                "type": "Bachillerato Técnico"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contáctame",
+        "subtitle": "¿Tienes una pregunta, idea o solo quieres conectar? Escríbeme — me encantaría saber de ti.",
+        "email_label": "Correo",
+        "email": "asterki.dev@proton.me",
+        "discord_label": "Discord",
+        "discord": "@asterki",
+        "instagram_label": "Instagram",
+        "instagram": "@nicht.fer",
+        "github_label": "GitHub",
+        "github": "Asterki",
+        "linkedin_label": "LinkedIn",
+        "cta": "Enviar Mensaje"
+    },
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Pensamientos, notas y cosas que aprendo en el camino.",
+        "read_more": "Leer Más",
+        "published": "Publicado",
+        "no_posts": "Aún no hay publicaciones — ¡vuelve pronto!"
+    },
+    "footer": {
+        "tagline": "Construido con curiosidad, impulsado por código abierto.",
+        "copyright": "Todos los derechos reservados."
+    },
+    "404": {
+        "title": "Página No Encontrada",
+        "message": "Esta página no existe. Puede que se haya movido o nunca haya existido.",
+        "cta": "Volver al Inicio"
+    }
+}

@@ -1,10 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body,
-html {
-    font-family: 'Ubuntu', sans-serif;
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: #f8fafc;
+    color: #334155;
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  }
+
+  ::selection { background-color: #a71b3e; color: #ffffff; }
+
+  h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.15; }
+}
+
+@layer components {
+  /* === CARD === */
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.04);
+    transform: translateY(-1px);
+  }
+
+  .card-feature { background-color: #f1f5f9; border-radius: 12px; }
+
+  /* === BUTTONS === */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 h-11 text-white font-semibold transition-all duration-200;
+    background-color: #a71b3e;
+    border-radius: 8px;
+    font-size: 15px; line-height: 1.4;
+  }
+  .btn-primary:hover {
+    background-color: #7a1230;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(167, 27, 62, 0.25);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 h-11 font-semibold transition-all duration-200;
+    background-color: transparent;
+    color: #a71b3e;
+    border: 1.5px solid #a71b3e;
+    border-radius: 8px;
+    font-size: 15px; line-height: 1.4;
+  }
+  .btn-outline:hover {
+    background-color: #a71b3e;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  .btn-text-link {
+    @apply inline-flex items-center gap-1 transition-all duration-200;
+    color: #a71b3e;
+    font-size: 15px; font-weight: 500; line-height: 1.4;
+  }
+  .btn-text-link:hover { color: #7a1230; gap: 3px; }
+
+  /* === TEXT === */
+  .section-heading {
+    font-size: 32px; color: #0f172a; font-weight: 700; line-height: 1.15; margin-bottom: 0.5rem;
+  }
+  @media (min-width: 768px) { .section-heading { font-size: 40px; } }
+
+  .section-subtitle {
+    font-size: 16px; color: #64748b; font-weight: 400; line-height: 1.6; max-width: 36rem;
+  }
+  .body-text { font-size: 16px; color: #475569; font-weight: 400; line-height: 1.65; }
+  .caption-text { font-size: 14px; color: #94a3b8; font-weight: 400; line-height: 1.5; }
+
+  /* === LAYOUT === */
+  .page-container {
+    min-height: 100vh;
+    padding: 7rem 1.5rem 4rem;
+    margin-left: 0;
+    transition: all 0.3s;
+  }
+  @media (min-width: 1024px) {
+    .page-container { margin-left: 16rem; padding: 7rem 3rem 4rem; }
+  }
+  .hp-container { max-width: 1366px; margin: 0 auto; padding: 0 1.5rem; }
+  @media (min-width: 1024px) { .hp-container { padding: 0 3rem; } }
+
+  .section-band { padding: 4rem 0; }
+  @media (min-width: 768px) { .section-band { padding: 5rem 0; } }
+
+  /* === DARK SLAB === */
+  .ink-slab { background-color: #1a1a1a; color: #ffffff; }
+
+  /* === BADGES === */
+  .badge-pill {
+    @apply inline-flex items-center px-3 py-1 rounded-full;
+    background-color: #1a1a1a; color: #ffffff; font-size: 13px; line-height: 1.5; font-weight: 500;
+  }
+  .badge-pill-outline {
+    @apply inline-flex items-center px-3 py-1 border rounded-full;
+    border-color: #cbd5e1; color: #475569; font-size: 13px; line-height: 1.5; font-weight: 500;
+  }
+
+  /* === TAG CHIP === */
+  .tag-chip {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full;
+    font-size: 12px; line-height: 1.4; font-weight: 500;
+    background-color: #fdf0e3; color: #e17526;
+  }
+
+  /* === ICON BOX === */
+  .icon-box {
+    @apply flex items-center justify-center flex-shrink-0;
+    border-radius: 10px;
+    background-color: #fce4e9; color: #a71b3e;
+  }
+  .icon-box-green { background-color: #e8f5e6; color: #6dc362; }
+  .icon-box-blue { background-color: #e4f2f8; color: #61b6d3; }
+  .icon-box-orange { background-color: #fdf0e3; color: #e17526; }
+
+  /* === GRADIENTS === */
+  .hero-gradient {
+    background: linear-gradient(135deg, #1a0a0f 0%, #2a0f18 50%, #3a1420 100%);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #a71b3e, #e17526);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }

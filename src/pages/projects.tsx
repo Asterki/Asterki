@@ -1,170 +1,79 @@
-import * as React from 'react';
-import { motion, useReducedMotion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronCircleLeft, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 
-import Particles from 'react-tsparticles';
-import type { Container, Engine } from 'tsparticles-engine';
-import { loadSlim } from 'tsparticles-slim';
-import NavbarComponent from '../components/navbar';
+interface Project { key: string; tags: string[]; github?: string; }
 
-type Project = {
-  id: number;
-  name: string;
-  description: string | null;
-  language: string | null;
-  html_url: string;
-};
+const projects: Project[] = [
+  { key: 'census', tags: ['React', 'Maps', 'Data Viz'], github: 'https://github.com/Asterki/bus-routes' },
+  { key: 'editor', tags: ['React', 'GPS', 'Real-time', 'IoT'], github: 'https://github.com/Asterki/bus-routes' },
+  { key: 'expedientes', tags: ['RBAC/ABAC', 'Security', 'Healthcare'], github: 'https://github.com/Asterki' },
+  { key: 'pumai', tags: ['LLM', 'RAG', 'MCP', 'AI'], github: 'https://github.com/Asterki/pumai' },
+  { key: 'curc', tags: ['Web Dev', 'UX', 'Accessibility'], },
+  { key: 'personal', tags: ['React', 'Vite', 'Tailwind', 'TypeScript'], github: 'https://github.com/Asterki/asterki' },
+  { key: 'flashet', tags: ['React', 'Node.js', 'PostgreSQL'], github: 'https://github.com/Asterki/flashet' },
+  { key: 'zappit', tags: ['Next.js', 'Node.js', 'MongoDB'], github: 'https://github.com/Asterki/Zappit' },
+  { key: 'songsurf', tags: ['Next.js', 'pandas', 'Spotify API'], github: 'https://github.com/Asterki/songsurf' },
+  { key: 'ascloud', tags: ['Next.js', 'MongoDB', 'Cloud'], github: 'https://github.com/Asterki/ascloud' },
+  { key: 'miichi', tags: ['Arduino', 'IoT', 'Robotics'], github: 'https://github.com/Asterki' },
+  { key: 'dimlim', tags: ['Next.js', 'E2EE', 'Real-time'], github: 'https://github.com/Asterki/dimlim' },
+];
 
-const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
-  return (
-    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl border border-rose-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-shadow">
-      <div className="text-left">
-        <h3 className="font-semibold text-gray-800 dark:text-gray-400">
-          Asterki/{project.name}
-          {project.language && (
-            <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
-              · {project.language}
-            </span>
-          )}
-        </h3>
+const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.06 } } };
+const fadeUp = { hidden: { opacity: 0, y: 14 }, show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: 'easeOut' } } };
 
-        <p className="mt-1 text-sm text-gray-700 dark:text-gray-400">
-          {project.description || 'No description provided'}
-        </p>
-      </div>
-
-      <a
-        href={project.html_url}
-        target="_blank"
-        rel="noreferrer"
-        aria-label={`Open ${project.name} on GitHub`}
-        className="inline-flex items-center justify-center gap-2 rounded-md px-3 py-2 bg-rose-600 text-white border-2 border-rose-600 hover:bg-transparent hover:text-rose-600 transition-all"
-      >
-        <FontAwesomeIcon icon={faLink} />
-        <span className="text-sm">Repo</span>
-      </a>
-    </div>
-  );
-};
-
-const ProjectsPage: React.FC = () => {
-  const navigate = useNavigate();
-  const { t } = useTranslation('projects');
-  const prefersReducedMotion = useReducedMotion();
-
-  const [isReady, setIsReady] = React.useState(false);
-  const [transitionTo, setTransitionTo] = React.useState('');
-  const [projects, setProjects] = React.useState<Project[]>([]);
-  const [showParticles, setShowParticles] = React.useState(true);
-
-  const particlesInit = React.useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
-  }, []);
-
-  const particlesLoaded = React.useCallback(
-    async (_container: Container | undefined) => {
-      /* noop */
-    },
-    [],
-  );
-
-  React.useEffect(() => {
-    const delay = prefersReducedMotion ? 0 : 600;
-    const id = window.setTimeout(() => setIsReady(true), delay);
-    return () => clearTimeout(id);
-  }, [prefersReducedMotion]);
-
-  React.useEffect(() => {
-    fetch('https://api.github.com/users/asterki/repos')
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
-  }, []);
-
-  React.useEffect(() => {
-    if (!transitionTo) return;
-    const id = window.setTimeout(() => {
-      if (transitionTo === 'home') navigate('/');
-      else navigate(`/${transitionTo}`);
-    }, prefersReducedMotion ? 0 : 600);
-    return () => clearTimeout(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [transitionTo]);
-
-  React.useEffect(() => {
-    const update = () => setShowParticles(window.innerWidth >= 768);
-    update();
-    window.addEventListener('resize', update);
-    return () => window.removeEventListener('resize', update);
-  }, []);
-
-  const containerVariant = {
-    hidden: { opacity: 0, y: 10 },
-    enter: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.55, ease: 'easeOut' },
-    },
-  };
+export default function ProjectsPage() {
+  const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen mt-32 relative bg-gradient-to-b from-white to-rose-50 dark:from-slate-900 dark:to-slate-800">
-      <NavbarComponent isReady={isReady} transitionTo={transitionTo} />
+    <div className="page-container">
+      <motion.div className="max-w-6xl mx-auto" variants={container} initial="hidden" animate="show">
+        <motion.div variants={fadeUp} className="mb-10 text-center">
+          <h1 className="section-heading">{t('projects.title')}</h1>
+          <p className="section-subtitle mx-auto">{t('projects.subtitle')}</p>
+        </motion.div>
 
-      {showParticles && (
-        <Particles
-          id="tsparticles-projects"
-          className="pointer-events-none absolute inset-0 z-0"
-          url="/particleConfig.json"
-          init={particlesInit}
-          loaded={particlesLoaded}
-        />
-      )}
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project) => {
+            const prefix = `projects.items.${project.key}`;
+            return (
+              <motion.article key={project.key} variants={fadeUp}
+                className="card p-6 flex flex-col">
+                {/* Placeholder — cloud bg, no gradient */}
+                <div className="w-full h-32 rounded-hp-lg bg-surface-cloud mb-4 flex items-center justify-center">
+                  <span className="text-[44px] font-medium text-primary/25">
+                    {t(`${prefix}.name`).charAt(0)}
+                  </span>
+                </div>
 
-      <motion.main
-        className="relative z-10 container mx-auto px-6 lg:px-12 py-16"
-        initial="hidden"
-        animate={isReady ? 'enter' : 'hidden'}
-        variants={containerVariant}
-        aria-labelledby="projects-heading"
-      >
-        <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl border border-rose-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 shadow-lg">
-            <header className="mb-6 text-center">
-              <h1
-                id="projects-heading"
-                className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-tr from-rose-700 to-orange-500"
-              >
-                {t('projects_title')}
-              </h1>
-              <p className="mt-2 text-sm text-gray-700 dark:text-gray-400">
-                {t('projects_text')}
-              </p>
-            </header>
+                <div className="caption-text uppercase tracking-wider mb-1">{t(`${prefix}.org`)}</div>
+                <h3 className="text-[20px] text-ink mb-1" style={{ fontWeight: 500, lineHeight: 1.0 }}>
+                  {t(`${prefix}.name`)}
+                </h3>
+                <div className="flex items-center gap-1.5 caption-text mb-3">
+                  <FontAwesomeIcon icon={faClock} className="w-3 h-3" />
+                  <span>{t(`${prefix}.period`)}</span>
+                </div>
+                <p className="body-text mb-4 flex-1">{t(`${prefix}.description`)}</p>
 
-            <section className="flex flex-col gap-4">
-              {projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </section>
+                <div className="flex flex-wrap gap-1.5 mb-4">
+                  {project.tags.map((tag) => (
+                    <span key={tag} className="tag-chip">{tag}</span>
+                  ))}
+                </div>
 
-            <div className="mt-8 flex justify-center">
-              <button
-                className="inline-flex items-center gap-2 rounded-md px-4 py-2 bg-rose-600 text-white border-2 border-rose-600 hover:bg-transparent hover:text-rose-600 transition-all focus:outline-none focus:ring-2 focus:ring-rose-300"
-                onClick={() => setTransitionTo('home')}
-              >
-                <FontAwesomeIcon icon={faChevronCircleLeft} />
-                {t('return_button')}
-              </button>
-            </div>
-          </div>
+                {project.github && (
+                  <a href={project.github} target="_blank" rel="noreferrer" className="btn-text-link">
+                    <FontAwesomeIcon icon={faGithub} className="w-4 h-4" /> {t('projects.source')}
+                  </a>
+                )}
+              </motion.article>
+            );
+          })}
         </div>
-      </motion.main>
+      </motion.div>
     </div>
   );
-};
-
-export default ProjectsPage;
+}
