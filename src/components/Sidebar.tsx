@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faHouse, faUser, faCode, faWrench, faBriefcase, faEnvelope, faBlog,
+  faHouse, faUser, faCode, faWrench, faBriefcase, faEnvelope, faBlog, faClipboardList,
   faBars, faXmark,
 } from '@fortawesome/free-solid-svg-icons';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -14,6 +14,7 @@ const navItems = [
   { to: '/projects', icon: faCode, labelKey: 'nav.projects' },
   { to: '/skills', icon: faWrench, labelKey: 'nav.skills' },
   { to: '/experience', icon: faBriefcase, labelKey: 'nav.experience' },
+  { to: '/services', icon: faClipboardList, labelKey: 'nav.services' },
   { to: '/blog', icon: faBlog, labelKey: 'nav.blog' },
   { to: '/contact', icon: faEnvelope, labelKey: 'nav.contact' },
 ];

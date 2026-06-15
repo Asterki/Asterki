@@ -5,6 +5,7 @@
         "projects": "Proyectos",
         "skills": "Habilidades",
         "experience": "Experiencia",
+        "services": "Servicios",
         "blog": "Blog",
         "contact": "Contacto"
     },
@@ -238,5 +239,50 @@
         "title": "Página No Encontrada",
         "message": "Esta página no existe. Puede que se haya movido o nunca haya existido.",
         "cta": "Volver al Inicio"
+    },
+    "services": {
+        "title": "Asterki Dev — Consultoría de Software",
+        "subtitle": "Encuentro lo que frena tu negocio y construyo la solución. Sin rodeos, sin funciones innecesarias — solo soluciones que realmente resuelven el problema.",
+        "model_title": "Cómo Funciona",
+        "model_steps": {
+            "detect": {
+                "name": "Detectar",
+                "desc": "Audito tus operaciones para encontrar ineficiencias, cuellos de botella y procesos rotos."
+            },
+            "diagnose": {
+                "name": "Diagnosticar",
+                "desc": "Analizo las causas raíz y determino la mejor solución — software a medida, SaaS o un cambio de proceso."
+            },
+            "deliver": {
+                "name": "Entregar",
+                "desc": "Construyo, despliego y verifico que la solución realmente resuelva el problema."
+            }
+        },
+        "services_title": "Lo Que Ofrezco",
+        "services_list": {
+            "audit": {
+                "name": "Auditoría de Procesos",
+                "desc": "Una evaluación estructurada de tus operaciones para encontrar dónde pierdes tiempo y dinero."
+            },
+            "build": {
+                "name": "Software a Medida",
+                "desc": "Aplicaciones web y móviles diseñadas para resolver tus problemas específicos."
+            },
+            "integrate": {
+                "name": "Integración de Sistemas",
+                "desc": "Conecta tus herramientas existentes para que los datos fluyan sin reingresarlos manualmente."
+            },
+            "train": {
+                "name": "Capacitación y Talleres",
+                "desc": "Sesiones prácticas enseñando a tu equipo a usar sus herramientas de manera efectiva."
+            },
+            "maintain": {
+                "name": "Mantenimiento y Soporte",
+                "desc": "Soporte continuo para mantener tus sistemas funcionando y actualizados."
+            }
+        },
+        "cta_title": "¿Listo para encontrar lo que te frena?",
+        "cta_desc": "Empecemos con una conversación. Sin compromiso, sin discurso de ventas — solo una charla sobre tu negocio y sus desafíos.",
+        "cta_button": "Contáctame"
     }
 }

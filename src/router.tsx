@@ -7,6 +7,7 @@ import SkillsPage from './pages/skills';
 import ExperiencePage from './pages/experience';
 import BlogPage from './pages/blog';
 import ContactPage from './pages/contact';
+import ServicesPage from './pages/services';
 import NotFoundPage from './pages/NotFound';
 
 const router = createBrowserRouter([
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: 'experience', element: <ExperiencePage /> },
       { path: 'blog', element: <BlogPage /> },
       { path: 'contact', element: <ContactPage /> },
+      { path: 'services', element: <ServicesPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

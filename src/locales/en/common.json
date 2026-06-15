@@ -5,6 +5,7 @@
         "projects": "Projects",
         "skills": "Skills",
         "experience": "Experience",
+        "services": "Services",
         "blog": "Blog",
         "contact": "Contact"
     },
@@ -238,5 +239,50 @@
         "title": "Page Not Found",
         "message": "This page doesn't exist. It might have moved or never existed.",
         "cta": "Back to Home"
+    },
+    "services": {
+        "title": "Asterki Dev — Software Consultancy",
+        "subtitle": "I find what's slowing your business down and build the fix. No fluff, no unnecessary features — just solutions that actually solve the problem.",
+        "model_title": "How It Works",
+        "model_steps": {
+            "detect": {
+                "name": "Detect",
+                "desc": "I audit your operations to find inefficiencies, bottlenecks, and broken processes."
+            },
+            "diagnose": {
+                "name": "Diagnose",
+                "desc": "I analyze root causes and determine the best fix — custom software, SaaS, or a process change."
+            },
+            "deliver": {
+                "name": "Deliver",
+                "desc": "I build, deploy, and verify the solution actually solves the problem."
+            }
+        },
+        "services_title": "What I Offer",
+        "services_list": {
+            "audit": {
+                "name": "Process & Tooling Audit",
+                "desc": "A structured assessment of your operations to find where you're losing time and money."
+            },
+            "build": {
+                "name": "Custom Software",
+                "desc": "Full-stack web and mobile applications tailored to solve your specific problems."
+            },
+            "integrate": {
+                "name": "Systems Integration",
+                "desc": "Connect your existing tools so data flows instead of being re-entered manually."
+            },
+            "train": {
+                "name": "Training & Workshops",
+                "desc": "Hands-on sessions teaching your team to use their tools effectively."
+            },
+            "maintain": {
+                "name": "Maintenance & Support",
+                "desc": "Ongoing support to keep your systems running and up to date."
+            }
+        },
+        "cta_title": "Ready to find what's slowing you down?",
+        "cta_desc": "Let's start with a conversation. No commitment, no sales pitch — just a discussion about your business and its challenges.",
+        "cta_button": "Get in Touch"
     }
 }
