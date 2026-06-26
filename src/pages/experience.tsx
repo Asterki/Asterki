@@ -99,7 +99,7 @@ export default function ExperiencePage() {
         <motion.div variants={fadeUp}>
           <div className="card-feature p-6 border-l-4 border-primary">
             <p className="body-text">
-              <span className="font-medium text-primary">Started early.</span>{' '}
+              <span className="font-medium text-primary">✨ Started early.</span>{' '}
               Began coding at 13, built my first project at 14, and haven't stopped since. Every role
               since has been about turning curiosity into capability.
             </p>

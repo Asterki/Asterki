@@ -96,7 +96,7 @@ export default function ServicesPage() {
         </motion.div>
 
         {/* CTA */}
-        <motion.div variants={fadeUp} className="card p-8 text-center max-w-xl mx-auto bg-primary-soft/10 border-primary/10">
+        <motion.div variants={fadeUp} className="warm-band rounded-2xl p-8 text-center max-w-xl mx-auto border border-primary/10">
           <h2 className="text-[20px] text-ink mb-2" style={{ fontWeight: 500, lineHeight: 1.1 }}>
             {t('services.cta_title')}
           </h2>

@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb, faLink, faBookOpen, faTrophy, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb, faLink, faBookOpen, faTrophy, faHeart, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.1 } } };
-const fadeUp = { hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' } } };
+const fadeUp = { hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.16, 1, 0.3, 1] } } };
 
 function SectionCard({ icon, title, children }: { icon: any; title: string; children: React.ReactNode }) {
   return (
@@ -33,30 +33,26 @@ export default function AboutPage() {
           <p className="section-subtitle mx-auto">{t('about.subtitle')}</p>
         </motion.div>
 
-        {/* Intro card with actual profile image */}
+        {/* Intro card with profile image */}
         <motion.div variants={fadeUp} className="card p-6 mb-6">
           <div className="flex flex-col md:flex-row items-start gap-5">
             <img
               src="/assets/images/icon.png"
               alt="Fernando Rivera"
-              className="w-16 h-16 rounded-hp-lg object-cover flex-shrink-0 shadow-soft-lift"
+              className="w-16 h-16 rounded-xl object-cover flex-shrink-0 ring-2 ring-primary/10"
             />
             <div>
               <p className="body-text leading-relaxed">{t('about.intro')}</p>
-              <div className="mt-3 flex flex-wrap items-center gap-2 caption-text">
-              </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Quote — HP dark testimonial slab style */}
+        {/* Quote — friendlier warm slab */}
         <motion.div variants={fadeUp} className="mb-6">
-          <div className="ink-slab rounded-hp-xl p-8">
+          <div className="ink-slab-warm rounded-2xl p-8 md:p-10">
             <div className="max-w-lg mx-auto text-center">
-              <svg className="w-8 h-8 text-accent-orange mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-              </svg>
-              <p className="text-[18px] text-white/90 leading-relaxed italic font-medium">
+              <FontAwesomeIcon icon={faQuoteLeft} className="w-6 h-6 text-accent-orange/50 mx-auto mb-3" />
+              <p className="text-[18px] text-white/85 leading-relaxed italic font-medium">
                 &ldquo;{t('about.quote')}&rdquo;
               </p>
             </div>
@@ -74,8 +70,8 @@ export default function AboutPage() {
         {/* Acknowledgments */}
         <motion.div variants={fadeUp} className="card p-6">
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-10 h-10 rounded-hp-lg flex items-center justify-center" style={{ backgroundColor: '#f9d4d2' }}>
-              <FontAwesomeIcon icon={faHeart} className="text-[#b3262b] w-[18px] h-[18px]" />
+            <div className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#fce4e9' }}>
+              <FontAwesomeIcon icon={faHeart} className="text-primary w-[18px] h-[18px]" />
             </div>
             <div>
               <h3 className="text-[16px] text-ink mb-1.5" style={{ fontWeight: 500, lineHeight: 1.38 }}>{t('about.acknowledgments_title')}</h3>

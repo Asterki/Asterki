@@ -58,7 +58,7 @@ export default function BlogPage() {
             ))}
           </div>
         ) : (
-          <motion.div variants={fadeUp} className="card p-8 text-center">
+          <motion.div variants={fadeUp} className="warm-band rounded-2xl p-8 text-center border border-primary/10">
             <div className="icon-box w-14 h-14 rounded-hp-lg mx-auto mb-4">
               <FontAwesomeIcon icon={faRss} className="text-primary w-6 h-6" />
             </div>

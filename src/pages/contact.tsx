@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faComment, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faComment, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 const contactMethods = [
@@ -13,7 +13,7 @@ const contactMethods = [
 ];
 
 const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.08 } } };
-const fadeUp = { hidden: { opacity: 0, y: 14 }, show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: 'easeOut' } } };
+const fadeUp = { hidden: { opacity: 0, y: 14 }, show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } } };
 
 export default function ContactPage() {
   const { t } = useTranslation();
@@ -27,35 +27,38 @@ export default function ContactPage() {
         </motion.div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {/* Left column */}
-          <motion.div variants={fadeUp} className="space-y-3">
-            <h2 className="text-[16px] text-ink mb-3 flex items-center gap-2" style={{ fontWeight: 500, lineHeight: 1.38 }}>
-              <FontAwesomeIcon icon={faComment} className="text-primary w-4 h-4" /> Reach out directly
+          {/* Left column — contact methods */}
+          <motion.div variants={fadeUp}>
+            <h2 className="text-[16px] text-ink mb-4 flex items-center gap-2" style={{ fontWeight: 500, lineHeight: 1.38 }}>
+              <FontAwesomeIcon icon={faComment} className="text-primary w-4 h-4" />
+              Reach out directly
             </h2>
-            {contactMethods.map((method) => (
-              <a key={method.labelKey} href={method.href} target="_blank" rel="noreferrer"
-                className="card p-4 flex items-center gap-4 hover:shadow-soft-lift transition-shadow group">
-                <div className="icon-box w-10 h-10">
-                  <FontAwesomeIcon icon={method.icon} className="text-primary w-[18px] h-[18px]" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="caption-text">{t(method.labelKey)}</div>
-                  <div className="text-[16px] text-ink font-medium truncate" style={{ fontWeight: 500, lineHeight: 1.38 }}>
-                    {method.value}
+            <div className="space-y-3">
+              {contactMethods.map((method) => (
+                <a key={method.labelKey} href={method.href} target="_blank" rel="noreferrer"
+                  className="card p-4 flex items-center gap-4 transition-all duration-200 hover:scale-[1.02] group">
+                  <div className="icon-box w-10 h-10">
+                    <FontAwesomeIcon icon={method.icon} className="text-primary w-[18px] h-[18px]" />
                   </div>
-                </div>
-                <FontAwesomeIcon icon={faChevronRight} className="text-text-graphite group-hover:text-primary w-4 h-4 transition-colors" />
-              </a>
-            ))}
+                  <div className="flex-1 min-w-0">
+                    <div className="caption-text">{t(method.labelKey)}</div>
+                    <div className="text-[16px] text-ink font-medium truncate" style={{ fontWeight: 500, lineHeight: 1.38 }}>
+                      {method.value}
+                    </div>
+                  </div>
+                  <FontAwesomeIcon icon={faArrowRight} className="text-text-graphite group-hover:text-primary group-hover:translate-x-0.5 w-4 h-4 transition-all duration-200" />
+                </a>
+              ))}
+            </div>
           </motion.div>
 
-          {/* Right column — CTA card */}
+          {/* Right column — CTA card with warm band */}
           <motion.div variants={fadeUp}>
-            <div className="card p-8 h-full flex flex-col items-center justify-center text-center">
-              <div className="icon-box w-14 h-14 rounded-hp-lg mb-5">
+            <div className="warm-band h-full rounded-2xl p-8 md:p-10 flex flex-col items-center justify-center text-center border border-primary/5">
+              <div className="icon-box w-14 h-14 rounded-xl mb-5">
                 <FontAwesomeIcon icon={faEnvelope} className="text-primary w-6 h-6" />
               </div>
-              <h3 className="text-[24px] text-ink mb-2" style={{ fontWeight: 500, lineHeight: 1.17 }}>
+              <h3 className="text-[24px] text-ink mb-2 font-semibold" style={{ lineHeight: 1.17 }}>
                 Let's work together
               </h3>
               <p className="body-text mb-6 max-w-xs">

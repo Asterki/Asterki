@@ -8,7 +8,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background-color: #f8fafc;
+    background-color: #faf8f6;
     color: #334155;
     font-family: 'Manrope', system-ui, -apple-system, sans-serif;
   }
@@ -22,28 +22,31 @@
   /* === CARD === */
   .card {
     background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.04);
-    transition: box-shadow 0.3s, transform 0.3s;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.35s, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   .card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.04);
-    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
   }
 
-  .card-feature { background-color: #f1f5f9; border-radius: 12px; }
+  .card-feature { background-color: #f1f5f9; border-radius: 16px; }
 
   /* === BUTTONS === */
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 px-6 h-11 text-white font-semibold transition-all duration-200;
     background-color: #a71b3e;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 15px; line-height: 1.4;
   }
   .btn-primary:hover {
-    background-color: #7a1230;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(167, 27, 62, 0.25);
+    background-color: #8f1634;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(167, 27, 62, 0.3);
+  }
+  .btn-primary:active {
+    transform: translateY(0) scale(0.98);
   }
 
   .btn-outline {
@@ -51,21 +54,37 @@
     background-color: transparent;
     color: #a71b3e;
     border: 1.5px solid #a71b3e;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 15px; line-height: 1.4;
   }
   .btn-outline:hover {
     background-color: #a71b3e;
     color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(167, 27, 62, 0.2);
+  }
+  .btn-outline:active {
+    transform: translateY(0);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-5 h-11 font-medium transition-all duration-200;
+    background-color: rgba(167, 27, 62, 0.06);
+    color: #a71b3e;
+    border-radius: 12px;
+    font-size: 15px; line-height: 1.4;
+  }
+  .btn-ghost:hover {
+    background-color: rgba(167, 27, 62, 0.12);
     transform: translateY(-1px);
   }
 
   .btn-text-link {
-    @apply inline-flex items-center gap-1 transition-all duration-200;
+    @apply inline-flex items-center gap-1.5 transition-all duration-200;
     color: #a71b3e;
     font-size: 15px; font-weight: 500; line-height: 1.4;
   }
-  .btn-text-link:hover { color: #7a1230; gap: 3px; }
+  .btn-text-link:hover { color: #7a1230; gap: 4px; transform: translateX(2px); }
 
   /* === TEXT === */
   .section-heading {
@@ -96,16 +115,26 @@
   @media (min-width: 768px) { .section-band { padding: 5rem 0; } }
 
   /* === DARK SLAB === */
-  .ink-slab { background-color: #1a1a1a; color: #ffffff; }
+  .ink-slab { background-color: #1b1417; color: #ffffff; }
+  .ink-slab-warm { background: linear-gradient(145deg, #1b1417 0%, #24181c 50%, #2a1a20 100%); color: #ffffff; }
+
+  /* === WARM BAND (alternative to ink-slab for friendlier sections) */
+  .warm-band {
+    background: linear-gradient(145deg, #fef6f3 0%, #fdf0eb 50%, #fceae5 100%);
+  }
 
   /* === BADGES === */
   .badge-pill {
     @apply inline-flex items-center px-3 py-1 rounded-full;
-    background-color: #1a1a1a; color: #ffffff; font-size: 13px; line-height: 1.5; font-weight: 500;
+    background-color: #a71b3e; color: #ffffff; font-size: 13px; line-height: 1.5; font-weight: 500;
+  }
+  .badge-pill-warm {
+    @apply inline-flex items-center px-3 py-1 rounded-full;
+    background-color: #1b1417; color: #ffffff; font-size: 13px; line-height: 1.5; font-weight: 500;
   }
   .badge-pill-outline {
     @apply inline-flex items-center px-3 py-1 border rounded-full;
-    border-color: #cbd5e1; color: #475569; font-size: 13px; line-height: 1.5; font-weight: 500;
+    border-color: #d6cfcb; color: #5c4e49; font-size: 13px; line-height: 1.5; font-weight: 500;
   }
 
   /* === TAG CHIP === */
@@ -118,7 +147,7 @@
   /* === ICON BOX === */
   .icon-box {
     @apply flex items-center justify-center flex-shrink-0;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #fce4e9; color: #a71b3e;
   }
   .icon-box-green { background-color: #e8f5e6; color: #6dc362; }
@@ -127,7 +156,7 @@
 
   /* === GRADIENTS === */
   .hero-gradient {
-    background: linear-gradient(135deg, #1a0a0f 0%, #2a0f18 50%, #3a1420 100%);
+    background: linear-gradient(145deg, #1f0d14 0%, #2c121c 30%, #351a24 60%, #2c121c 100%);
   }
 
   .gradient-text {
@@ -136,4 +165,15 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  /* === DECORATIVE BLOBS === */
+  .blob-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    opacity: 0.15;
+  }
+  .blob-glow-primary { background: radial-gradient(circle, #a71b3e 0%, transparent 70%); }
+  .blob-glow-orange { background: radial-gradient(circle, #e17526 0%, transparent 70%); }
 }

@@ -10,7 +10,7 @@ export default function NotFoundPage() {
 
   return (
     <div className="page-container flex items-center justify-center min-h-[60vh]">
-      <motion.div className="text-center max-w-md" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}>
+      <motion.div className="warm-band rounded-2xl p-10 md:p-12 text-center max-w-md border border-primary/10" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}>
         <div className="icon-box w-20 h-20 rounded-hp-lg mx-auto mb-5">
           <FontAwesomeIcon icon={faCompass} className="text-primary w-8 h-8" />
         </div>
