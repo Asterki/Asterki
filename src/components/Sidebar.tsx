@@ -26,18 +26,17 @@ export default function Sidebar() {
   return (
     <>
       <button onClick={() => setOpen(true)} aria-label="Open navigation"
-        className="fixed top-4 left-4 z-50 lg:hidden p-2.5 rounded-xl bg-[#1b1417] text-white shadow-lg">
+        className="fixed top-4 left-4 z-50 lg:hidden p-2.5 rounded-lg bg-[#2E3440] text-[#D8DEE9] shadow-lg">
         <FontAwesomeIcon icon={faBars} className="w-5 h-5" />
       </button>
 
-      {open && <div className="fixed inset-0 z-40 bg-black/60 lg:hidden" onClick={() => setOpen(false)} />}
+      {open && <div className="fixed inset-0 z-40 bg-[#2E3440]/80 lg:hidden" onClick={() => setOpen(false)} />}
 
-      <aside className={`fixed top-0 left-0 z-40 h-full w-64 ink-slab-warm border-r border-white/5 transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${open ? 'translate-x-0' : '-translate-x-full'}`}>
+      <aside className={`fixed top-0 left-0 z-40 h-full w-64 nord-slab-gradient border-r border-[#4C566A]/20 transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${open ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex flex-col h-full">
-          {/* Logo area */}
-          <div className="flex items-center justify-between px-6 py-6 border-b border-white/10">
+          <div className="flex items-center justify-between px-6 py-6 border-b border-[#4C566A]/30">
             <NavLink to="/" onClick={() => setOpen(false)} className="flex items-center gap-3 group">
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center overflow-hidden ring-2 ring-white/10 group-hover:ring-primary/40 transition-all duration-200">
+              <div className="w-9 h-9 rounded-lg flex items-center justify-center overflow-hidden ring-2 ring-[#88C0D0]/30 group-hover:ring-[#88C0D0]/60 transition-all duration-200">
                 <img
                   src="/assets/images/icon.png"
                   alt="Fernando Rivera"
@@ -45,24 +44,23 @@ export default function Sidebar() {
                 />
               </div>
               <div>
-                <div className="text-white font-semibold text-[16px] leading-tight">Asterki</div>
-                <div className="text-[12px] text-white/40 leading-tight font-medium">Developer & Advocate</div>
+                <div className="text-[#ECEFF4] font-semibold text-[16px] leading-tight">Asterki</div>
+                <div className="text-[12px] text-[#D8DEE9]/40 leading-tight font-medium">Developer & Advocate</div>
               </div>
             </NavLink>
-            <button onClick={() => setOpen(false)} className="lg:hidden p-1 text-white/40 hover:text-white transition-colors">
+            <button onClick={() => setOpen(false)} className="lg:hidden p-1 text-[#D8DEE9]/40 hover:text-[#ECEFF4] transition-colors">
               <FontAwesomeIcon icon={faXmark} className="w-5 h-5" />
             </button>
           </div>
 
-          {/* Navigation */}
           <nav className="flex-1 px-3 py-4 space-y-0.5 overflow-y-auto">
             {navItems.map((item) => (
               <NavLink key={item.to} to={item.to} end={item.to === '/'}
                 className={({ isActive }) =>
-                  `block px-4 py-2.5 rounded-xl transition-all duration-200 text-[14px] leading-[1.5] ${
+                  `block px-4 py-2.5 rounded-lg transition-all duration-200 text-[14px] leading-[1.5] ${
                     isActive
-                      ? 'bg-primary/20 text-primary font-semibold shadow-sm'
-                      : 'text-white/45 hover:text-white hover:bg-white/5'
+                      ? 'bg-[#88C0D0]/15 text-[#88C0D0] font-semibold shadow-sm'
+                      : 'text-[#D8DEE9]/45 hover:text-[#D8DEE9] hover:bg-white/5'
                   }`
                 }
                 onClick={() => setOpen(false)}>
@@ -74,8 +72,7 @@ export default function Sidebar() {
             ))}
           </nav>
 
-          {/* Language switcher */}
-          <div className="px-4 py-4 border-t border-white/10">
+          <div className="px-4 py-4 border-t border-[#4C566A]/30">
             <LanguageSwitcher />
           </div>
         </div>

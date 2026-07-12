@@ -33,7 +33,7 @@
         "goals_text": "Seguir creciendo mi trabajo mientras me desarrollo como un profesional fuerte y capaz. Seguir refinando habilidades y construyendo soluciones útiles y significativas.",
         "quote": "No te sientas intimidado, encuentra motivación y disciplina dentro de tus sueños.",
         "acknowledgments_title": "Agradecimientos",
-        "acknowledgments_text": "A todos los que han estado presentes en este viaje — su apoyo, retroalimentación y confianza me mantuvieron avanzando. Lo aprecio genuinamente."
+        "acknowledgments_text": "A todos los que han estado presentes en este viaje - su apoyo, retroalimentación y confianza me mantuvieron avanzando. Lo aprecio genuinamente."
     },
     "projects": {
         "title": "Proyectos",
@@ -41,7 +41,7 @@
         "view_github": "Ver en GitHub",
         "view_live": "Demo en Vivo",
         "source": "Código",
-        "empty": "Próximamente más proyectos — ¡mantente al tanto!",
+        "empty": "Próximamente más proyectos - ¡mantente al tanto!",
         "items": {
             "census": {
                 "name": "Bus Routes Census",
@@ -62,7 +62,7 @@
                 "description": "Sistema de gestión de expedientes médicos construido en cumplimiento con los estándares ISO/IEC 27001. Cuenta con un modelo de control de acceso de múltiples capas combinando RBAC y ABAC, auditorías completas, alertas en tiempo real y trazabilidad total."
             },
             "pumai": {
-                "name": "PumAI — Asistente de IA",
+                "name": "PumAI - Asistente de IA",
                 "org": "UNAH",
                 "period": "Oct 2025 - Presente",
                 "description": "Asistente impulsado por LLM para atender consultas estudiantiles con respuestas precisas y contextuales. Incluye soporte RAG para recuperación de conocimiento institucional, integración con MCP server y flujos de trabajo deterministas para procesos guiados."
@@ -71,7 +71,7 @@
                 "name": "Sitio Web Institucional UNAH CURC",
                 "org": "UNAH",
                 "period": "Sep 2025 - Ene 2026",
-                "description": "El sitio web oficial del Campus Comayagua de la UNAH, sirviendo a más de 3,000 estudiantes. Rediseñado para mejorar estructura, accesibilidad y usabilidad — incluyendo oferta académica, servicios estudiantiles, directorios administrativos y recursos de transparencia."
+                "description": "El sitio web oficial del Campus Comayagua de la UNAH, sirviendo a más de 3,000 estudiantes. Rediseñado para mejorar estructura, accesibilidad y usabilidad - incluyendo oferta académica, servicios estudiantiles, directorios administrativos y recursos de transparencia."
             },
             "personal": {
                 "name": "Sitio Web Personal",
@@ -120,7 +120,7 @@
     "skills": {
         "title": "Habilidades y Herramientas",
         "subtitle": "Tecnologías con las que trabajo regularmente. Siempre aprendiendo, siempre expandiendo.",
-        "note": "Esta es una lista curada de herramientas que uso frecuentemente — sigo actualizándola a medida que aprendo y construyo más.",
+        "note": "Esta es una lista curada de herramientas que uso frecuentemente - sigo actualizándola a medida que aprendo y construyo más.",
         "categories": {
             "languages": "Lenguajes de Programación",
             "frontend": "Frontend",
@@ -132,7 +132,7 @@
     },
     "experience": {
         "title": "Experiencia",
-        "subtitle": "Mi trayectoria hasta ahora — desde la primera línea de código hasta liderar proyectos universitarios y construir sistemas empresariales.",
+        "subtitle": "Mi trayectoria hasta ahora - desde la primera línea de código hasta liderar proyectos universitarios y construir sistemas empresariales.",
         "roles": {
             "unah_dev": {
                 "title": "Ingeniero de Software Junior",
@@ -212,7 +212,7 @@
     },
     "contact": {
         "title": "Contáctame",
-        "subtitle": "¿Tienes una pregunta, idea o solo quieres conectar? Escríbeme — me encantaría saber de ti.",
+        "subtitle": "¿Tienes una pregunta, idea o solo quieres conectar? Escríbeme - me encantaría saber de ti.",
         "email_label": "Correo",
         "email": "asterki.dev@proton.me",
         "discord_label": "Discord",
@@ -229,7 +229,7 @@
         "subtitle": "Pensamientos, notas y cosas que aprendo en el camino.",
         "read_more": "Leer Más",
         "published": "Publicado",
-        "no_posts": "Aún no hay publicaciones — ¡vuelve pronto!"
+        "no_posts": "Aún no hay publicaciones - vuelve pronto!"
     },
     "footer": {
         "tagline": "Construido con curiosidad, impulsado por código abierto.",
@@ -241,8 +241,8 @@
         "cta": "Volver al Inicio"
     },
     "services": {
-        "title": "Asterki Dev — Consultoría de Software",
-        "subtitle": "Encuentro lo que frena tu negocio y construyo la solución. Sin rodeos, sin funciones innecesarias — solo soluciones que realmente resuelven el problema.",
+        "title": "Asterki Dev - Consultoría de Software",
+        "subtitle": "Encuentro lo que frena tu negocio y construyo la solución. Sin rodeos, sin funciones innecesarias - solo soluciones que realmente resuelven el problema.",
         "model_title": "Cómo Funciona",
         "model_steps": {
             "detect": {
@@ -251,7 +251,7 @@
             },
             "diagnose": {
                 "name": "Diagnosticar",
-                "desc": "Analizo las causas raíz y determino la mejor solución — software a medida, SaaS o un cambio de proceso."
+                "desc": "Analizo las causas raíz y determino la mejor solución - software a medida, SaaS o un cambio de proceso."
             },
             "deliver": {
                 "name": "Entregar",
@@ -282,7 +282,7 @@
             }
         },
         "cta_title": "¿Listo para encontrar lo que te frena?",
-        "cta_desc": "Empecemos con una conversación. Sin compromiso, sin discurso de ventas — solo una charla sobre tu negocio y sus desafíos.",
+        "cta_desc": "Empecemos con una conversación. Sin compromiso, sin discurso de ventas - solo una charla sobre tu negocio y sus desafíos.",
         "cta_button": "Contáctame"
     }
 }

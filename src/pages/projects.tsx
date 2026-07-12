@@ -41,15 +41,14 @@ export default function ProjectsPage() {
             return (
               <motion.article key={project.key} variants={fadeUp}
                 className="card p-6 flex flex-col">
-                {/* Placeholder — cloud bg, no gradient */}
-                <div className="w-full h-32 rounded-hp-lg bg-surface-cloud mb-4 flex items-center justify-center">
-                  <span className="text-[44px] font-medium text-primary/25">
+                <div className="w-full h-32 rounded-soft bg-[#D8DEE9] mb-4 flex items-center justify-center">
+                  <span className="text-[44px] font-medium text-[#4C566A]/25">
                     {t(`${prefix}.name`).charAt(0)}
                   </span>
                 </div>
 
                 <div className="caption-text uppercase tracking-wider mb-1">{t(`${prefix}.org`)}</div>
-                <h3 className="text-[20px] text-ink mb-1" style={{ fontWeight: 500, lineHeight: 1.0 }}>
+                <h3 className="text-[20px] text-[#2E3440] mb-1" style={{ fontWeight: 500, lineHeight: 1.0 }}>
                   {t(`${prefix}.name`)}
                 </h3>
                 <div className="flex items-center gap-1.5 caption-text mb-3">

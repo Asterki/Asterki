@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faArrowRight, faRocket, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import ParticlesBackground from '../components/ParticlesBackground';
 
 const socialLinks = [
@@ -20,23 +20,22 @@ const item = {
   hidden: { opacity: 0, y: 24 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } },
 };
+
 export default function HomePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen">
-      {/* Hero — warm dark with particles */}
+      {/* Hero */}
       <div className="hero-gradient relative overflow-hidden">
-        {/* Decorative glow blobs */}
         <div className="blob-glow blob-glow-primary w-[400px] h-[400px] -top-20 -left-20" />
-        <div className="blob-glow blob-glow-orange w-[300px] h-[300px] top-1/3 -right-10" />
+        <div className="blob-glow blob-glow-blue w-[300px] h-[300px] top-1/3 -right-10" />
 
-        {/* Soft grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(236,239,244,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(236,239,244,0.06) 1px, transparent 1px)`,
             backgroundSize: '64px 64px',
           }}
         />
@@ -48,54 +47,46 @@ export default function HomePage() {
           initial="hidden"
           animate="show"
         >
-          {/* Warm greeting badge */}
           <motion.div variants={item} className="mb-5">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white/80 text-[14px] font-medium backdrop-blur-sm border border-white/10">
-              <span>👋</span> {t('hero.greeting')}
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-[#D8DEE9] text-[14px] font-medium backdrop-blur-sm border border-white/10">
+              {t('hero.greeting')}
             </span>
           </motion.div>
 
-          {/* Name — big and bold */}
           <motion.h1 variants={item}
-            className="text-[64px] md:text-[80px] lg:text-[96px] text-white mb-3 max-w-4xl font-bold leading-[0.95] tracking-tight">
+            className="text-[64px] md:text-[80px] lg:text-[96px] text-[#ECEFF4] mb-3 max-w-4xl font-bold leading-[0.95] tracking-tight">
             {t('hero.name')}
           </motion.h1>
 
-          {/* Title with gradient accent */}
           <motion.p variants={item}
-            className="text-[22px] md:text-[26px] text-white/60 mb-6 font-medium leading-[1.2]">
+            className="text-[22px] md:text-[26px] text-[#D8DEE9]/60 mb-6 font-medium leading-[1.2]">
             {t('hero.title')}
           </motion.p>
 
-          {/* Subtitle */}
           <motion.p variants={item}
-            className="text-[17px] text-white/40 max-w-xl mb-10 leading-relaxed">
+            className="text-[17px] text-[#D8DEE9]/40 max-w-xl mb-10 leading-relaxed">
             {t('hero.subtitle')}
           </motion.p>
 
-          {/* CTAs */}
           <motion.div variants={item} className="flex flex-wrap items-center justify-center gap-3 mb-14">
             <button onClick={() => navigate('/about')}
-              className="inline-flex items-center gap-2 px-7 h-12 bg-white text-[#1b1417] font-semibold rounded-xl transition-all duration-200 hover:scale-105 active:scale-95 text-[15px] shadow-lg hover:shadow-white/25">
-              <FontAwesomeIcon icon={faRocket} className="w-4 h-4" />
+              className="inline-flex items-center gap-2 px-7 h-12 bg-[#88C0D0] text-[#2E3440] font-semibold rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 text-[15px] shadow-lg hover:shadow-[0_8px_24px_rgba(136,192,208,0.3)]">
               {t('hero.cta_about')}
             </button>
             <button onClick={() => navigate('/projects')}
-              className="inline-flex items-center gap-2 px-7 h-12 bg-white/10 text-white font-medium rounded-xl border border-white/20 transition-all duration-200 hover:bg-white/20 hover:scale-105 active:scale-95 text-[15px] backdrop-blur-sm">
-              <FontAwesomeIcon icon={faCode} className="w-4 h-4" />
+              className="inline-flex items-center gap-2 px-7 h-12 bg-white/10 text-[#D8DEE9] font-medium rounded-lg border border-white/20 transition-all duration-200 hover:bg-white/20 hover:scale-105 active:scale-95 text-[15px] backdrop-blur-sm">
               {t('hero.cta_projects')}
             </button>
             <button onClick={() => navigate('/contact')}
-              className="btn-text-link text-white/50 hover:text-white">
+              className="btn-text-link text-[#D8DEE9]/50 hover:text-[#88C0D0]">
               {t('hero.cta_contact')} <FontAwesomeIcon icon={faArrowRight} className="w-3.5 h-3.5" />
             </button>
           </motion.div>
 
-          {/* Social — slightly more prominent */}
           <motion.div variants={item} className="flex items-center gap-6">
             {socialLinks.map(({ href, icon, label }) => (
               <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}
-                className="text-white/25 hover:text-white transition-all duration-200 hover:scale-110 hover:-translate-y-0.5">
+                className="text-[#D8DEE9]/25 hover:text-[#88C0D0] transition-all duration-200 hover:scale-110 hover:-translate-y-0.5">
                 <FontAwesomeIcon icon={icon} className="w-5 h-5" />
               </a>
             ))}
@@ -103,8 +94,8 @@ export default function HomePage() {
         </motion.div>
       </div>
 
-      {/* Warm cloud band — quick pitch */}
-      <div className="warm-band">
+      {/* Snow band */}
+      <div className="snow-band">
         <div className="hp-container py-12 md:py-16 text-center">
           <div className="max-w-2xl mx-auto">
             <motion.p
@@ -112,7 +103,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[17px] md:text-[19px] text-[#3d2c28] leading-relaxed font-medium">
+              className="text-[17px] md:text-[19px] text-[#3B4252] leading-relaxed font-medium">
               Software Engineer at UNAH, building internal tools, teaching workshops, and opening boxes of curiosity.
             </motion.p>
             <motion.div

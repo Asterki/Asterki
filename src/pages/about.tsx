@@ -11,10 +11,10 @@ function SectionCard({ icon, title, children }: { icon: any; title: string; chil
     <motion.div variants={fadeUp} className="card p-6">
       <div className="flex items-start gap-4">
         <div className="icon-box w-10 h-10">
-          <FontAwesomeIcon icon={icon} className="text-primary w-[18px] h-[18px]" />
+          <FontAwesomeIcon icon={icon} className="w-[18px] h-[18px]" />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-[16px] text-ink mb-1.5" style={{ fontWeight: 500, lineHeight: 1.38 }}>{title}</h3>
+          <h3 className="text-[16px] text-[#2E3440] mb-1.5" style={{ fontWeight: 500, lineHeight: 1.38 }}>{title}</h3>
           <div className="body-text space-y-2">{children}</div>
         </div>
       </div>
@@ -33,13 +33,12 @@ export default function AboutPage() {
           <p className="section-subtitle mx-auto">{t('about.subtitle')}</p>
         </motion.div>
 
-        {/* Intro card with profile image */}
         <motion.div variants={fadeUp} className="card p-6 mb-6">
           <div className="flex flex-col md:flex-row items-start gap-5">
             <img
               src="/assets/images/icon.png"
               alt="Fernando Rivera"
-              className="w-16 h-16 rounded-xl object-cover flex-shrink-0 ring-2 ring-primary/10"
+              className="w-16 h-16 rounded-xl object-cover flex-shrink-0 ring-2 ring-[#88C0D0]/30"
             />
             <div>
               <p className="body-text leading-relaxed">{t('about.intro')}</p>
@@ -47,19 +46,18 @@ export default function AboutPage() {
           </div>
         </motion.div>
 
-        {/* Quote — friendlier warm slab */}
+        {/* Quote */}
         <motion.div variants={fadeUp} className="mb-6">
-          <div className="ink-slab-warm rounded-2xl p-8 md:p-10">
+          <div className="nord-slab-gradient rounded-2xl p-8 md:p-10">
             <div className="max-w-lg mx-auto text-center">
-              <FontAwesomeIcon icon={faQuoteLeft} className="w-6 h-6 text-accent-orange/50 mx-auto mb-3" />
-              <p className="text-[18px] text-white/85 leading-relaxed italic font-medium">
+              <FontAwesomeIcon icon={faQuoteLeft} className="w-6 h-6 text-[#88C0D0]/50 mx-auto mb-3" />
+              <p className="text-[18px] text-[#D8DEE9] leading-relaxed italic font-medium">
                 &ldquo;{t('about.quote')}&rdquo;
               </p>
             </div>
           </div>
         </motion.div>
 
-        {/* 2-column grid */}
         <div className="grid gap-4 md:grid-cols-2 mb-6">
           <SectionCard icon={faLightbulb} title={t('about.empowering_title')}><p>{t('about.empowering_text')}</p></SectionCard>
           <SectionCard icon={faLink} title={t('about.events_title')}><p>{t('about.events_text')}</p></SectionCard>
@@ -67,14 +65,13 @@ export default function AboutPage() {
           <SectionCard icon={faTrophy} title={t('about.goals_title')}><p>{t('about.goals_text')}</p></SectionCard>
         </div>
 
-        {/* Acknowledgments */}
         <motion.div variants={fadeUp} className="card p-6">
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#fce4e9' }}>
-              <FontAwesomeIcon icon={faHeart} className="text-primary w-[18px] h-[18px]" />
+            <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#D8DEE9' }}>
+              <FontAwesomeIcon icon={faHeart} className="w-[18px] h-[18px] text-[#5E81AC]" />
             </div>
             <div>
-              <h3 className="text-[16px] text-ink mb-1.5" style={{ fontWeight: 500, lineHeight: 1.38 }}>{t('about.acknowledgments_title')}</h3>
+              <h3 className="text-[16px] text-[#2E3440] mb-1.5" style={{ fontWeight: 500, lineHeight: 1.38 }}>{t('about.acknowledgments_title')}</h3>
               <p className="body-text">{t('about.acknowledgments_text')}</p>
             </div>
           </div>

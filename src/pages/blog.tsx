@@ -8,11 +8,11 @@ interface BlogPost { title: string; date: string; description: string; slug: str
 const blogPosts: BlogPost[] = [
   {
     title: 'Building in Public: A Week of Side Projects', date: '2026-06-14',
-    description: 'What happens when curiosity wins over planning — a recap of seven days, three prototypes, and two all-nighters.', slug: 'building-in-public'
+    description: 'What happens when curiosity wins over planning - a recap of seven days, three prototypes, and two all-nighters.', slug: 'building-in-public'
   },
   {
     title: 'Welcome to the Asterki Blog', date: '2026-06-14',
-    description: 'Hello and welcome — here\'s what this blog is about and what you can expect.', slug: 'welcome'
+    description: 'Hello and welcome - here\'s what this blog is about and what you can expect.', slug: 'welcome'
   },
 ];
 
@@ -34,10 +34,10 @@ export default function BlogPage() {
           <div className="space-y-4">
             {blogPosts.map((post) => (
               <motion.article key={post.slug} variants={fadeUp}
-                className="card p-5 hover:shadow-soft-lift transition-shadow group">
+                className="card p-5 hover:shadow-hover transition-shadow group">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1 min-w-0">
-                    <h2 className="text-[16px] text-ink group-hover:text-primary transition-colors"
+                    <h2 className="text-[16px] text-[#2E3440] group-hover:text-[#5E81AC] transition-colors"
                       style={{ fontWeight: 500, lineHeight: 1.38 }}>
                       {post.title}
                     </h2>
@@ -47,9 +47,8 @@ export default function BlogPage() {
                     </div>
                     <p className="mt-2 body-text">{post.description}</p>
                   </div>
-                  {/* Opens Hugo blog in new tab */}
                   <a href={`/blog/${post.slug}.html`} target="_blank" rel="noopener noreferrer"
-                    className="flex-shrink-0 p-2 rounded-hp-md text-text-graphite hover:text-primary hover:bg-primary-soft transition-all"
+                    className="flex-shrink-0 p-2 rounded-lg text-[#4C566A] hover:text-[#5E81AC] hover:bg-[#D8DEE9] transition-all"
                     aria-label={t('blog.read_more')}>
                     <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
                   </a>
@@ -58,11 +57,11 @@ export default function BlogPage() {
             ))}
           </div>
         ) : (
-          <motion.div variants={fadeUp} className="warm-band rounded-2xl p-8 text-center border border-primary/10">
-            <div className="icon-box w-14 h-14 rounded-hp-lg mx-auto mb-4">
-              <FontAwesomeIcon icon={faRss} className="text-primary w-6 h-6" />
+          <motion.div variants={fadeUp} className="snow-band rounded-2xl p-8 text-center border border-[#D8DEE9]">
+            <div className="icon-box w-14 h-14 rounded-lg mx-auto mb-4">
+              <FontAwesomeIcon icon={faRss} className="w-6 h-6" />
             </div>
-            <h3 className="text-[16px] text-ink mb-2" style={{ fontWeight: 500, lineHeight: 1.38 }}>
+            <h3 className="text-[16px] text-[#2E3440] mb-2" style={{ fontWeight: 500, lineHeight: 1.38 }}>
               {t('blog.no_posts')}
             </h3>
             <p className="body-text">Writing is in progress. Check back soon.</p>

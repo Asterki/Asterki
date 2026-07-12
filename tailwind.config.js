@@ -7,46 +7,43 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#a71b3e',
-          dark: '#7a1230',
-          light: '#c9295a',
-          soft: '#fce4e9',
-        },
-        accent: {
-          green: '#6dc362',
-          blue: '#61b6d3',
-          orange: '#e17526',
-          'green-soft': '#e8f5e6',
-          'blue-soft': '#e4f2f8',
-          'orange-soft': '#fdf0e3',
-        },
-        ink: {
-          DEFAULT: '#1a1a1a',
-          deep: '#000000',
-        },
-        surface: {
-          canvas: '#ffffff',
-          cloud: '#f8fafc',
-          fog: '#f1f5f9',
-        },
-        text: {
-          ink: '#1a1a1a',
-          charcoal: '#475569',
-          graphite: '#94a3b8',
+        /* Nord palette */
+        nord: {
+          /* Polar Night */
+          darkest: '#2E3440',
+          dark: '#3B4252',
+          medium: '#434C5E',
+          muted: '#4C566A',
+          /* Snow Storm */
+          white: '#ECEFF4',
+          light: '#E5E9F0',
+          lighter: '#D8DEE9',
+          /* Frost */
+          teal: '#8FBCBB',
+          primary: '#88C0D0',
+          blue: '#81A1C1',
+          deep: '#5E81AC',
+          /* Aurora */
+          red: '#BF616A',
+          orange: '#D08770',
+          yellow: '#EBCB8B',
+          green: '#A3BE8C',
+          purple: '#B48EAD',
         },
       },
       fontFamily: {
-        sans: ['Manrope', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       borderRadius: {
-        friendly: '12px',
+        nord: '8px',
+        soft: '12px',
         pill: '9999px',
       },
       boxShadow: {
-        soft: '0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04)',
-        hover: '0 4px 16px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04)',
-        'btn-glow': '0 4px 12px rgba(167, 27, 62, 0.25)',
+        soft: '0 1px 3px rgba(46, 52, 64, 0.06), 0 4px 12px rgba(46, 52, 64, 0.04)',
+        hover: '0 4px 16px rgba(46, 52, 64, 0.08), 0 8px 24px rgba(46, 52, 64, 0.04)',
+        'btn-glow': '0 4px 12px rgba(136, 192, 208, 0.3)',
+        'btn-glow-dark': '0 4px 12px rgba(94, 129, 172, 0.3)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out',

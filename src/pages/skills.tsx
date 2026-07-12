@@ -53,10 +53,6 @@ const skills: Record<string, Skill[]> = {
   ],
 };
 
-const categoryIcons: Record<string, string> = {
-  languages: '💻', frontend: '🎨', backend: '⚙️', devops: '🛠️', datascience: '📊', tools: '🧰',
-};
-
 const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.04 } } };
 const fadeUp = { hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: 'easeOut' } } };
 
@@ -74,16 +70,13 @@ export default function SkillsPage() {
         <div className="space-y-8">
           {Object.entries(skills).map(([category, items]) => (
             <motion.div key={category} variants={fadeUp}>
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-sm">{categoryIcons[category]}</span>
-                <h2 className="text-[16px] text-ink" style={{ fontWeight: 500, lineHeight: 1.38 }}>
-                  {t(`skills.categories.${category}`)}
-                </h2>
-              </div>
+              <h2 className="text-[14px] uppercase tracking-wider text-[#5E81AC] mb-4 font-semibold">
+                {t(`skills.categories.${category}`)}
+              </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
                 {items.map((skill) => (
                   <div key={skill.name}
-                    className="card p-4 flex flex-col items-center justify-center gap-2.5 hover:shadow-soft-lift transition-shadow">
+                    className="card p-4 flex flex-col items-center justify-center gap-2.5 hover:shadow-hover transition-shadow">
                     <img src={skill.icon} alt={`${skill.name} logo`}
                       className="w-8 h-8 object-contain" loading="lazy" />
                     <span className="caption-text text-center font-medium">{skill.name}</span>

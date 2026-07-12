@@ -33,7 +33,7 @@
         "goals_text": "Continue growing my work while developing into a strong, capable professional. Keep refining skills, diving into new technologies, and building solutions that are useful and meaningful.",
         "quote": "Don't feel intimidated, find motivation and discipline within your dreams.",
         "acknowledgments_title": "Acknowledgments",
-        "acknowledgments_text": "To everyone who has been there throughout this journey — your support, feedback, and belief kept me moving forward. I genuinely appreciate all of it."
+        "acknowledgments_text": "To everyone who has been there throughout this journey - your support, feedback, and belief kept me moving forward. I genuinely appreciate all of it."
     },
     "projects": {
         "title": "Projects",
@@ -41,7 +41,7 @@
         "view_github": "View on GitHub",
         "view_live": "Live Demo",
         "source": "Source",
-        "empty": "Projects coming soon — stay tuned!",
+        "empty": "Projects coming soon - stay tuned!",
         "items": {
             "census": {
                 "name": "Bus Routes Census",
@@ -62,16 +62,16 @@
                 "description": "A secure medical records management system built in strict compliance with ISO/IEC 27001 standards. Features a deep, multi-layered access control model combining RBAC and ABAC, comprehensive audit trails, real-time alerts, and full traceability across all record interactions."
             },
             "pumai": {
-                "name": "PumAI — AI Inquiry Assistant",
+                "name": "PumAI - AI Inquiry Assistant",
                 "org": "UNAH",
                 "period": "Oct 2025 - Present",
-                "description": "An LLM-powered assistant built to handle student inquiries with accurate, context-aware responses. Features RAG support for institutional knowledge retrieval, MCP server integration, and deterministic workflows for guided processes — enabling autonomous actions and step-by-step student guidance."
+                "description": "An LLM-powered assistant built to handle student inquiries with accurate, context-aware responses. Features RAG support for institutional knowledge retrieval, MCP server integration, and deterministic workflows for guided processes - enabling autonomous actions and step-by-step student guidance."
             },
             "curc": {
-                "name": "UNAH CURC — Institutional Website",
+                "name": "UNAH CURC - Institutional Website",
                 "org": "UNAH",
                 "period": "Sep 2025 - Jan 2026",
-                "description": "The official website for UNAH's Campus Comayagua, serving 3,000+ students. Redesigned and developed to improve structure, accessibility, and usability — covering academic offerings, student services, administrative directories, transparency resources, and campus information."
+                "description": "The official website for UNAH's Campus Comayagua, serving 3,000+ students. Redesigned and developed to improve structure, accessibility, and usability - covering academic offerings, student services, administrative directories, transparency resources, and campus information."
             },
             "personal": {
                 "name": "Personal Website",
@@ -120,7 +120,7 @@
     "skills": {
         "title": "Skills & Tools",
         "subtitle": "Technologies I work with regularly. Always learning, always expanding.",
-        "note": "This is a curated list of tools I use frequently — I keep updating it as I learn and build more.",
+        "note": "This is a curated list of tools I use frequently - I keep updating it as I learn and build more.",
         "categories": {
             "languages": "Programming Languages",
             "frontend": "Frontend",
@@ -132,7 +132,7 @@
     },
     "experience": {
         "title": "Experience",
-        "subtitle": "My journey so far — from first line of code to leading university projects and building enterprise systems.",
+        "subtitle": "My journey so far - from first line of code to leading university projects and building enterprise systems.",
         "roles": {
             "unah_dev": {
                 "title": "Junior Software Engineer",
@@ -212,7 +212,7 @@
     },
     "contact": {
         "title": "Get in Touch",
-        "subtitle": "Have a question, idea, or just want to connect? Reach out — I'd love to hear from you.",
+        "subtitle": "Have a question, idea, or just want to connect? Reach out - I'd love to hear from you.",
         "email_label": "Email me",
         "email": "asterki.dev@proton.me",
         "discord_label": "Discord",
@@ -229,7 +229,7 @@
         "subtitle": "Thoughts, notes, and things I'm learning along the way.",
         "read_more": "Read More",
         "published": "Published",
-        "no_posts": "No posts yet — check back soon!"
+        "no_posts": "No posts yet - check back soon!"
     },
     "footer": {
         "tagline": "Built with curiosity, powered by open source.",
@@ -241,8 +241,8 @@
         "cta": "Back to Home"
     },
     "services": {
-        "title": "Asterki Dev — Software Consultancy",
-        "subtitle": "I find what's slowing your business down and build the fix. No fluff, no unnecessary features — just solutions that actually solve the problem.",
+        "title": "Asterki Dev - Software Consultancy",
+        "subtitle": "I find what's slowing your business down and build the fix. No fluff, no unnecessary features - just solutions that actually solve the problem.",
         "model_title": "How It Works",
         "model_steps": {
             "detect": {
@@ -251,7 +251,7 @@
             },
             "diagnose": {
                 "name": "Diagnose",
-                "desc": "I analyze root causes and determine the best fix — custom software, SaaS, or a process change."
+                "desc": "I analyze root causes and determine the best fix - custom software, SaaS, or a process change."
             },
             "deliver": {
                 "name": "Deliver",
@@ -282,7 +282,7 @@
             }
         },
         "cta_title": "Ready to find what's slowing you down?",
-        "cta_desc": "Let's start with a conversation. No commitment, no sales pitch — just a discussion about your business and its challenges.",
+        "cta_desc": "Let's start with a conversation. No commitment, no sales pitch - just a discussion about your business and its challenges.",
         "cta_button": "Get in Touch"
     }
 }

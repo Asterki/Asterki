@@ -29,27 +29,26 @@ export default function ExperiencePage() {
           <p className="section-subtitle mx-auto">{t('experience.subtitle')}</p>
         </motion.div>
 
-        {/* Work Experience */}
         <motion.div variants={fadeUp} className="mb-12">
-          <h2 className="text-[16px] text-ink mb-6 flex items-center gap-2" style={{ fontWeight: 500, lineHeight: 1.38 }}>
-            <FontAwesomeIcon icon={faBriefcase} className="text-primary w-4 h-4" /> Work Experience
+          <h2 className="text-[16px] text-[#2E3440] mb-6 flex items-center gap-2" style={{ fontWeight: 500, lineHeight: 1.38 }}>
+            <FontAwesomeIcon icon={faBriefcase} className="text-[#5E81AC] w-4 h-4" /> Work Experience
           </h2>
 
           <div className="relative">
-            <div className="absolute left-[18px] top-2 bottom-2 w-px bg-hairline" />
+            <div className="absolute left-[18px] top-2 bottom-2 w-px bg-[#D8DEE9]" />
             <div className="space-y-5">
               {roles.map((role) => {
                 const prefix = `experience.roles.${role.key}`;
                 return (
                   <motion.div key={role.key} variants={fadeUp} className="relative pl-12">
-                    <div className="absolute left-3 top-2 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-canvas z-10" />
+                    <div className="absolute left-3 top-2 w-2.5 h-2.5 rounded-full bg-[#88C0D0] border-2 border-[#E5E9F0] z-10" />
                     <div className="card p-5">
                       <div className="flex items-start justify-between gap-3 flex-wrap">
                         <div>
-                          <h3 className="text-[16px] text-ink" style={{ fontWeight: 500, lineHeight: 1.38 }}>
+                          <h3 className="text-[16px] text-[#2E3440]" style={{ fontWeight: 500, lineHeight: 1.38 }}>
                             {t(`${prefix}.title`)}
                           </h3>
-                          <p className="caption-text text-primary font-medium">{t(`${prefix}.org`)}</p>
+                          <p className="caption-text text-[#5E81AC] font-medium">{t(`${prefix}.org`)}</p>
                         </div>
                         <span className="tag-chip whitespace-nowrap">{t(`${prefix}.period`)}</span>
                       </div>
@@ -66,10 +65,9 @@ export default function ExperiencePage() {
           </div>
         </motion.div>
 
-        {/* Education */}
         <motion.div variants={fadeUp} className="mb-12">
-          <h2 className="text-[16px] text-ink mb-6 flex items-center gap-2" style={{ fontWeight: 500, lineHeight: 1.38 }}>
-            <FontAwesomeIcon icon={faGraduationCap} className="text-primary w-4 h-4" /> {t('education.title')}
+          <h2 className="text-[16px] text-[#2E3440] mb-6 flex items-center gap-2" style={{ fontWeight: 500, lineHeight: 1.38 }}>
+            <FontAwesomeIcon icon={faGraduationCap} className="text-[#5E81AC] w-4 h-4" /> {t('education.title')}
           </h2>
           <div className="space-y-4">
             {educationItems.map((item) => {
@@ -77,13 +75,13 @@ export default function ExperiencePage() {
               return (
                 <motion.div key={item} variants={fadeUp} className="card p-5 flex items-start gap-4">
                   <div className="icon-box w-11 h-11 flex-shrink-0">
-                    <FontAwesomeIcon icon={faGraduationCap} className="text-primary w-5 h-5" />
+                    <FontAwesomeIcon icon={faGraduationCap} className="w-5 h-5" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-[16px] text-ink" style={{ fontWeight: 500, lineHeight: 1.38 }}>
+                    <h3 className="text-[16px] text-[#2E3440]" style={{ fontWeight: 500, lineHeight: 1.38 }}>
                       {t(`${prefix}.degree`)}
                     </h3>
-                    <p className="caption-text text-primary font-medium">{t(`${prefix}.school`)}</p>
+                    <p className="caption-text text-[#5E81AC] font-medium">{t(`${prefix}.school`)}</p>
                     <div className="mt-1 flex items-center gap-3 caption-text">
                       <span>{t(`${prefix}.period`)}</span>
                       <span className="badge-pill-outline text-[13px]">{t(`${prefix}.type`)}</span>
@@ -95,11 +93,10 @@ export default function ExperiencePage() {
           </div>
         </motion.div>
 
-        {/* Note */}
         <motion.div variants={fadeUp}>
-          <div className="card-feature p-6 border-l-4 border-primary">
+          <div className="card-feature p-6 border-l-4 border-[#88C0D0]">
             <p className="body-text">
-              <span className="font-medium text-primary">✨ Started early.</span>{' '}
+              <span className="font-medium text-[#5E81AC]">Started early.</span>{' '}
               Began coding at 13, built my first project at 14, and haven't stopped since. Every role
               since has been about turning curiosity into capability.
             </p>
